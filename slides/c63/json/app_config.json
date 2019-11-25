@@ -1,0 +1,10 @@
+{
+	"defaultSkin" : "blue",
+	"staticPath" : "/static/",
+    "slideList": [
+	    { "imgUrl": "/static/images/slide/m1.png", "href": "" },
+	    { "imgUrl": "/static/images/slide/m2.png", "href": "" },
+	    { "imgUrl": "/static/images/slide/m3.png", "href": "" },
+	    { "imgUrl": "/static/images/slide/m4.png", "href": "" }
+    ]
+}

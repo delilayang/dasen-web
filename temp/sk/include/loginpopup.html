@@ -1,0 +1,104 @@
+<div class="popup-main" id="loginPopup">
+  <div class="cross">
+      <img src="img/cross.png" width="18" height="18">
+  </div>
+  <div class="left">
+    <a href="javascript:void(0)" class="oldAccount popup">已有帐号?</a>
+  </div>
+  <div class="right">
+        <form onsubmit="doRegister();return false;" autocomplete="off">
+                <ul>
+                    <li class="loginTitle">
+                        <span>请填写您的基本信息：</span>   
+                    </li>
+                    <li class="usn">
+                        <input type="text" placeholder="请输入您的账号" id="regUsername" maxlength="15" class="userInput" value="">
+                    </li>
+                    <li class="pwd">
+                        <input type="password" placeholder="请输入您的密码" id="regPassword" maxlength="20" class="pwdInput" value="">
+                    </li>
+                    <li>
+                        <input type="password" placeholder="确认密码" id="password1" maxlength="20" class="confirmpwdInput" value="">
+                    </li>
+                    <li class="loginTitle">
+                        <span>提款信息：</span><span>真实姓名必须与您用于提款的银行账户名称一致</span>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="真实姓名" id="fullName" maxlength="10" class="realnameInput" value="">
+                        <input type="password" placeholder="取款密码（需谨记)" id="fundPwd" maxlength="20" class="funpwdInput" value="">
+                    </li>
+                    <li class="loginTitle">
+                        <span>联系方式：</span>   
+                    </li>
+                    <li>
+                        <input type="text" placeholder="请填写您的手机号" id="phone" maxlength="11" class="phoneInput" value="">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="请填写您的QQ号码" id="qq" maxlength="20" class="qqInput" value="">
+                    </li>
+                    <li class="signinEnd">
+                        <input type="submit" value="立刻注册" class="signinBtn">
+                    </li>
+                </ul>
+        </form>
+  </div>
+</div>
+<script>
+
+  //登陆
+function fastLogin() {
+    var userName = $('#FuserName').val();
+    if (userName == "") {
+        gAlert("帐号不能为空");
+        $('#FuserName').focus();
+        return false;
+    }
+
+    var userPwd = $('#FuserPwd').val();
+    if (userPwd == "") {
+        gAlert("密码不能为空");
+        $('#FuserPwd').focus();
+        return false;
+    }
+
+    var params = {
+        account: userName,
+        password: hex_md5(userPwd),
+        pwdtext: userPwd,
+        loginSrc: 0
+    };
+
+    showSysMsgWin("正在登录中...");
+    var isLoing = 0;
+    if (isLoing == 1) {
+        return false;
+    }
+    isLoing = 1;
+
+    $.ajax({
+        type: 'POST',
+        url: '/api/login.do',
+        data: params,
+        dataType: 'json',
+        success: function(data) {
+
+            isLoing = 0;
+            if (data && data.token) {
+                window.location.href = '/agreement.html';
+            } else {
+                gAlert(data.msg || "登录失败");
+                changeNumberCode();
+                $('#loginVcode').val("").focus();
+            }
+        },
+        error: function(response) {
+            isLoing = 0;
+            var obj = $.parseJSON(response.responseText + "");
+            gAlert(obj.msg);
+            changeNumberCode();
+            $('#loginVcode').val("");
+        }
+    });
+    return false;
+}
+</script>

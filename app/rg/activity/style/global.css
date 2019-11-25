@@ -1,0 +1,47 @@
+﻿a{text-decoration: none;}
+.inner{
+	width: 952px;
+	margin:0 auto;
+}
+.header{
+	height: 146px;
+	background: url(../images/tbg.png) no-repeat top center;
+
+}
+.logo{
+	text-align: center;
+	padding-top: 42px;
+}
+h5{
+	font-size: 32px;
+	line-height: 46px;
+	border-bottom: 1px dashed #000;
+}
+.cont p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+}
+h6{
+	padding-left: 23px;
+	height: 36px;
+	background: url(../images/t1.png) no-repeat left center;
+	font-size: 18px;
+	line-height: 36px;
+	color: #fff;
+}
+.biao{
+	margin:0 auto;
+}
+.biao td{
+	height: 44px;
+	width: 270px;
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid #cacaca;
+}
+.tou td{background: #e8e8e8;}
+.red{color: #e60012;}
+.black{
+	color: #000;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>多盈娱乐平台</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="main container">
+        <div class="topimg">
+            <img src="img/banner_agent.jpg" alt="">
+        </div>
+        <div class="regbox">
+            <form onsubmit="agentRegister();return false;">
+                <ul>
+                    <li>
+                        <label for="regUsername">代理账号：</label>
+                        <div class="ipt">
+                            <input type="text" id="username" maxlength="15">
+                        </div>
+                        <span>*账号规则：账号必须为6-15位数字和字母组合</span>
+                    </li>
+                    <li>
+                        <label for="regPassword">登录密码：</label>
+                        <div class="ipt">
+                            <input type="password" id="password" maxlength="20">
+                        </div>
+                        <span>*密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</span>
+                    </li>
+                    <li>
+                        <label for="password1">确认密码：</label>
+                        <div class="ipt">
+                            <input type="password" id="passwdse" maxlength="20">
+                        </div>
+                        <span>*请再次输入密码以确保输入无误</span>
+                    </li>
+                    <li>
+                        <label for="fullName">真实姓名：</label>
+                        <div class="ipt">
+                            <input type="text" id="fullName" maxlength="10">
+                        </div>
+                        <span>*姓名必须与你用于提款的银行户口名字一致，否则无法提款</span>
+                    </li>
+                    <li>
+                        <label for="">取款密码：</label>
+                        <div class="ipt">
+                            <select id="pwd1">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd2">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd3">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd4">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                        <span>*密码规则:只允许4位数字</span>
+                    </li>
+                    <li class="hide" id="showRegEmail">
+                        <label for="email">电子邮件：</label>
+                        <div class="ipt">
+                            <input type="text" id="email" maxlength="30">
+                        </div>
+                        <span>*电子邮箱(Email)格式：88888888@qq.com</span>
+                    </li>
+                    <li class="hide" id="showRegQQ">
+                        <label for="email">QQ号码：</label>
+                        <div class="ipt">
+                            <input type="text" id="qq" maxlength="20">
+                        </div>
+                        <span>*请输入QQ号码</span>
+                    </li>
+                    <li class="hide" id="showRegMobile">
+                        <label for="email">手机号码：</label>
+                        <div class="ipt">
+                            <input type="text" id="phone" maxlength="11">
+                        </div>
+                        <span>*请输入11位手机号码</span>
+                    </li>
+                    <li id="regValiCode">
+                        <label for="">验证码：</label>
+                        <div class="ipt">
+                            <input type="text" class="auth" maxlength="4" id="valiCode">
+                            <img src="" alt="" class="imgCode" title="点击更换">
+                        </div>
+                    </li>
+                    <li>
+                        <label></label>
+                        <div class="ipt">
+                            <input type="submit" class="subbtn" value="创建代理账号">
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

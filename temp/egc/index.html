@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>易购彩</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="main-wrap">
+        <div class="banner-index">
+            <div class="lbbox" id="lg_box">
+                <ul>
+                    <li><img src="img/lb/lb01.jpg" alt=""></li>
+                    <li><img src="img/lb/lb01.jpg" alt=""></li>
+                    <li><img src="img/lb/lb01.jpg" alt=""></li>
+                    <li><img src="img/lb/lb01.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="lgbox">
+                    <div class="tit">
+                        会员登录
+                    </div>
+                    <div>
+                        <a href="javascript:BBOnlineService();" class="service"></a>
+                    </div>
+                    <form action="" onsubmit="loginNoValiCode();return false;">
+                        <ul>
+                            <li class="usn">
+                                <i></i>
+                                <input type="text" placeholder="用户名" id="userName" maxlength="15">
+                            </li>
+                            <li class="pwd">
+                                <i></i>
+                                <input type="password" placeholder="密码" id="userPwd" maxlength="20">
+                            </li>
+                            <li class="sub">
+                                <input type="submit" value="">
+                                <a href="reg.html" class="reg"></a>
+                            </li>
+                            <li class="try">
+                                <a href="javascript:guestLogin();"></a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="radio">
+            <div class="container" id="noticeDom">
+                <div><i></i><span>最新消息：</span></div>
+            </div>
+        </div>
+        <div class="gamebox">
+            <ul class="clearfix">
+                <li>
+                    <img src="img/gamelist/fc3d.png" alt="福彩3D">
+                    <span>福彩3D</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+                <li>
+                    <img src="img/gamelist/cqssc.png" alt="重启时时彩">
+                    <span>重庆时时彩</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+                <li>
+                    <img src="img/gamelist/lhc.png" alt="香港六合彩">
+                    <span>香港六合彩</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+                <li>
+                    <img src="img/gamelist/pk10.png" alt="北京赛车">
+                    <span>北京赛车</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+                <li>
+                    <img src="img/gamelist/pcdd.png" alt="PC蛋蛋28">
+                    <span>PC蛋蛋28</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+                <li>
+                    <img src="img/gamelist/lhc.png" alt="幸运飞艇">
+                    <span>幸运飞艇</span>
+                    <a href="javascript:gAlert('请先登录');">
+                            立即投注
+                        </a>
+                </li>
+            </ul>
+        </div>
+        <div class="showbox">
+            <div class="container">
+                <img src="img/bg_showbox_1.png" alt="">
+                <div class="contact">
+                    <p><i class="email"></i>邮箱：<span>123456@gmail.com</span></p>
+                    <p><i class="phone"></i>客服电话：<span>400 12345678</span></p>
+                </div>
+                <img class="img2" src="img/bg_showbox_2.png" alt="">
+            </div>
+            <div class="line"></div>
+            <img class="img3" src="img/bg_showbox_3.png" alt="">
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

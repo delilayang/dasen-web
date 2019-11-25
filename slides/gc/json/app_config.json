@@ -1,0 +1,14 @@
+{
+	"defaultSkin" : "blue",
+	"staticPath" : "/static/",
+    "slideList": [
+		{ "imgUrl": "/static/images/slide/m4.png", "href": "http://www.gcwpay.com/wap/huodong/" },
+		{ "imgUrl": "/static/images/slide/m0.png", "href": "http://148.66.7.178/Index.php/WebUser/index" }, 
+	    { "imgUrl": "/static/images/slide/m7.png", "href": "http://www.gcwpay.com/" },
+	    { "imgUrl": "/static/images/slide/m6.jpg", "href": "http://www.gcwpay.com/wap/huodong/" },
+	    { "imgUrl": "/static/images/slide/m5.jpg", "href": "http://www.gcwpay.com/wap/huodong/" },
+	    { "imgUrl": "/static/images/slide/m1.jpg", "href": "" },
+	    { "imgUrl": "/static/images/slide/m2.jpg", "href": "" },
+	    { "imgUrl": "/static/images/slide/m3.jpg", "href": "" }
+    ]
+}

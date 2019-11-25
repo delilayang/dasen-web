@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>幸运彩票</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="banner-about">
+        <!--#include virtual="include/radio.html"-->
+    </div>
+    <div class="main">
+        <div class="container clearfix">
+            <div class="menu">
+                <ul>
+                    <li class="about">
+                        <a href="about.html"></a>
+                    </li>
+                    <li class="contact">
+                        <a href="contact.html"></a>
+                    </li>
+                    <li class="partner">
+                        <a href="partner-plan.html"></a>
+                    </li>
+                    <li class="deposit">
+                        <a href="deposit.html"></a>
+                    </li>
+                    <li class="withdraw">
+                        <a href="withdraw.html"></a>
+                    </li>
+                    <li class="question">
+                        <a href="question.html"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="reg-tb">
+                    <div class="tit">
+                        <img src="img/logo1.png" alt="">
+                        <p>幸运彩票 · 挣第一</p>
+                        <p>加入幸运彩票，幸运非你莫属！【易记域名 : www.xy8883.com】</p>
+                    </div>
+                    <form onsubmit="agentRegister();return false;">
+                        <table>
+                            <tr>
+                                <th width="100"></th>
+                                <th width="300"></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td class="lname">会员账号：</td>
+                                <td>
+                                    <input type="text" id="username" maxlength="15">
+                                </td>
+                                <td>*格式长度6-15个字符内,请牢记</td>
+                            </tr>
+                            <tr>
+                                <td class="lname">登录密码：</td>
+                                <td>
+                                    <input type="password" id="password" maxLength="20">
+                                </td>
+                                <td>*格式长度6-20个字符内,请牢记</td>
+                            </tr>
+                            <tr>
+                                <td class="lname">确认密码：</td>
+                                <td>
+                                    <input type="password" id="passwdse" maxLength="20">
+                                </td>
+                                <td>*同上</td>
+                            </tr>
+                            <tr>
+                                <td class="lname">真实姓名：</td>
+                                <td>
+                                    <input type="text" id="fullName" maxLength="10" class="realname" placeholder="请输入真实姓名">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="lname">提款密码：</td>
+                                <td>
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </td>
+                                <td>*取款必须认证，务必记住</td>
+                            </tr>
+                            <tr class="hide" id="showRegEmail">
+                                <td class="lname">电子邮箱：</td>
+                                <td>
+                                    <input type="text" id="email" maxlength="30">
+                                </td>
+                                <td>*电子邮箱（Email）格式：88888888@qq.com</td>
+                            </tr>
+                            <tr class="hide" id="showRegQQ">
+                                <td class="lname">QQ号码：</td>
+                                <td>
+                                    <input type="text" id="qq" maxlength="20">
+                                </td>
+                                <td>*QQ号码格式：88888888</td>
+                            </tr>
+                            <tr class="hide" id="showRegMobile">
+                                <td class="lname">手机号码：</td>
+                                <td>
+                                    <input type="text" id="phone" maxlength="11">
+                                </td>
+                                <td>*手机号码格式：1888888888</td>
+                            </tr>
+                            <tr id="regValiCode">
+                                <td class="lname">验证码：</td>
+                                <td>
+                                    <input type="text" class="auth" id="valiCode">
+                                    <span><img src="" alt="" title="点击更换" class="imgCode"></span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input class="btn-reg" value="提交注册" type="submit">
+                                    <input class="btn-reset" value="重新输入" type="reset">
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/init.html"-->

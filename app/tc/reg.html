@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="main">
+        <div class="tit">
+            <img src="img/ban_reg.png" style="margin-top:0px;margin-bottom: -52px;">
+        </div>
+        <div class="container">
+            <div class="box reg">
+                <form onsubmit="doRegister(); return false;">
+                	<ul>
+                		<li id="recoTr">
+                			<div class="typename">推荐人：</div>
+                			<div class="ipt"><input type="text" id="regRecoUserName" maxlength="15" placeholder="(必填)"></div>
+                			<div class="hint">* 推荐人规则：请如实填写推荐人，否则无法进行注册</div>
+                		</li>
+                		<li>
+                			<div class="typename">会员账号：</div>
+                			<div class="ipt"><input type="text" id="regUsername" maxlength="15"></div>
+                			<div class="hint">* 账号规则：账号必须为6-15位字母和数字组合</div>
+                		</li>
+                		<li>
+                			<div class="typename">登录密码：</div>
+                			<div class="ipt"><input type="password" id="regPassword" maxlength="20"></div>
+                			<div class="hint">* 密码规则：密码必须为6-20位字母和数字组合</div>
+                		</li>
+                		<li>
+                			<div class="typename">确认密码：</div>
+                			<div class="ipt"><input type="password" maxlength="20" id="password1"></div>
+                			<div class="hint">* 确认您的登陆密码，请输入和以上一致的密码</div>
+                		</li>
+                		<li>
+                			<div class="typename">真实姓名：</div>
+                			<div class="ipt"><input type="text" id="fullName" maxlength="10"></div>
+                			<div class="hint">* 请填写您的真实姓名</div>
+                		</li>
+                		<li>
+                			<div class="typename">取款密码：</div>
+                			<div class="ipt sel">
+                				<select id="pwd1">
+                					<option value="-">-</option>
+                					<option value="0">0</option>
+                					<option value="1">1</option>
+                					<option value="2">2</option>
+                					<option value="3">3</option>
+                					<option value="4">4</option>
+                					<option value="5">5</option>
+                					<option value="6">6</option>
+                					<option value="7">7</option>
+                					<option value="8">8</option>
+                					<option value="9">9</option>
+                				</select>
+                				<select id="pwd2">
+                					<option value="-">-</option>
+                					<option value="0">0</option>
+                					<option value="1">1</option>
+                					<option value="2">2</option>
+                					<option value="3">3</option>
+                					<option value="4">4</option>
+                					<option value="5">5</option>
+                					<option value="6">6</option>
+                					<option value="7">7</option>
+                					<option value="8">8</option>
+                					<option value="9">9</option>
+                				</select>
+                				<select id="pwd3">
+                					<option value="-">-</option>
+                					<option value="0">0</option>
+                					<option value="1">1</option>
+                					<option value="2">2</option>
+                					<option value="3">3</option>
+                					<option value="4">4</option>
+                					<option value="5">5</option>
+                					<option value="6">6</option>
+                					<option value="7">7</option>
+                					<option value="8">8</option>
+                					<option value="9">9</option>
+                				</select>
+                				<select id="pwd4">
+                					<option value="-">-</option>
+                					<option value="0">0</option>
+                					<option value="1">1</option>
+                					<option value="2">2</option>
+                					<option value="3">3</option>
+                					<option value="4">4</option>
+                					<option value="5">5</option>
+                					<option value="6">6</option>
+                					<option value="7">7</option>
+                					<option value="8">8</option>
+                					<option value="9">9</option>
+                				</select>
+                			</div>
+                			<div class="hint">* 取款必须认证，务必记住</div>
+                		</li>
+                		<li id="showRegEmail">
+                			<div class="typename">电子邮箱：</div>
+                			<div class="ipt"><input type="text" id="email" maxlength="30"></div>
+                			<div class="hint">* 电子邮箱格式（Email）格式：88888888@qq.com</div>
+                		</li>
+                		<li id="showRegQQ">
+                			<div class="typename">QQ号码：</div>
+                			<div class="ipt"><input type="text" id="qq" maxlength="20"></div>
+                			<div class="hint"></div>
+                		</li>
+                		<li id="showRegMobile">
+                			<div class="typename">手机号码：</div>
+                			<div class="ipt"><input type="text" id="phone" maxlength="11"></div>
+                			<div class="hint"></div>
+                		</li>
+                		<li id="regValiCode">
+                			<div class="typename">验证码：</div>
+                			<div class="ipt"><input type="text" id="valiCode"></div>
+                			<img src="" class="imgCode">
+                		</li>
+                		<li>
+                			<div class="typename"></div>
+                			<div class="ipt"><input type="submit" value="创建账号"></div>
+                		</li>
+                	</ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

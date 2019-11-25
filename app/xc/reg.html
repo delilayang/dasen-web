@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>星彩网</title>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <!--#include virtual="include/nav.html" -->
+    <div class="wraper auto">
+        <!-- 公告 -->
+        <div class="tc-ggnews clear">
+            <div class="con">
+                <ul>
+                    <li id="noticeDom"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 注册 -->
+        <div class="regcon auto">
+            <h2 class="title"><img src="img/user.png"><span>请在下方填写您的注册信息</span></h2>
+            <div class="reg-form">
+                <form onsubmit="doRegister(); return false;">
+                    <dl id="recoTr">
+                        <dt>推荐人账号</dt>
+                        <dd>
+                            <input type="text" class="lr-txt" id="regRecoUserName" maxlength="15">
+                            <span class="r-tip">推荐人或上级代理账号，没有可不填</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>会员账号</dt>
+                        <dd>
+                            <input type="text" id="regUsername" maxlength="15" class="lr-txt">
+                            <span class="r-tip">账号规则：账号必须为6-15位数字和字母的组合</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>登录密码</dt>
+                        <dd>
+                            <input type="password" id="regPassword" maxlength="20" class="lr-txt">
+                            <span class="r-tip">密码规则：密码要有6-20个字符，必须包含数字和字母的组合</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>确认密码</dt>
+                        <dd>
+                            <input type="password" id="password1" maxlength="20" class="lr-txt">
+                            <span class="r-tip">确认密码</span></dd>
+                    </dl>
+                    <dl>
+                        <dt>真实姓名</dt>
+                        <dd>
+                            <input id="fullName" maxlength="10" class="lr-txt">
+                            <span class="r-tip">请正确填写，取款使用</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>提款密码</dt>
+                        <dd>
+                            <select id="pwd1">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd2">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd3">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd4">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl id="showRegEmail">
+                        <dt>电子邮箱</dt>
+                        <dd>
+                            <input id="email" maxlength="30" class="lr-txt">
+                            <span class="r-tip">电子邮箱格式：8888@qq.com</span>
+                        </dd>
+                    </dl>
+                    <dl id="showRegQQ">
+                        <dt>QQ号码</dt>
+                        <dd>
+                            <input id="qq" maxlength="20" class="lr-txt">
+                            <span class="r-tip">QQ号码格式：1234567</span>
+                        </dd>
+                    </dl>
+                    <dl id="showRegMobile">
+                        <dt>手机号码</dt>
+                        <dd>
+                            <input id="phone" maxlength="11" class="lr-txt">
+                            <span class="r-tip">手机号码格式：1388888888</span>
+                        </dd>
+                    </dl>
+                    <dl id="regValiCode">
+                        <dt style="letter-spacing: 6px; position: relative; right: -5px;">验证码</dt>
+                        <dd>
+                            <input type="text" class="lr-txt"><span class="r-tip">
+                            <img src="" height="28" class="imgCode"></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>&nbsp;</dt>
+                        <dd>
+                            <input type="submit" class="lg-btn reg-btn" value="注册">
+                            <p>
+                                已有账户？
+                                <a href="index.html" class="lg-btn login-btn">我要登录</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/text.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

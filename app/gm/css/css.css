@@ -1,0 +1,204 @@
+﻿*{ margin:0px; padding:0px;}
+body{ color:#333333; font-size:12px; font-family:"微软雅黑",Arial, Helvetica, sans-serif; }
+div,table,tr,td,img,ul,li,h1,h2,h3,h4,h5,h6,p,em,font,span,dl,dt,dd,form,textarea,input,form,cite{ margin:0; padding:0; }
+ul,ol{ list-style-type:none;}
+h1,h2,h3,h4,h5{font-weight:500;}
+img{ border:none;}
+.hidden{ display:none;}
+a{ color:#333333; text-decoration:none;}
+a:hover{ color:#1174b5; text-decoration:none;}
+.undis{ display:none}
+.dis{ display:block}
+.fl{ float:left; display:inline}
+.fr{ float:right; display:inline}
+.w{MARGIN: 0px auto; width:1010px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+/*头部*/
+.top{ height:102px; background-color:#ffffff; min-width:1010px}
+.logo{ float:left; margin-top:32px}
+.nav{ float:right; margin-top:35px}
+.nav li{ float:left; width:90px; height:29px; text-align:center; line-height:29px; margin-left:15px;border-radius:15px;; background-color:#ff0000}
+.nav li a{ font-size:15px; color:#FFFFFF}
+.nav li:hover{ background-color:#ea5504}
+.nav li.on{ background-color:#ea5504}
+.gg-bg{ height:38px; background:url(../images/gbg.png)}
+.gg-bg .tit{ float:left; background:url(../images/gg.png) left center no-repeat; height:30px; line-height:30px; padding-left:35px; font-size:18px; color:#FFFFFF}
+.gonggao{ float:left; line-height:33px; margin-left:15px}
+.gonggao a{ font-size:14px; color:#FFFFFF}
+
+/*banner*/
+.banner .flexslider{position:relative;height:430px;overflow:hidden;overflow:hidden; width:100%; margin:0px auto}
+.banner .slides{position:relative;z-index:1; height:430px; overflow:hidden;}
+.banner .slides li{height:430px;}
+.banner .flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.banner .flex-direction-nav li a{display:block;width:40px;height:76px;overflow:hidden;cursor:pointer;position:absolute;}
+.banner .flex-direction-nav li a.flex-prev{left:100px;}
+.banner .flex-direction-nav li a.flex-next{right:100px;}
+
+.banner .flex-control-nav{position:absolute;bottom:22px;z-index:2;width:100%;text-align:center; height:19px;}
+.banner .flex-control-nav li{width:19px;height:19px;margin:5px 0px;*display:inline;zoom:1; display:inline-block;margin-left:10px;*display:inline;zoom:1; overflow:hidden;}
+.banner .flex-control-nav a{display:inline-block;width:19px;height:19px;line-height:40px;overflow:hidden;background:url(../images/dot.png) -40px 0px no-repeat;cursor:pointer;  text-indent:-99em; }
+.banner .flex-control-nav .flex-active{background-position:0 0;}
+
+
+.loginbg{position:relative; z-index:99999; background-color:#0033FF; height:0px; clear:both; width:1010px; margin:0px auto}
+.login{ position:absolute; z-index:99999;  right:0px; display:block; bottom:-380px; width:281px; height:325px; background:url(../images/bg.png);border-radius:5px}
+.login .box{ width:245px; margin:10px auto}
+.login .box .t{ text-align:left; color:#ffffff; font-size:18px; margin-top:25px; font-weight:bold; margin-bottom:15px; overflow:hidden}
+.login .box .t span{ float:right}
+.login .label{ border:1px solid #aaaaaa; overflow:hidden;   margin-top:15px;width:239px; background-color:#ffffff; height:40px;border-radius:25px}
+.login .label .ico-user{ display:inline-block; height:18px; width:23px; background:url(../images/l_user.jpg) left center no-repeat; float:left; margin-left:10px; margin-top:9px}
+.login .label2{ border:1px solid #aaaaaa; overflow:hidden;   margin-top:15px;width:239px; background-color:#ffffff; height:40px; vertical-align:middle;border-radius:25px}
+.login .label2 .ico-pwd{ display:inline-block; height:25px; width:23px; background:url(../images/l_pass.jpg) left center  no-repeat; float:left; margin-left:10px; margin-top:9px}
+
+.login .label2 .ico-code{ display:inline-block; height:25px; width:23px; background:url(../images/l_pass-09.jpg) left center  no-repeat; float:left; margin-left:10px; margin-top:9px}
+.login .txt{ width:200px; height:30px; margin-top:5px; float:left; line-height:28px; border:0px; outline:none}
+.login .txt1{ width:100px; height:30px; margin-top:5px; float:left; line-height:28px; border:0px; outline:none}
+.login .code{ float:right; margin-right:10px; margin-top:10px}
+.submit{ float:left; margin-top:10px; margin-left:15px}
+.submit input{ width:101px; height:38px; background:url(../images/denglu.png); font-size:15px; color:#FFFFFF; border:0px; font-family:微软雅黑;}
+.submit input:hover{}
+.reg{ float:right; margin-top:10px; margin-right:15px}
+.reg a{ width:101px; height:38px;  font-size:15px; color:#FFFFFF; border:0px; display:block; text-align:center; line-height:39px; background:url(../images/reg.png)}
+.reg a:hover{background-color:#44759a}
+.btn{ float:right; margin-top:10px; margin-right:15px}
+.btn a{ width:213px; height:37px; font-size:15px; color:#FFFFFF; border:0px; display:block; text-align:center; background:url(../images/mf.png)}
+.btn a:hover{}
+
+
+
+
+
+.cai li{ float:left; width:168px; height:205px; background:url(../images/cbg.png); margin-top:20px; text-align:center}
+.cai li .img{ height:140px; vertical-align:middle; display:table-cell; text-align:center; width:168px; padding-top:10px}
+.cai li p{ font-size:15px}
+.cai li a{ width:87px; height:26px; display:inline-block; background-color:#e34120; line-height:26px; text-align:center; font-size:12px; color:#FFFFFF;border-radius:5px}
+.cai li a:hover{ background-color:#3572a1}
+.cai li:hover{ background:url(../images/cbg1.png)}
+.ad-w{ margin-top:20px; border-bottom:1px solid #fe5f26; border-top:1px solid #fe5f26; overflow:hidden; padding-bottom:35px; min-width:1010px}
+
+.question-bg{ min-width:1010px; overflow:hidden;  background:url(../images/regbg.jpg) center no-repeat; height:796px }
+.xinshou{background:url(../images/xbg.png) center  top  no-repeat; height:129px; margin-top:25px}
+.jiameng{background:url(../images/xbg1.png) center  top  no-repeat; height:149px; margin-top:25px}
+.regs{background:url(../images/regs.png) center top  no-repeat; height:161px; margin-top:25px}
+.huodong{background:url(../images/huodong.png) center  top   no-repeat; height:209px; margin-top:25px}
+.body{ background-color:#ffffff;  overflow:hidden; padding-bottom:22px}
+.left_menu{ float:left; width:198px; margin-left:6px; margin-top:10px}
+.left_menu li{ height:50px; margin-bottom:10px; border:1px solid #e34120; position:relative; line-height:50px; text-align:center; cursor:pointer;border-radius:5px;}
+.left_menu li a{ font-size:16px; color:#e34120}
+.left_menu li span{ width:9px; height:19px; background:url(../images/jt.png); position:absolute; right:-9px; top:15px; display:none}
+.left_menu #c1 { background:url(../images/ico.png) 10px 10px no-repeat}
+.left_menu #c2{ background:url(../images/ico.png) 10px -50px no-repeat}
+.left_menu #c3{ background:url(../images/ico.png) 10px -100px no-repeat}
+.left_menu #c4{ background:url(../images/ico.png) 10px -159px no-repeat}
+.left_menu #c5{ background:url(../images/ico.png) 10px -214px no-repeat}
+.left_menu #c1.on{background:url(../images/ico.png) 10px -270px no-repeat #e34120;}
+.left_menu #c2.on{background:url(../images/ico.png) 10px -327px no-repeat #e34120;}
+.left_menu #c3.on{background:url(../images/ico.png) 10px -381px no-repeat #e34120;}
+.left_menu #c4.on{background:url(../images/ico.png) 10px -440px no-repeat #e34120;}
+.left_menu #c5.on{background:url(../images/ico.png) 10px -495px no-repeat #e34120;}
+.left_menu li.on span{ display:block}
+.left_menu li.on a{ color:#FFFFFF}
+.right_m{ float:right; width:770px; background-color:#e34120; margin-top:10px; margin-right:10px; overflow:hidden}
+.right_m .tit{ font-size:28px; color:#FFFFFF; margin-top:20px; text-align:center; overflow:hidden}
+.content{ font-size:14px; color:#FFFFFF; line-height:200%; text-align:left; margin-left:42px; margin-right:42px; padding:52px 0px}
+
+
+
+.regbox .tit{border-bottom:1px solid #efefef}
+.regbox ul{padding:50px 0 38px 110px}
+.regbox ul li>div{display:inline-block}
+.regbox ul li>div{*display:inline}
+.regbox ul li{margin-bottom:12px}
+.regbox ul .typename{text-align:right;width:90px}
+.regbox ul input{width:247px;height:25px;padding:7px 10px;color:#000;border-radius:5px;border:1px solid #e4e4e4;font-size:16px}
+.regbox ul select{width:60px;height:37px;color:#000;padding:10px 0 10px 7px;margin-right:6px;border:1px solid #d7d8d7;border-radius:3px}
+.regbox ul .ipt{width:300px}
+
+.regbox ul .hint{color:#ff2f2b}
+.regbox ul .hint a{display:inline-block;vertical-align:bottom;color:#f73737;text-decoration:underline}
+.regbox ul .hint a{*display:inline}
+.regbox ul .auth{width:150px;text-align:center}
+.regbox ul .authimg{width:78px;height:32px;display:inline-block;vertical-align:bottom;cursor:pointer}
+.regbox ul .authimg{*display:inline}
+.regbox ul input[type=submit]{ height:39px; background-color:#e34120; font-size:18px; color:#ffffff;width:270px;height:42px;cursor:pointer;border:none}
+.regbox ul input[type=submit]:hover{ background-color:#f14520}
+
+.nav2{height:70px;border-bottom:1px solid #efefef;position:relative}
+.nav2 ul{position:absolute;left:16px;top:12px}
+.nav2 li{float:left;margin-right:7px;border-radius:5px;background:#e7e7e7}
+.nav2 li:hover{background:#e34120}
+.nav2 li:hover a{color:#fff}
+.nav2 a{width:126px;height:42px;color:#2b2a2a;line-height:42px;text-align:center; display:inline-block}
+.nav2 .active{background:#e34120}
+.nav2 .active a{color:#fff}.faq{color:#535353}
+
+.textbox{padding:32px 50px}
+.textbox .tit{text-align:center;font-size:24px;color:#075db5;font-weight:700}
+.textbox .text{margin-top:12px}
+.hide{ display:none}
+.wait{color:#ff0000; font-size:23px; text-align:center; line-height:300%}
+
+
+.contact{ width:1010px; overflow:hidden}
+.contact ul{ width:1080px;}
+.contact li{ width:320px; height:35px; float:left; margin-right:25px; background-color:#0f64a5; text-align:center;border-radius:15px}
+.contact li .c1{ display:inline-block; height:35px; background:url(../images/ico1.png) left center no-repeat; padding-left:29px; color:#FFFFFF; font-size:15px; line-height:35px}
+.contact li .c2{ display:inline-block; height:35px; background:url(../images/ico2.png) left center no-repeat; padding-left:29px; color:#FFFFFF; font-size:15px; line-height:35px}
+.contact li .c3{ display:inline-block; height:35px; background:url(../images/ico3.png) left center no-repeat; padding-left:29px; color:#FFFFFF; font-size:15px; line-height:35px}
+.foot{ position:relative; margin-top:35px; padding:10px 0;}
+.copyright{ position:absolute; bottom:0px; text-align:center; width:100%}
+.footer{
+	padding-top: 25px;
+	
+	text-align: center;
+	font-size: 13px;
+
+}
+.footer p{
+	margin-top: 15px;
+
+}
+
+/*客服*/
+.kf{ position:fixed; width:184px; z-index:99999; right:0px; top:50px; text-align:center}
+.kf .con{ width:184px; height:629px; background:url(../images/kf.png); overflow:hidden}
+.btn2{ text-align:center;margin-top:340px}
+.btn2 a{ display:inline-block; width:135px; height:32px; background-color:#0f64a5; text-align:center; line-height:32px; font-size:18px; color:#FFFFFF;border-radius:15px}
+.btn2 a:hover{ background-color:#3373a4}
+.btn3{ text-align:center; padding-top:10px; }
+.btn3 a{ display:inline-block; width:135px; height:32px; background-color:#e67818; text-align:center; line-height:32px; font-size:18px; color:#FFFFFF;border-radius:15px}
+.btn3 a:hover{background-color:#d07c32}
+.qq{ background:url(../images/qq.png) center top no-repeat; text-align:center; padding-top:25px; color:#ff0000; margin-top:6px; font-size:23px}
+
+.line{ height:20px; background-color:#e34120; min-width:1010px; margin-top:20px}
+
+
+
+
+.specdetail{margin-left:56px;margin-top:34px; overflow:hidden}
+.specdetail2{margin-left:66px;margin-top:20px;padding-right:15px;width:250px}
+.specdetail2 .col1{width:70px;float:left}
+.specdetail2 .col2,.specdetail2 .col3{width:85px;float:left}
+.specdetail2 a{color:#666;text-decoration:none;line-height:20px;width:100%}
+.specleft{width:113px;float:left}
+.specleft2{float:left}
+.specright{float:right}
+.number1{font-family:'Helvetica Neue LT';float:left;font-size:30px;line-height:43px;color:#000000;font-style:italic;overflow:visible}
+.number1txt{float:left;margin-top:18px;margin-left:5px;font-size:14px;color:#666}
+.stats1{width:256px;height:12px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;overflow:hidden;position:relative;background-color:#ccc}
+.stats2{width:256px;height:12px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;position:absolute;right:200px;top:0;background-color:#5d5d5d}
+.specdetail h1,.specdetail2 h1{margin:0;font-size:18px;color:#555}
+.specdetail p,.specdetail2 p{margin-top:5px;line-height:20px;font-size:14px;color:#666}
+.specgraph{margin-left:56px;margin-top:6px}
+.coltxt a{color:#fff}.cci_title{height:24px;left:0;top:0;color:#333;font-size:18px;line-height:18px;white-space:nowrap;text-shadow:0 1px 0 #fff}
+.card_count{ margin-top:-15px}
+.cpys{ float:left; margin-top:34px; margin-left:55px; width:290px}
+.cpys h2{ color:#727272; font-size:18px; margin-top:31px}
+.cpys p{ color:#727272; font-size:12px; margin-top:14px}
+.pro_box{ width:200px; height:50px; background-color:#FFFFFF; text-align:center; line-height:50px; display:none}
+
+.daili{ width:112px; height:38px; line-height:38px; text-align:center; border:1px solid #992a2c; background:#992a2c; color:#fff; font-size:15px; cursor:pointer; border-radius:3px; font-family:"Microsoft YaHei"; display:block; margin:0 auto}
+.daili:link, .daili:visited{ color:#fff}

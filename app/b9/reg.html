@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><!--#include virtual="/include/index_head_title.html" --></title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link href="css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+    <link href="layui/css/layui.css" rel="stylesheet" />
+    <style>
+        .layui-form select{
+            display: inline-block;
+            float: left;
+            height: 30px;
+            width: 40px;
+            margin-right: 8px;
+            padding: 3px;
+            border-radius: 2px;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="dodi_img"><img alt="新闻资讯" class="img-responsive" src="images/zc.jpg"></div>
+    <div class="dodi_cen">
+        <div class="dodi_center">
+            <div class="dodi_title_3">
+                <div class="dodi_title_31">
+                    请在以下填写您的注册信息
+                </div>
+                <div class="dodi_title_32">
+                    <span class="dodi_span1">已有账号？</span><span class="dodi_span2"><a href="index.html" style="color:#FF0000 ">直接登陆</a></span>
+                </div>
+            </div>
+            <div class="dodi_content_3">
+                <form class="layui-form" onsubmit="doRegister(); return false;">
+                    <div class="layui-form-item" id="recoTr" style="position:relative ">
+                        <label class="layui-form-label">推荐人：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="regRecoUserName" maxlength="15" placeholder="可选填" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="position:relative ">
+                        <label class="layui-form-label">会员账号：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="regUsername" maxlength="15" placeholder="请输入会员账号" class="layui-input">
+                        </div>
+                        <div class="err">账号规则：账号必须为6-15位数字和字母组合</div>
+                    </div>
+                    <div class="layui-form-item" style="position:relative ">
+                        <label class="layui-form-label">登入密码：</label>
+                        <div class="layui-input-block">
+                            <input type="password" id="regPassword" maxlength="20" placeholder="请输入会员密码" class="layui-input">
+                        </div>
+                        <div class="err">密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</div>
+                    </div>
+                    <div class="layui-form-item" style="position:relative ">
+                        <label class="layui-form-label">确认密码：</label>
+                        <div class="layui-input-block">
+                            <input type="password" id="password1" maxlength="20" placeholder="请再次输入密码" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="position:relative ">
+                        <label class="layui-form-label">真实姓名：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="fullName" maxlength="10" placeholder="请输入真实姓名" class="layui-input">
+                        </div>
+                        <div class="err">姓名必须与你用于提款的银行户口名字一致，否则无法提款</div>
+                    </div>
+                    <div class="layui-form-item" style="position:relative ">
+                        <label class="layui-form-label">提款密码：</label>
+                        <div class="layui-input-block">
+                            <select id="pwd1">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd2">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd3">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd4">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                        <div class="err">提款必须</div>
+                    </div>
+                    <div class="layui-form-item showRegEmail hide" style="position:relative">
+                        <label class="layui-form-label">电子邮箱：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="email" maxlength="30" placeholder="请输入电子邮箱" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item showRegQQ hide" style="position:relative ">
+                        <label class="layui-form-label">QQ号码：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="qq" maxlength="20" placeholder="请输入QQ号码" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item showRegMobile hide" style="position:relative ">
+                        <label class="layui-form-label">手机号码：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="phone" maxlength="11" placeholder="请输入手机号码" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" id="regValiCode" style="position:relative">
+                        <label class="layui-form-label">验证码：</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="valiCode" maxlength="4" placeholder="请输入验证码" class="layui-input">
+                        </div>
+                        <img class="imgCode" src="">
+                    </div>
+                    <div class="layui-form-item" style="position:relative">
+                        <input class="layui-btn2" type="submit" value="立即提交" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>

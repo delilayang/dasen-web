@@ -1,0 +1,46 @@
+<div class="header">
+    <div class="wrapper">
+        <div class="logo"><a href="index.html"><img src="img/dsn3_logo_g.png"  alt="logo"/></a></div>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">网站首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="activity.html">优惠活动</a>
+                </li>
+                <li class="nav-item">
+                    <a class="trade" href="reg.html">开户注册</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html">常见问题</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mobile.html">手机投注</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:BBOnlineService();" target="_blank">在线客服</a>
+                </li>
+            </ul>
+        </div>
+        <div class="login-form trial">
+            <form onsubmit="loginNoValiCode();return false;" autocomplete="off" class="login-input login">
+                <span class="inline-input">
+                        <input type='text' id="userName" placeholder="会员账号" maxlength="15" tabindex="1">
+                        <label class="input-label">会员账号</label>
+                      </span>
+                <span class="inline-input">
+                        <input type='password' id="userPwd" placeholder="密码" maxlength="20" tabindex="2">
+                        <label class="input-label">密码</label> 
+                        <a class="forgot-password" href="javascript:BBOnlineService();">忘记</a>
+                      </span>
+                <button class="button login" type="submit">登入</button>
+                <button type="button" class="button trial" onClick="guestLogin();">试玩</button>
+                <button class="button register" type="button" onclick="window.location.href='reg.html'">注册</button>
+            </form>
+            <div class="login-support">
+                <div class="right date"></div>
+            </div>
+        </div>
+    </div>
+</div>

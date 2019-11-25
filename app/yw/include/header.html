@@ -1,0 +1,61 @@
+<div class="header">
+    <div class="top">
+        <div class="container">
+            <div class="logo">
+                <embed src="img/logo.swf" quality="high" pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="290" height="109" wmode="transparent">
+            </div>
+            <div class="time"><span id="nowdate"></span> 营业时间: 早上07:00 - 凌晨04:30 / 全年无休</div>
+            <div class="links">
+                <ul class="clearfix">
+                    <li><a href="javascript:addFavoriteHome(this,window.location.host);">设为首页</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:AddFavorite('永旺彩票',location.href);">加入收藏</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:guestLogin();">免费试玩</a></li>
+                </ul>
+            </div>
+            <div class="nav" id="nav">
+                <ul class="clearfix">
+                    <li><a href="index.html" class="n1"><span>首页HOME</span></a></li>
+                    <li><a href="reg.html" class="n2"><span>加入会员</span></a></li>
+                    <li><a href="bank.html" class="n3"><span>存款取款</span></a></li>
+                    <li><a href="faq.html" class="n4"><span>常见问题</span></a></li>
+                    <li><a href="activity.html" class="n5"><span>优惠活动</span></a></li>
+                    <li><a href="appdownload.html" class="n6"><span>手机投注</span></a></li>
+                    <li><a href="agent.html" class="n7"><span>加盟合作</span></a></li>
+                    <li><a href="javascript:BBOnlineService();" class="n8"><span>在线客服</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <div class="radio" id="noticeDom"></div>
+            <div class="lgbox">
+                <form onsubmit="loginNoValiCode();return false;" autocomplete="off">
+                    <ul>
+                        <li>
+                            <label class="usnlab" for="userName"></label>
+                            <input type="text" tabindex="1" placeholder="账号" id="userName" maxlength="15">
+                        </li>
+                        <li>
+                            <label class="pwdlab" for="userPwd"></label>
+                            <input type="password" tabindex="2" placeholder="密码" id="userPwd" maxlength="20">
+                            <a href="javascript:BBOnlineService();" class="forget">忘记？</a>
+                        </li>
+                        <li>
+                            <label class="pwdlab" for="loginVcode"></label>
+                            <input type="text" tabindex="3" placeholder="验证码" id="loginVcode" maxlength="4">
+                            <span id="numberCode" class="numcode"></span>
+                        </li>
+                        <li>
+                            <input type="submit" value="登录">
+                        </li>
+                        <li><a href="reg.html" class="regbtn">注册会员</a></li>
+                        <li><a href="javascript:guestLogin();" class="trybtn">免费试玩</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

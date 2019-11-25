@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>平安彩票</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/top.html"-->
+    <div class="banner">
+        <img src="img/banner.jpg" alt="">
+        <div class="radio" id="noticeDom"></div>
+    </div>
+    <div class="main">
+        <div class="innr clearfix">
+            <div class="menu fl">
+                <ul>
+                    <li><a href="deposit.html"><i class="m1"></i><span>如何存款</span></a></li>
+                    <li><a href="withdraw.html"><i class="m2"></i><span>如何取款</span></a></li>
+                    <li><a href="about.html"><i class="m3"></i><span>关于我们</span></a></li>
+                    <li><a href="faq.html"><i class="m4"></i><span>常见问题</span></a></li>
+                    <li><a href="contact.html"><i class="m5"></i><span>联系我们</span></a></li>
+                </ul>
+            </div>
+            <div class="content fr">
+                <h5>代理注册</h5>
+                <div class="regbox">
+                    <form onsubmit="agentRegister();return false;">
+                        <ul>
+                            <li>
+                                <div class="typename"></div>账号规则：账号必须为6-15位数字或字母</li>
+                            <li>
+                                <div class="typename">
+                                    <span>*</span>代理账号：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" maxlength="15" id="username">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="typename"></div>密码规则：密码必须为6-20位数字或字母</li>
+                            <li>
+                                <div class="typename">
+                                    <span>*</span>登陆密码：
+                                </div>
+                                <div class="ipt">
+                                    <input type="password" maxlength="20" id="password">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="typename">
+                                    <span>*</span>确认密码：
+                                </div>
+                                <div class="ipt">
+                                    <input type="password" id="passwdse" maxlength="20">
+                                </div>
+                            </li>
+                            <li class="cred">
+                                <div class="typename"></div>姓名必须与您用于提款的银行账户姓名一致，否则无法提款
+                            </li>
+                            <li>
+                                <div class="typename">
+                                    <span>*</span>真实姓名：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" id="fullName" maxlength="10">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="typename"></div>提款认证必须，务必记住</li>
+                            <li>
+                                <div class="typename">
+                                    <span>*</span>取款密码：
+                                </div>
+                                <div class="ipt">
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="cred showRegEmail">
+                                <div class="typename"></div>email格式：88888@qq.com</li>
+                            <li class="showRegEmail">
+                                <div class="typename">
+                                    <span>*</span>电子邮箱：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" id="email" maxlength="30">
+                                </div>
+                            </li>
+                            <li class="cred showRegQQ">
+                                <div class="typename"></div>QQ号码格式：8888888</li>
+                            <li class="showRegQQ">
+                                <div class="typename">
+                                    <span>*</span>QQ号码：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" maxlength="20" id="qq">
+                                </div>
+                            </li>
+                            <li class="cred showRegMobile">
+                                <div class="typename"></div>手机号码格式：18888888888</li>
+                            <li class="showRegMobile">
+                                <div class="typename">
+                                    <span>*</span>手机号码：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" maxlength="11" id="phone">
+                                </div>
+                            </li>
+                            <li id="regValiCode">
+                                <div class="typename">
+                                    <span>*</span>验证码：
+                                </div>
+                                <div class="ipt">
+                                    <input type="text" id="valiCode" class="authcode" maxlength="4">
+                                    <img src="" alt="" class="imgCode" title="点击更换">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="ctrl">
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/showbox2.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

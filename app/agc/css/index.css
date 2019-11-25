@@ -1,0 +1,253 @@
+html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(../img/index/bg_index.jpg) no-repeat top;
+    min-height: 900px;
+    min-width: 1018px;
+    background-size: auto 100%;
+}
+
+.container {
+    width: 1018px;
+    height: 876px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    width: 316px;
+    height: 122px;
+    background: url(../img/index/logo_index.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.radio {
+    width: 745px;
+    height: 42px;
+    background: url(../img/index/radio_bar.png) no-repeat center;
+    position: absolute;
+    left: 275px;
+    top: 39px;
+    line-height: 42px;
+}
+
+.radio marquee {
+    position: absolute;
+    left: 190px;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.loginbox {
+    position: absolute;
+    right: 40px;
+    top: 78px;
+    background: url(../img/index/bg_loginbox.png) no-repeat center;
+    width: 443px;
+    height: 335px;
+}
+
+.loginbox ul {
+    width: 320px;
+    margin: 91px auto 0;
+}
+
+.loginbox .lgipt {
+    width: 321px;
+    height: 36px;
+    margin-bottom: 14px;
+    vertical-align: middle;
+    background: #fff;
+    position: relative;
+}
+
+.lg-btn {
+    width: 274px;
+    height: 48px;
+    background: url(../img/index/login_btn.png) no-repeat center;
+    margin: 17px auto 0;
+    font-size: 21px;
+    color: #682f00;
+    font-weight: bold;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginbox .icon-label {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/index/icon_loginbox.png) no-repeat;
+}
+
+.usn .icon-label {
+    background-position: 4px 2px;
+}
+
+.pwd .icon-label {
+    background-position: 4px -42px;
+}
+
+.auth .icon-label {
+    background-position: 4px -86px;
+}
+
+.loginbox input {
+    border: 0 none;
+    height: 22px;
+    width: 274px;
+    padding: 7px 0;
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    left: 42px;
+    top: 0;
+}
+
+.loginbox .cover {
+    position: absolute;
+    left: 42px;
+    top: 5px;
+    font-size: 20px;
+}
+
+#numberCode {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 36px;
+    width: 80px;
+    cursor: pointer;
+    background: url(../img/temp/codebg.jpg);
+    font-family: Arial;
+    font-style: italic;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: #353640
+}
+
+.service {
+    position: absolute;
+    right: 88px;
+    top: 408px;
+    background: url(../img/index/bg_servicebox.png) no-repeat center;
+    width: 346px;
+    height: 117px;
+    cursor: pointer;
+}
+
+.bottombox {
+    position: absolute;
+    width: 984px;
+    height: 103px;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -492px;
+    background: url(../img/index/bg_bottom.png) no-repeat center;
+}
+
+.bottombox ul {
+    position: absolute;
+    bottom: 53px;
+    left: 50%;
+    margin-left: -460px;
+    width: 920px;
+    text-align: center;
+}
+
+.bottombox li {
+    float: left;
+    margin: 0 28px;
+}
+
+.bottombox a {
+    width: 248px;
+    height: 124px;
+    display: block;
+}
+
+.bottombox .freeplay {
+    background: url(../img/index/btn_free.png) no-repeat center;
+}
+
+.bottombox .qqservice {
+    background: url(../img/index/btn_qqservice.png) no-repeat center;
+}
+
+.bottombox .reg {
+    background: url(../img/index/btn_reg.png) no-repeat center;
+}
+
+.floatbox {
+    position: absolute;
+    height: 455px;
+    width: 133px;
+    right: -120px;
+    top: 200px;
+    background: url(../img/index/bg_float.png) no-repeat top;
+}
+
+.floatbox ul {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+}
+
+.floatbox a {
+    display: block;
+    background: url(../img/index/btns_floatbox.png) no-repeat;
+    width: 104px;
+    height: 29px;
+    margin: 0 auto 3px;
+}
+.floatbox .andcode {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+    display: block;
+}
+
+.floatbox .andcode img {
+    width: 100px;
+    height: 100px;
+}
+
+.floatbox .qrcode {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 54px;
+    display: block;
+}
+
+.floatbox .olservice {
+    background-position: 0 0;
+}
+
+.floatbox .qqservice {
+    background-position: 0 -29px;
+}
+
+.floatbox .close {
+    width: 46px;
+    height: 15px;
+    background-position: 0 -58px;
+    margin: 16px auto 0;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/top.html"-->
+    <div class="main">
+        <!-- 代理注册 -->
+        <div class="ppreg">
+            <div class="info-cont">
+                <form onsubmit="agentRegister();return false;">
+                    <div class="ppregi">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <td>账号必须为6-15为数字和字母组合</td>
+                                </tr>
+                                <tr>
+                                    <th><span>*</span>代理账号：</th>
+                                    <td>
+                                        <input type="text" class="inp-txt" maxlength="15" id="username" size="40">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>密码长度要有6-15个字符，必须含有数字和字母组合</td>
+                                </tr>
+                                <tr>
+                                    <th><span>*</span>登陆密码：</th>
+                                    <td>
+                                        <input type="password" class="inp-txt" size="40" maxlength="20" id="password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>*</span>确认密码：</th>
+                                    <td>
+                                        <input type="password" class="inp-txt" size="40" maxlength="20" id="passwdse">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td style="color:#ff0;">姓名必须与你提款的银行户口名字一致，否则无法提款</td>
+                                </tr>
+                                <tr>
+                                    <th><span>*</span>真实姓名：</th>
+                                    <td>
+                                        <input class="inp-txt" maxlength="10" size="40" id="fullName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>*</span>取款密码：</th>
+                                    <td>
+                                        <select class="reg-select" id="pwd1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select class="reg-select" id="pwd2">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select class="reg-select" id="pwd3">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select class="reg-select" id="pwd4">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="showRegEmail hide">
+                                    <th></th>
+                                    <td>Email格式如：8888@qq.com</td>
+                                </tr>
+                                <tr id="showRegEmail" class="hide">
+                                    <th><span>*</span>电子邮箱：</th>
+                                    <td>
+                                        <input class="inp-txt" size="40" id="email" maxlength="30">
+                                    </td>
+                                </tr>
+                                <tr class="showRegQQ hide">
+                                    <th></th>
+                                    <td>QQ号码格式如：1234567</td>
+                                </tr>
+                                <tr id="showRegQQ" class="hide">
+                                    <th><span>*</span>QQ号码：</th>
+                                    <td>
+                                        <input class="inp-txt" size="40" id="qq" maxlength="20">
+                                    </td>
+                                </tr>
+                                <tr class="showRegMobile hide">
+                                    <th></th>
+                                    <td>手机号码格式如：13988888888</td>
+                                </tr>
+                                <tr id="showRegMobile" class="hide">
+                                    <th><span>*</span>手机号码：</th>
+                                    <td>
+                                        <input class="inp-txt" size="40" id="phone" maxlength="11">
+                                    </td>
+                                </tr>
+                                <tr id="regValiCode">
+                                    <th><span>*</span>验证码：</th>
+                                    <td style="position: relative;">
+                                        <input class="inp-txt" size="40" maxlength="4" id="valiCode">
+                                        <img class="imgCode" src="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td height="50" style="color:#fff"><span style="color:#ff0;">*</span>
+                                    <input type="checkbox" checked="checked" class="rdFace" id="tycbx"> 我已届满18岁合法博彩年龄﹐且同意各项
+                                    <a href="javascript:;" style="color:#ff0" title="点击查看用户协议">《用户协议》</a>。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10" colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td width="70"></td>
+                                <td>
+                                    <input type="submit" class="sub-btn" value="立即提交"> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="reset" class="ret-btn" value="重新填写">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20" colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- 注册 end -->
+    </div>
+    <!--#include virtual="include/content.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/init.html"-->
+</body>
+
+</html>

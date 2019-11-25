@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>全民彩票</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="/static/lib/validationEngine/validationEngine.jquery.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <!--#include virtual="include/nav.html" -->
+    <!--#include virtual="include/radio.html" -->
+    <div class="main">
+        <div class="container">
+            <div class="detail">
+                <div class="regbox">
+                    <div class="tit">注册账号</div>
+                    <div class="regtb">
+                        <form id="form_reg" onsubmit="doRegister(); return false;">
+                            <ul>
+                                <li id="recoTr">
+                                    <div class="typename">推荐人账号：</div>
+                                    <div class="ipt">
+                                        <input type="text" placeholder="非必填" maxlength="15" id="regRecoUserName" class="validate[minSize[6],[maxSize[15]]">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="hint">账号规则：账号必须为6~15为数字和字母组合</div>
+                                </li>
+                                <li>
+                                    <div class="typename"><strong>*</strong>会员账号：</div>
+                                    <div class="ipt">
+                                        <input type="text" maxlength="15" id="regUsername" class="validate[required] validate[minSize[6],[maxSize[15]]">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="hint">密码规则：密码长度要有6~20个字符，必须含有数字和字母</div>
+                                </li>
+                                <li>
+                                    <div class="typename"><strong>*</strong>登录密码：</div>
+                                    <div class="ipt">
+                                        <input type="password" id="regPassword" maxlength="20" class="validate[required,minSize[6],[maxSize[20]]">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="typename"><strong>*</strong>确认密码：</div>
+                                    <div class="ipt">
+                                        <input type="password" maxlength="20" id="password1" class="validate[required,equals[regPassword]]">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="hint cred">姓名必须与你用于提款的银行户口名字一致，否则无法提款。</div>
+                                </li>
+                                <li>
+                                    <div class="typename"><strong>*</strong>真实姓名：</div>
+                                    <div class="ipt">
+                                        <input type="text" maxlength="10" id="fullName" class="validate[required,custom[chinese]]">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="hint cred">提款认证必须，务必记住</div>
+                                </li>
+                                <li>
+                                    <div class="typename"><strong>*</strong>取款密码：</div>
+                                    <div class="ipt">
+                                        <select id="pwd1">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select id="pwd2">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select id="pwd3">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                        <select id="pwd4">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li id="showRegEmail" class="hide">
+                                    <div class="typename"><strong>*</strong>电子邮箱：</div>
+                                    <div class="ipt">
+                                        <input type="text" id="email" maxlength="30" class="validate[required,custom[email]]">
+                                    </div>
+                                </li>
+                                <li id="showRegQQ" class="hide">
+                                    <div class="typename"><strong>*</strong>QQ号码：</div>
+                                    <div class="ipt">
+                                        <input type="text" id="qq" maxlength="20" class="validate[required]">
+                                    </div>
+                                </li>
+                                <li id="showRegMobile" class="hide">
+                                    <div class="typename"><strong>*</strong>手机号码：</div>
+                                    <div class="ipt">
+                                        <input type="text" id="phone" maxlength="11" class="validate[required]">
+                                    </div>
+                                </li>
+                                <li id="regValiCode">
+                                    <div class="typename"><strong>*</strong>验证码：</div>
+                                    <div class="ipt">
+                                        <input type="text" maxlength="4"  id="valiCode" class="validate[required]"/>
+                                        <img class="imgCode" src="">
+                                    </div>
+                                </li>
+                                <li class="check">
+                                    <label>
+                                        <input type="checkbox" checked="checked" id="tycbx">
+                                        <span>我已经18岁合法博彩年龄,且同意开户各项条约</span>
+                                    </label>
+                                </li>
+                                <li class="sub">
+                                    <input type="submit" value="立即提交">
+                                    <input type="reset" value="重新填写">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script src="/static/lib/validationEngine/jquery.validationEngine-zh_CN.js"></script>
+    <script src="/static/lib/validationEngine/jquery.validationEngine.min.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

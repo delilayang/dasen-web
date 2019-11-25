@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>大象</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <div class="banner">
+        <img src="img/banner.jpg" alt="">
+    </div>
+    <div class="regbox container">
+        <div class="tit">请在以下填写您的注册信息</div>
+        <form onsubmit="agentRegister();return false;">
+            <ul>
+                <li>
+                    <div class="typename">代理账号：</div>
+                    <div class="ipt">
+                        <input type="text" maxlength="15" id="username">
+                    </div>
+                    <div class="hint">账号规则：账号必须为6-15位数字和字母组合</div>
+                </li>
+                <li>
+                    <div class="typename">登录密码：</div>
+                    <div class="ipt">
+                        <input type="password" id="password" maxlength="20">
+                    </div>
+                    <div class="hint">密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</div>
+                </li>
+                <li>
+                    <div class="typename">确认密码：</div>
+                    <div class="ipt">
+                        <input type="password" id="passwdse" maxlength="20">
+                    </div>
+                    <div class="hint">确认密码</div>
+                </li>
+                <li>
+                    <div class="typename">真实姓名：</div>
+                    <div class="ipt">
+                        <input type="text" id="fullName" maxlength="10">
+                    </div>
+                    <div class="hint">真实姓名必须与您用于提款银行账户名称一致</div>
+                </li>
+                <li>
+                    <div class="typename">取款密码：</div>
+                    <div class="ipt">
+                        <select id="pwd1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="hint"></div>
+                </li>
+                <li id="showRegEmail" class="hide">
+                    <div class="typename">电子邮箱：</div>
+                    <div class="ipt">
+                        <input type="text" id="email" maxlength="30">
+                    </div>
+                    <div class="hint">电子邮箱(Email)格式：88888888@qq.com</div>
+                </li>
+                <li id="showRegQQ" class="hide">
+                    <div class="typename">QQ号码：</div>
+                    <div class="ipt">
+                        <input type="text" id="qq" maxlength="20">
+                    </div>
+                    <div class="hint">请输入QQ号码</div>
+                </li>
+                <li id="showRegMobile" class="hide">
+                    <div class="typename">手机号码：</div>
+                    <div class="ipt">
+                        <input type="text" id="phone" maxlength="11">
+                    </div>
+                    <div class="hint">请输入11位手机号码</div>
+                </li>
+                <li id="regValiCode">
+                    <div class="typename">验证码：</div>
+                    <div class="ipt">
+                        <input type="text" id="valiCode" maxlength="4">
+                        <img class="imgCode" src="" title="点击更换">
+                    </div>
+                    <div class="hint"></div>
+                </li>
+                <li>
+                    <div class="typename"></div>
+                    <div class="ipt">
+                        <input type="submit" value="">
+                        <a href="javascript:agentLogin();">已有代理账号？</a>
+                        <a href="javascript:agentLogin();" class="lgbtn"></a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

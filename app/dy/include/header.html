@@ -1,0 +1,90 @@
+<div class="header">
+    <div class="top container clearfix">
+        <div class="logo">
+            <embed src="img/logo.swf" quality="high" pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="280" height="100" wmode="transparent">
+        </div>
+        <div class="lgbox">
+            <form onsubmit="loginNoValiCode();return false;">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="账号" id="userName" maxlength="15" tabindex="1">
+                        </td>
+                        <td>
+                            <input type="text" placeholder="验证码" id="loginVcode" maxlength="4" tabindex="3">
+                            <label id="numberCode">8888</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" id="userPwd" placeholder="密码" maxlength="20" tabindex="2">
+                            <a href="javascript:BBOnlineService();" class="forget">忘记密码</a>
+                        </td>
+                        <td>
+                            <input type="submit" value="登陆">
+                            <a href="reg.html" class="regbtn">注册</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="try">
+            <a href="javascript:guestLogin();">
+                <img src="img/btn_try.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="nav container" id="nav">
+            <a href="index.html">
+                <i class="index"></i>
+                <div>
+                    <h5>首 页</h5>
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="reg.html">
+                <i class="reg"></i>
+                <div>
+                    <h5>开户注册</h5>
+                    <p>Register</p>
+                </div>
+            </a>
+            <a href="activity.html">
+                <i class="activity"></i>
+                <div>
+                    <h5>优惠活动</h5>
+                    <p>Promotian</p>
+                </div>
+            </a>
+            <a href="faq.html">
+                <i class="bank"></i>
+                <div>
+                    <h5>存款取款</h5>
+                    <p>Access money</p>
+                </div>
+            </a>
+            <a href="faq.html">
+                <i class="faq"></i>
+                <div>
+                    <h5>常见问题</h5>
+                    <p>Help</p>
+                </div>
+            </a>
+            <a href="javascript:BBOnlineService();">
+                <i class="service"></i>
+                <div>
+                    <h5>在线客服</h5>
+                    <p>Online Service</p>
+                </div>
+            </a>
+            <a href="agent.html" class="last">
+                <i class="agent"></i>
+                <div>
+                    <h5>加盟合作</h5>
+                    <p>Cooperation</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

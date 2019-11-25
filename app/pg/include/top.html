@@ -1,0 +1,50 @@
+<div class="header">
+    <div class="logo">
+        <embed src="images/logo.swf" wmode="transparent" width="274" height="130"></embed>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="reg.html">立即开户</a></li>
+            <li><a href="javascript:app()">APP下载</a></li>
+            <li><a href="javascript:hezuo()">代理合作</a></li>
+            <li><a href="javascript:youhui()">最新优惠</a></li>
+            <li><a href="javascript:answer()">常见问题</a></li>
+            <li><a href="javascript:about()">关于我们</a></li>
+            <li><a href="javascript:BBOnlineService()">联系客服</a></li>
+        </ul>
+    </div>
+    <!-- 公告信息 -->
+    <div class="notice">
+        <div class="txtMarquee-left">
+            <div class="iconMarquee"></div>
+            <div class="bd" id="noticeDom"></div>
+        </div>
+    </div>
+    <!-- 公告信息 end -->
+</div>
+<script type="text/javascript">
+function initNotice() {
+    if (typeof($LAB) != 'object') {
+        setTimeout(initNotice, 1000);
+    } else {
+        initNoticeData(function(notice) {
+            if (notice.length) {
+
+                var html = '<marquee direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1" onmouseover="this.stop();" onmouseout="this.start();" >';
+                for (var i = 0; i < notice.length; i++) {
+                    html += notice[i].title + '：&nbsp;&nbsp;&nbsp;&nbsp;' + notice[i].message + '&nbsp;&nbsp;&nbsp;&nbsp;';
+                }
+
+                html += '</marquee>';
+
+                $("#noticeDom").append(html);
+            } else {
+                $("#noticeDom").append('<marquee direction="left" behavior="scroll" scrollamount="3" scrolldelay="0" loop="-1" onmouseover="this.stop();" onmouseout="this.start();" >欢迎来到苹果</marquee>');
+            }
+        });
+    }
+};
+
+setTimeout(initNotice, 2000);
+</script>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>众彩网</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/top.html"-->
+    <div class="banner">
+        <div class="wrap">
+            <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="549" height="265">
+                <param name="movie" value="images/home.swf">
+                <param name="quality" value="high">
+                <param name="wmode" value="transparent" />
+                <param name="swfversion" value="8.0.35.0">
+                <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+                <param name="expressinstall" value="Scripts/expressInstall.swf">
+                <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="images/home.swf" width="549" height="265">
+                    <!--<![endif]-->
+                    <param name="quality" value="high">
+                    <param name="wmode" value="transparent" />
+                    <param name="swfversion" value="8.0.35.0">
+                    <param name="expressinstall" value="Scripts/expressInstall.swf">
+                    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+                    <div>
+                        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                        <p>
+                            <a href="http://www.adobe.com/go/getflashplayer">
+                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" />
+                            </a>
+                        </p>
+                    </div>
+                    <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </div>
+    </div>
+    <div class="bg">
+        <!--#include virtual="include/notice.html"-->
+        <div class="youxi">
+            <div class="youxibox mg20">
+                <a href="rule.html"><img src="images/index/01.png"></a>
+            </div>
+            <div class="youxibox mg20">
+                <a href="rule.html"><img src="images/index/02.png"></a>
+            </div>
+            <div class="youxibox mg20">
+                <a href="rule.html"><img src="images/index/03.png"></a>
+            </div>
+            <div class="youxibox">
+                <a href="rule.html"><img src="images/index/04.png"></a>
+            </div>
+            <div class="youxigg">
+                <a href="activity.html" class="ini1"></a>
+                <a href="reg.html" class="ini2"></a>
+                <a href="javascript:" onclick="BBOnlineService();" class="ini3"></a>
+            </div>
+        </div>
+        <!-- 游戏 end -->
+        <!--#include virtual="include/footer.html"-->
+    </div>
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="./js/global.js"></script>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/init.html"-->
+    <script type="text/javascript">
+    swfobject.registerObject("FlashID");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="./include/header.html"-->
+    <div class="banner banner_02">
+        <div class="ui-news" id="noticeDom">
+            <div class="title">最新消息/NEWS</div>
+        </div>
+    </div>
+    <div class="container-static container clearfix">
+        <!--#include virtual="./include/leftmenu.html"-->
+        <div class="main-content">
+            <div id="tabs" class="tabs">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">加盟方案</a></li>
+                    <li><a href="javascript:;">加盟协议</a></li>
+                    <li><a href="javascript:;">推广地址</a></li>
+                    <li><a href="javascript:;" onclick="agentService();">代理注册</a></li>
+                    <li><a href="javascript:agentLogin();">代理登录</a></li>
+                </ul>
+                <div class="tab">
+                    <p>作为一名尊贵的盛兴彩票网联盟合营伙伴，您可以利用您的资源最快赚取高额佣金，由这一秒钟开始，您将可以轻松实现成功与财富的梦想！</p>
+                    <h5>联盟方案：</h5>
+                    <p>盛兴彩票网公司拥有多元化的产品，使用最公平、公正、公开的系统，在市场上的众多博彩网站中，我们自豪的提供会员最优惠的回馈，给予合作伙伴最优势的营利回报! 无论 拥有的是网络资源，或是人脉资源， 都欢迎您来加入盛兴彩票网合作伙伴的行列，无须负担任何费用，就可以开始无上限的收入。 选择盛兴彩票网，绝对是您最聪明的选择!</p>
+                    <h5>代理条件：</h5>
+                    <p>
+                        a.具有便利的计算机上网设备。
+                        <br> b.有一定的人脉资源、网络资源或自己的广告网站。
+                        <br> c.每期游戏都要有10个或以上实际有效投注的会员以上，如达不到就累积到下期计算佣金！
+                        <br> d.在第一次结算之后的每个月必须递增2个有效会员。
+                        <br> e.禁止发展已经属于盛兴的会员，禁止重复注册代理重复发展同名会员，违者冻结代理账户永久纳入黑名单！
+                    </p>
+                    <h5>代理独立平台：</h5>
+                    <p>
+                        我们为您提供单独的代理后台，您可以在后台不受限制的开出下线，并且实时了解下线会员输赢，存款，取款情况。代理后台有一个您的专属链接，您可以直接将您的专属链接链接在网站、论坛、 博客等等可链接的网络页面，也可在群里面发送您的专属链接，只要通过您的专属链接注册的会员都算是您的下线。推广方式简单方便，推广渠道多种多样。
+                    </p>
+                    <h5>有效会员：</h5>
+                    <p>月结区间内进行过最少五次有效下注且投注总额不低于500RMB的会员！如联盟体系当月未达﹛月最低有效会员﹜最低门槛10人，则该月无法领取佣金回馈。联盟体系当月营利达到标准，而 ﹛月最低有效会员﹜人数达相应最低门坎，则该月佣金比例依照纯盈利所达门槛相应的百分比进行分红。
+                    </p>
+                    <h5>代理合作模式：</h5>
+                    <p>A：根据纯盈利比例分红加上盈利注单0.2%为代理返水福利
+                        <br> 1.一个月内公司在您的代理账号内纯赢利达到1000元-50000元，可享受其中15%的佣金。
+                        <br> 2.一个月内公司在您的代理账号内纯赢利达到50001元-100000元，可享受其中20%的佣金。
+                        <br> 3.一个月内公司在您的代理账号内纯赢利达到100001元-200000元，可享受其中25%的佣金。
+                        <br> 4.一个月内公司在您的代理账号内纯赢利达到200001元-500000元，可享受其中30%的佣金。
+                        <br> 5.一个月内公司在您的代理账号内纯赢利达到500001元-1000000元，可享受其中35%的佣金。
+                        <br> 6.一个月内公司在您的代理账号内纯赢利达到1000001-2000000元，可享受其中40%的佣金。
+                        <br> 7.一个月内公司在您的代理账号内纯赢利达到2000001-5000000元，可享受其中45%的佣金。
+                        <br> 8.一个月内公司在您的代理账号内纯赢利达到5000001元-10000000元，可享受其中50%的佣金。
+                        <br> 9.一个月内公司在您的代理账号内纯赢利达到10000001元，可享受其中55%的佣金。
+                        <br>
+                    </p>
+                </div>
+                <div class="tab hide">
+                    <h5>一、盛兴彩票网对代理联盟的权利与义务</h5>
+                    <p>
+                        1. 盛兴彩票网的客服部会登记联盟的会员并会观察他们的投注状况。联盟及会员必须同意并遵守盛兴彩票网的会员条例，政策及操作程序。盛兴彩票网保留拒绝或冻结联盟/会员账户权利。
+                        <br> 2. 代理联盟可随时登入接口观察旗下会员的下注状况及会员在网站的活动概况。盛兴彩票网的客服部会根据代理联盟旗下的会员计算所得的佣金。
+                        <br> 3. 盛兴彩票网保留可以修改合约书上的任何条例，包括: 现有的佣金范围、佣金计划、付款程序、及参考计划条例的权力，盛兴彩票网会以电邮、网站公告等方法通知代理联盟。 代理联盟对于所做的修改有异议， 代理联盟可选择终止合约，或洽客服人员反映意见。 如修改后代理联盟无任何异议，便视作默认合约修改，代理联盟必须遵守更改后的相关规定。
+                    </p>
+                    <h5>二、代理联盟对盛兴彩票网的权力及义务 </h5>
+                    <p>
+                        1. 代理联盟应尽其所能，广泛地宣传、销售及推广盛兴彩票网，使代理本身及盛兴彩票网的利润最大化。代理联盟可在不违反法律下，以正面形象宣传、销售及推广盛兴彩票网，并有责任义务告知旗下会员所有盛兴彩票网的相关优惠条件及产品。
+                        <br> 2. 代理联盟选择的盛兴彩票网推广手法若需付费，则代理应承担该费用。
+                        <br> 3. 任何盛兴彩票网相关信息包括: 标志、报表、游戏画面、图样、文案等，代理联盟不得私自复制、公开、分发有关材料，盛兴彩票网保留法律追诉权。如代理在做业务推广有相关需要，请随时洽盛兴彩票网。
+                    </p>
+                    <h5>三、规则条款 </h5>
+                    <p>
+                        1. 各阶层代理联盟不可在未经盛兴彩票网许可情况下开设双/多个的代理账号，也不可从盛兴彩票网账户或相关人士赚取佣金。请谨记任何阶层代理不能用代理帐户下注，盛兴彩票网有权终止并封存账号及所有在游戏中赚取的佣金。
+                        <br> 2. 为确保所有盛兴彩票网会员账号隐私与权益，盛兴彩票网不会提供任何会员密码，或会员个人资料。各阶层代理联盟亦不得以任何方式取得会员数据，或任意登入下层会员账号，如发现代理联盟有侵害盛兴彩票网会员隐私行为，盛兴彩票网有权取消代理联盟红利，并取消代理联盟账号。
+                        <br> 3. 代理联盟旗下的会员不得开设多于一个的账户。盛兴彩票网有权要求会员提供有效的身份证明以验证会员的身份，并保留以IP判定是否重复会员的权利。如违反上述事项，盛兴彩票网有权终止玩家进行游戏并封存账号及所有于游戏中赚取的佣金
+                        <br> 4. 代理联盟不可为自己或其他联盟下的有效投注会员,只能是公司直属下的有效投注会员, 代理每月需有10个下线有效投注会员（每月至少上线10次进行正常投注），如有违反联盟协议盛兴彩票网有权终止并封存账号及所有在游戏中赚取的佣金。
+                        <br> 5. 如代理联盟旗下的会员因为违反条例而被禁止享用盛兴彩票网的游戏，或盛兴彩票网退回存款给会员，盛兴彩票网将不会分配相应的佣金给代理联盟。如代理联盟旗下会员存款用的信用卡、银行资料须经审核，盛兴彩票网保留相关佣金直至审核完成。
+                        <br> 6. 合约内的条件会以盛兴彩票网通知接受代理联盟加入后开始执行。盛兴彩票网及代理联盟可随时终止此合约，在任何情况下，代理联盟如果想终止合约，都必须以书面/电邮方式提早于七日内通知盛兴彩票网。 代理联盟的表现会3个月审核一次，如代理联盟已不是现有的合作成员则本合约书可以在任何时间终止。 如合作伙伴违反合约条例，盛兴彩票网有权立即终止合约。
+                        <br> 7. 在没有盛兴彩票网许可下，代理联盟不能透露及授权盛兴彩票网相关密数据，包括代理联盟所获得的回馈、佣金报表、计算等;代理联盟有义务在合约终止后仍执行机密文件及数据的保密。
+                        <br> 8. 在合约终止后，代理联盟及 盛兴彩票网将不须要履行双方的权利及义务。终止合约并不会解除代理联盟于终止合约前应履行的义务
+                    </p>
+                </div>
+                <div class="tab hide">
+                    <p>作为一名尊贵的 盛兴彩票网合作伙伴，您可以利用您的资源简单赚取高额佣金，轻松实现成功与财富的梦想！</p>
+                    <div>
+                        <input type="text" class="agentUrlbyAgentid" style="width: 300px;">
+                    </div>
+                </div>
+                <div class="tab hide">
+                    <h4 class="title">代理注册</h4>
+                    <div class="form-bg">
+                        <form onsubmit="agentRegister();return false;">
+                            <fieldset>
+                                <legend>代理帐号</legend>
+                                <div class="form-regist">
+                                    <div class="row">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span>帐号规则 : 帐号必须为6-15位数字和字母组合</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>代理帐号 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="username" maxlength="15">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span>密码规则 : 密码长度要有6-20个字符,以及必须含有数字和字母组合</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>登录密码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="password" id="password" maxlength="20">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>确认密码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="password" id="passwdse" maxlength="20">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span class="font-orange">姓名必须与你用于提款的银行户口名字一致,否则无法提款 </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>真实姓名 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="fullName" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span>提款认证必须,务必记住</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>取款密码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <select id="pwd1">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                            <select id="pwd2">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                            <select id="pwd3">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                            <select id="pwd4">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row showRegEmail hide">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span class="font-orange">email格式 : 888888@qq.com </span>
+                                        </div>
+                                    </div>
+                                    <div class="row showRegEmail hide">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>电子邮箱 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="email" maxlength="30">
+                                        </div>
+                                    </div>
+                                    <div class="row hide showRegQQ">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span class="font-orange">QQ号码格式 : 888888 </span>
+                                        </div>
+                                    </div>
+                                    <div class="row hide showRegQQ">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>QQ号码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="qq" maxlength="20">
+                                        </div>
+                                    </div>
+                                    <div class="row hide showRegMobile">
+                                        <div class="form-left">
+                                        </div>
+                                        <div class="form-right">
+                                            <span class="font-orange">手机号码格式 : 18888888888 </span>
+                                        </div>
+                                    </div>
+                                    <div class="row hide showRegMobile">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>手机号码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="phone" maxlength="11">
+                                        </div>
+                                    </div>
+                                    <div class="row regValiCode">
+                                        <div class="form-left">
+                                            <span><b class="font-orange">*</b>验证码 : </span>
+                                        </div>
+                                        <div class="form-right">
+                                            <input type="text" id="valiCode" class="test-code" maxlength="4">
+                                            <img src="" class="imgCode" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-button">
+                                <div class="row">
+                                    <input type="submit">
+                                    <input type="reset">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="./include/footer.html"-->
+    <!--#include virtual="./include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script>
+        $('#tabs li').on('click',function(){
+            if($(this).index() != $('#tabs a').length){
+                $('.tab').eq($(this).index()).show().siblings('.tab').hide();
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>welcome</title>
+    <link href="css/core.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="css/css.css" rel="stylesheet">
+    <!--#include virtual="/include/chkwh.html" -->
+    <style>
+    /*规则说明*/
+
+    .rule-info {
+        margin: 15px auto 0px auto;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul {
+        width: 670px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .rule-info ul li {
+        float: left;
+        margin-top: 5px;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul li img {
+        float: left;
+        width: 670px;
+    }
+
+    .rule-info ul li div {
+        float: left;
+    }
+
+    .rule-info ul li .min-banner {
+        width: 670px;
+        cursor: pointer;
+    }
+
+    .rule-info .rule-cont {
+        display: none;
+        padding: 5px 0px;
+        line-height: 2em;
+        overflow: hidden;
+    }
+
+    .rule-info .rule-pic img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="banner_bg8">
+        <div id="wraping">
+            <div class="gonggao" id="noticeDom"></div>
+        </div>
+    </div>
+    <div id="mainbg">
+        <div id="wrap">
+            <!--#include virtual="include/lefter.html" -->
+            <div id="righter">
+                <div class="title">技术问题</div>
+                <div class="mainer main">
+                    <div class="righttext appdownload">
+                        <div class="text" style="text-align:left;">
+                             【1】进行游戏对系统配置有要求么？<br>
+答：我们设计的网页将会提供新一代浏览器服务，提供更好的特点，让您能够享有更好的投注乐趣。我们希望您能使用Internet Explorer 6.0或者是以上的浏览器版本。<br>
+【2】为什么系统会将我登出？<br>
+答：这是网页的保安程式之一，当您在一定的时间内没有使用有关的网页，那么有关的网页将不再活跃，并且无法浏览最新的页面，在此您必需重新登入；若您重新登入后情况仍然一样请立即联系我们。<br>
+【3】为什么需要清除网页缓存？<br>
+答：如果您无法浏览新的网页或者是最新的页面，并且发现所浏览的是相同或者是旧的页面，这表示您的记忆体已经满载。<br><br>
+IE以及Netscape的经常使用将导致记忆体的储存，要解决这个问题，只需依照以下的步骤： <br>
+INTERNET EXPLORER 6.0或者是以上的浏览器版本 <br>
+在您的桌面浏览器，使用滑鼠右击。 <br>
+点击"Internet属性， <br>
+再按"删除档"中的"删除所有脱机内容"键， <br>
+关闭浏览器，重新启动IE浏览器， <br>
+这将会清除记忆体快取，并不会清除Cookies或者是重要程式档案。 <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ruleInfo").children(".rule-pic").click(function() {
+            var m = $(this);
+            if (m.next().is(":visible")) {
+                m.next().slideUp(500);
+            } else {
+                m.next().slideDown(500);
+            }
+        });
+    });
+    </script>
+    <script>
+    document.getElementById("yxyx1").className = "checkyo"
+    </script>
+</body>
+
+</html>

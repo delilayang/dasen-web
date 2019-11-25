@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><!--#include virtual="/include/index_head_title.html" --></title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link href="css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="banner">
+        <div class="login-aside">
+            <div id="o-box-up"></div>
+            <div id="o-box-down" style="table-layout:fixed;">
+                <form class="registerform" onsubmit="loginNoValiCode();return false;">
+                    <div class="label">
+                        <div class="ico-user"></div>
+                        <input type="text" class="txt" placeholder="账号" id="userName">
+                    </div>
+                    <div class="labe2">
+                        <div class="ico-pwd"></div>
+                        <input type="password" class="txt" placeholder="密码" id="userPwd">
+                    </div>
+                    <div class="fm-item">
+                        <div class="error-box" style="display:none;"></div>
+                        <label for="logonId" class="form-label"></label>
+                        <input type="submit" value="立即登录" tabindex="4" id="send-btn" class="btn-login">
+                        <div class="ui-form-explain"></div>
+                    </div>
+                    <div class="fm-item">
+                        <label for="logonId" class="form-label" style=" margin:10px "></label>
+                        <a href="reg.html" class="btn-login1">立即注册</a>
+                        <a href="javascript:guestLogin();" class="btn-login2">免费试玩</a>
+                        <div class="ui-form-explain"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div class="fullwidthbanner-container">
+                <div class="fullwidthbanner">
+                    <ul>
+                        <li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300">
+                            <img src="images/banner.jpg" alt="" width="1920" /> </li>
+                        <li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300">
+                            <img src="images/banner1.jpg" alt="" width="1920" /> </li>
+                        <li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300">
+                            <img src="images/banner2.jpg" alt="" width="1920" /> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dodi_b">
+        <div class="dodi_b_t">
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_1.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">北京赛车PK10</div>
+                    <div class="dodi_b_t_22">亚洲最大流行的彩票平台之一</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_2.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">重庆时时彩</div>
+                    <div class="dodi_b_t_22">玩法简单 中奖率高 开奖快</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_3.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">PC蛋蛋</div>
+                    <div class="dodi_b_t_22">玩法新颖 趣味多 返奖高</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_4.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">快乐十分</div>
+                    <div class="dodi_b_t_22">玩法简单多样 娱乐性强</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_5.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">快三</div>
+                    <div class="dodi_b_t_22">玩法新颖 简单多样</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+            <div class="dodi_b_t_1">
+                <div class="dodi_b_t_11"><a target="_blank" href="javascript:gAlert('请先登录');"><img alt="l" src="images/1_6.jpg"></a></div>
+                <div class="dodi_b_t_2">
+                    <div class="dodi_b_t_21">香港六合彩</div>
+                    <div class="dodi_b_t_22">大陆最流行的彩票平台之一</div>
+                    <div class="dodi_b_t_23"><a class="but" href="javascript:gAlert('请先登录');">立即投注</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery.banner.revolution.min.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+</body>
+
+</html>

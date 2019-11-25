@@ -1,0 +1,47 @@
+<!-- 代码 开始 -->
+<div id="rightArrow">
+    <a href="javascript:;" title="在线客户"></a>
+</div>
+<div id="floatDivBoxs">
+    <div class="floatShadow">
+        <ul class="floatDqq">
+            <li>
+                <a href="javascript:void(0);" onclick="BBOnlineService();"><img src="images/kf/01.png" align="absmiddle"></a>
+            </li>
+            <li style="padding-top:5px">
+                <a target="_blank" href="reg.html"><img src="images/kf/02.png" align="absmiddle"></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="guestLogin();"><img src="images/kf/03.png" align="absmiddle"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="qqnum cfgMainCustomerQQ"></div>
+    <div class="sideqr"><img src="images/appewm.png" alt=""></div>
+    <div class="floatDbg"></div>
+</div>
+<!-- 代码 结束 -->
+<script>
+var flag = 1;
+$('#rightArrow').click(function() {
+    if (flag == 1) {
+        $("#floatDivBoxs").animate({
+            right: '-175px'
+        }, 300);
+        $(this).animate({
+            right: '-5px'
+        }, 300);
+        $(this).css('background-position', '-40px 0');
+        flag = 0;
+    } else {
+        $("#floatDivBoxs").animate({
+            right: '0'
+        }, 300);
+        $(this).animate({
+            right: '170px'
+        }, 300);
+        $(this).css('background-position', '0px 0');
+        flag = 1;
+    }
+});
+</script>

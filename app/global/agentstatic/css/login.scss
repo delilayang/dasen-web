@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+    font: 14px/1.231 Verdana, Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: none;
+    padding: 0;
+}
+
+.main {
+    background: #b63a42 url("../img/login/bg.jpg") no-repeat;
+    height: 475px;
+}
+
+.panel {
+    background: url("../img/login/2015.png") no-repeat left;
+    width: 950px;
+    height: 475px;
+    margin: 0 auto;
+}
+
+.login {
+    background: url("../img/login/login_win.png") no-repeat;
+    float: right;
+    width: 270px;
+    height: 310px;
+    margin-top: 72px;
+    .info {
+        background: url("../img/login/input_bg.png") no-repeat left top;
+        height: 50px;
+        width: 220px;
+        margin: 10px auto;
+        label {
+            background: url("../img/login/login_ico.png") no-repeat top;
+            display: block;
+            font-size: 0;
+            text-indent: -99999px;
+            height: 35px;
+            width: 38px;
+            margin: 6px 0px 0 10px;
+            float: left;
+        }
+        input {
+            float: left;
+            font-size: 16px;
+            margin: 12px 0 0 0;
+            width: 155px;
+            font-family: Microsoft YaHei;
+        }
+        .tip {
+            color: #999;
+        }
+    }
+    .password {
+        label {
+            background-position: center;
+        }
+    }
+    .code {
+        label {
+            background-position: bottom;
+        }
+        input {
+            width: 60px;
+        }
+        img {
+            cursor: pointer;
+            float: right;
+            margin: 9px 15px 0 0;
+        }
+    }
+    .control {
+        input {
+            background: url("../img/login/submit.png");
+            display: block;
+            height: 36px;
+            margin: 15px auto 0 auto;
+            width: 215px;
+            text-indent: -9999em;
+        }
+    }
+    .support {
+        display: block;
+        /* background: url("../images/support.png") no-repeat; */
+        width: 70px;
+        height: 25px;
+        margin: 23px 30px 32px auto;
+    }
+}
+
+.c_logo {
+    float: left;
+    padding-top: 58px;
+    margin-top: 279px;
+    margin-left: 170px;
+    img {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 182px;
+        height: 48px;
+    }
+}
+
+.login_bu {
+    margin-left: 25px;
+    overflow: hidden;
+    input {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+    }
+}
+
+.enter {
+    width: 120px;
+    height: 52px;
+    background: url(../img/login/login_bu.png) no-repeat left top;
+    text-indent: -9999em;
+    float: left;
+}
+
+.reg {
+    width: 88px;
+    height: 52px;
+    background: url(../img/login/login_bu.png) no-repeat left -104px;
+    text-indent: -9999em;
+    float: left;
+}
+
+.test {
+    width: 221px;
+    height: 46px;
+    background: url(../img/login/login_bu.png) no-repeat left -208px;
+    text-indent: -9999em;
+    float: left;
+}
+

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>大众彩票网</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body class="register-bg">
+    <div class="register-container">
+        <div class="register-header">
+        </div>
+        <div class="register-content clearfix">
+            <div class="inner">
+                <div class="register-inner">
+                    <div class="register-heading">
+                        代理商账号注册信息
+                    </div>
+                    <div class="register-form">
+                        <form onsubmit="agentRegister();return false;" autocomplete="off">
+                            <div class="input-group">
+                                <label class="ipt-lab">代理账号：</label>
+                                <input type="text" id="username" maxlength="15" class="ipt" />
+                                <span class="ipt-tip">账号规则：账号必须为6-15位数字和字母组合</span>
+                            </div>
+                            <div class="input-group">
+                                <label class="ipt-lab">登录密码：</label>
+                                <input type="password" class="ipt" id="password" maxlength="20" />
+                                <span class="ipt-tip">密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</span>
+                            </div>
+                            <div class="input-group">
+                                <label class="ipt-lab">确认密码：</label>
+                                <input type="password" id="passwdse" class="ipt" maxlength="20" />
+                                <span class="ipt-tip">请再次输入密码</span>
+                            </div>
+                            <div class="input-group">
+                                <label class="ipt-lab">真实姓名：</label>
+                                <input type="text" id="fullName" class="ipt" maxlength="10" />
+                                <span class="ipt-tip">  姓名必须与你用于提款的银行户口名字一致，否则无法提款</span>
+                            </div>
+                            <div class="input-group">
+                                <label class="ipt-lab">提款密码：</label>
+                                <div class="ipt-wrap">
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                                <span class="ipt-tip">密码规则:只允许4位数字</span>
+                            </div>
+                            <div class="input-group hide" id="showRegEmail">
+                                <label class="ipt-lab">邮箱：</label>
+                                <input type="text" id="email" maxlength="30" class="ipt" />
+                                <span class="ipt-tip">email格式：888888@qq.com</span>
+                            </div>
+                            <div class="input-group hide" id="showRegQQ">
+                                <label class="ipt-lab">QQ号码：</label>
+                                <input type="text" id="qq" maxlength="20" class="ipt" />
+                                <span class="ipt-tip">请输入QQ号码</span>
+                            </div>
+                            <div class="input-group hide" id="showRegMobile">
+                                <label class="ipt-lab">手机号码：</label>
+                                <input type="text" id="phone" maxlength="11" class="ipt" />
+                                <span class="ipt-tip">请输入11位手机号码</span>
+                            </div>
+                            <div class="input-group clearfix" id="regValiCode" style="position: relative;">
+                                <label class="ipt-lab">验证码：</label>
+                                <input type="text" id="valiCode" maxlength="4" class="ipt">
+                                <img class="imgCode" src="">
+                            </div>
+                            <div class="btn-group">
+                                <input type="submit" value="确认注册" class="btn btn-reg">
+                                <a href="javascript:agentLogin();" class="zhanghu">已有账户</a>
+                                <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1657777" target="_blank" class="btn btn-login">我要登录</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

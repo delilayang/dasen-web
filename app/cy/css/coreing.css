@@ -1,0 +1,634 @@
+.fl{
+	float:left;}
+	
+.fr{
+	float:right;}
+.inf4 {
+	padding-top: 26px;
+	font-size: 12px
+}
+
+.inf4 li {
+	width: 305px;
+	margin: 0 35px 0 3px;
+	display: inline-block;
+	vertical-align: top
+}
+
+.inf4 .last {
+	margin-right: 0
+}
+
+ .inf4 .titimg {
+	margin-bottom: 20px
+}
+
+ .inf4 .bankshow .textbox {
+	width: 258px
+}
+
+.inf4 .bankshow .leftbox .t1 {
+	font-size: 18px;
+	margin-bottom: 2px
+}
+
+.inf4 .bankshow .rightbox .num {
+	font-size: 38px;
+	line-height: 38px;
+	margin-right: 2px;
+	color:#1447af;
+}
+
+.inf4 .bankshow .rightbox span {
+	vertical-align: bottom;
+	font-size: 24px
+}
+
+.inf4 .bankshow .lineshow {
+	margin: 13px 0 20px 0;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -5px -497px;
+	width: 259px;
+	height: 14px;
+	overflow: hidden;
+	position: relative;
+	float:left;
+	border-radius: 20px
+}
+
+.inf4 .bankshow .floatling {
+	display: block;
+	position: absolute;
+	left: -153px;
+	top: 0;
+	width: 153px;
+	height: 12px;
+	background: #4197ff;
+	border-radius: 20px
+}
+
+.inf4 .bankshow .imgshow {
+	width: 273px;
+	height: 51px;
+	margin-top: 12px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -2px -129px;
+	float:left;
+}
+
+.inf4 .textshow .tit {
+	font-size: 19px;
+	margin-bottom: 6px
+}
+
+.inf4 .textshow .tit span {
+	font-size: 14px
+}
+
+.inf4 .textshow .text {
+	margin-bottom: 40px;
+	color:#a0a0a0;
+}
+
+.inf4 .textshow .text2 {
+	margin-bottom: 20px
+}
+
+.inf4 .textshow .partnerimg {
+	width: 306px;
+	height: 88px;
+	margin-bottom: 10px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: 0 0
+}
+
+.inf4 .textshow .links {
+	line-height: inherit;
+	text-align: left;
+	margin-top: 2px
+}
+
+.inf4 .textshow .links a {
+	line-height: 20px;
+	margin: 0 20px 0 0;
+	padding-left: 20px;
+	display: inline-block;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -242px -241px;
+	color: #fff
+}
+
+.inf4 .textshow .links a:hover {
+	text-decoration: underline;
+	color: #f9e668;
+	background-position: -242px -272px
+}
+
+.inf4 .textshow .links a {
+	*display: inline
+}
+
+ .inf4 .textshow .links .last {
+	margin-right: 0
+}
+
+.float {
+	position: fixed;
+	right: -10000px;
+	padding: 20px 30px 0 0
+}
+
+.float li {
+	margin: 0 auto;
+	position: relative
+}
+
+.float a {
+	height: 100%
+}
+
+.float .girl {
+	width: 117px;
+	height: 127px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: 4px -57px
+}
+
+.float .service {
+	margin-top: -5px;
+	width: 128px;
+	height: 71px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: 0 -351px
+}
+
+.float .service:hover {
+	background-position: -178px -351px
+}
+
+.float .reg {
+	width: 134px;
+	height: 51px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: 0 -482px
+}
+
+.float .reg:hover {
+	background-position: -178px -482px
+}
+
+.float .qq {
+	width: 134px;
+	height: 50px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: 0 -592px
+}
+
+.float .qq p {
+	margin-top: 26px;
+	text-align: center
+}
+
+.float .qq:hover {
+	background-position: -178px -592px
+}
+
+.float .try {
+	width: 134px;
+	height: 103px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: -178px -57px
+}
+
+.float .try a {
+	width: 111px;
+	height: 31px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: -8px -700px;
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+	margin-left: -56px
+}
+
+.float .try a:hover {
+	background-position: -178px -700px
+}
+
+.float .ewm {
+	width: 134px;
+	height: 139px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: -178px -160px
+}
+
+.float .ewm img {
+	position: absolute;
+	left: 50%;
+	top: 7px;
+	width: 102px;
+	height: 102px;
+	margin-left: -51px
+}
+
+.float .close {
+	width: 74px;
+	height: 27px;
+	background: url(../img/float/bg_float.png) no-repeat;
+	background-position: 0 -209px;
+	margin-top: -7px
+}
+
+.float .close:hover {
+	background-position: 0 -274px
+}
+
+.banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 256px
+}
+
+.banner img {
+	position: absolute;
+	left: 50%;
+	margin-left: -960px
+}
+
+.main {
+	background: url(../img/bg_main.jpg) repeat-x bottom #0187e6;
+	margin-top: -28px;
+	font-family: SimSun
+}
+
+.main .wrap {
+	padding: 36px 22px 26px
+}
+
+.main .leftmenu {
+	width: 238px;
+	height: 528px;
+	background: url(../img/bg_menu.png) no-repeat center;
+	position: relative;
+	display: inline-block;
+	vertical-align: top
+}
+
+.main .leftmenu.agent {
+	height: 365px;
+	background: url(../img/bg_menu2.png) no-repeat center
+}
+
+.main .leftmenu ul {
+	position: absolute;
+	top: 145px;
+	left: 44px
+}
+
+.main .leftmenu li {
+	width: 177px;
+	height: 40px;
+	margin-bottom: 2px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 -663px
+}
+
+.main .leftmenu li:hover {
+	background-position: -223px -663px
+}
+
+.main .leftmenu li a {
+	height: 35px;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	font-weight: 700
+}
+
+.main .righttext {
+	width: 672px;
+	background: #072a65;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 500px;
+	margin-left: 5px;
+	color: #a5ceff;
+	border: 1px solid #0e5bad;
+	padding: 0 24px
+}
+
+.main .righttext .tit {
+	line-height: 42px;
+	height: 42px;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 14px
+}
+
+.main .righttext .text {
+	padding: 20px 5px
+}
+
+.main .righttext .text p {
+	line-height: 21px
+}
+
+.main .righttext .actitable {
+	width: 90%
+}
+
+.main .righttext .actitable td {
+	border: 1px solid #fff;
+	height: 35px;
+	text-align: center
+}
+
+.main .righttext .actitable th {
+	height: 40px;
+	border: 1px solid #fff
+}
+
+.main .righttext .rules li {
+	margin-bottom: 3px
+}
+
+.main .righttext .rules li img {
+	width: 100%
+}
+
+.main .righttext .rules .detail {
+	padding: 10px 2px
+}
+
+.main .regbox {
+	position: relative;
+	margin-top: 20px;
+	padding: 0 10px 20px
+}
+
+.main .regbox .tbwrap {
+	border: 1px solid #074391;
+	position: relative;
+	padding: 23px 100px 10px
+}
+
+.main .regbox table {
+	color: #fff
+}
+
+.main .regbox table strong {
+	color: red;
+	margin-right: 5px;
+	font-size: 14px
+}
+
+.main .regbox table input {
+	line-height: 18px;
+	padding: 3px 8px;
+	width: 248px;
+	color: #000;
+	border: 1px solid #5799f2;
+	background: #013175;
+	color: #fff
+}
+
+.main .regbox table td {
+	padding: 4px 0
+}
+
+.main .regbox table select {
+	width: 48px;
+	height: 24px;
+	margin-right: 8px;
+	color: #fff;
+	border: 1px solid #5799f2;
+	background: #013175
+}
+
+.main .regbox table .authimgcode {
+	width: 78px;
+	text-align: center
+}
+
+.main .regbox table .imgCode {
+	width: 78px;
+	height: 26px;
+	display: inline-block;
+	vertical-align: bottom;
+	cursor: pointer
+}
+
+.main .regbox .btns {
+	text-align: center;
+	padding-top: 18px
+}
+
+.main .regbox .btns input {
+	border: 1px solid #707070;
+	color: #707070;
+	cursor: pointer;
+	height: 28px;
+	width: 90px;
+	margin: 0 3px
+}
+
+.main .appdownload {
+	text-align: center;
+	padding-bottom: 20px
+}
+
+.main .appdownload .text {
+	height: 700px;
+	overflow-x: hidden;
+	margin-top: 20px
+}
+
+.main .appdownload .applogo {
+	height: 70px;
+	margin: 10px 0 30px
+}
+
+.main .appdownload .ewm {
+	height: 120px
+}
+
+.main .appdownload img {
+	display: inline-block;
+	height: 100%
+}
+
+.main .appdownload ::-webkit-scrollbar {
+	width: 8px
+}
+
+.main .appdownload ::-webkit-scrollbar-thumb {
+	background-color: #00179a;
+	border: 2px solid #051037;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em
+}
+
+.main .appdownload ::-webkit-scrollbar-track {
+	background-color: #051037;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em
+}
+
+.main .appteach {
+	margin-top: 20px
+}
+
+.main .appteach img {
+	width: 60%;
+	height: auto;
+	display: block;
+	margin: 0 auto
+}
+
+.icon-flag {
+	width: 68px;
+	height: 17px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -147px -36px
+}
+
+.icon-regbtn {
+	width: 238px;
+	height: 81px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -5px -68px
+}
+
+.icon-regbtn:hover {
+	background-position: -279px -68px
+}
+
+.icon-usn {
+	width: 15px;
+	height: 17px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -5px 1px
+}
+
+.icon-pwd {
+	width: 15px;
+	height: 17px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -3px -32px
+}
+
+.icon-hot {
+	width: 21px;
+	height: 12px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -80px -38px
+}
+
+.icon-onlineservice {
+	width: 134px;
+	height: 68px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: -5px -377px
+}
+
+.icon-onlineservice:hover {
+	background-position: -176px -377px
+}
+
+.icon-phone {
+	width: 36px;
+	height: 36px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -2px -521px
+}
+
+.icon-qq {
+	width: 36px;
+	height: 36px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -89px -521px
+}
+
+.icon-email {
+	width: 36px;
+	height: 36px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -174px -521px
+}
+
+.icon-online {
+	width: 36px;
+	height: 36px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -261px -521px
+}
+
+.icon-footer-service1 {
+	width: 141px;
+	height: 45px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -1px -230px
+}
+
+.icon-footer-service2 {
+	width: 141px;
+	height: 45px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -1px -323px
+}
+
+.icon-footer-service3 {
+	width: 141px;
+	height: 45px;
+	background: url(../img/icon_footer.png) no-repeat;
+	background-position: -1px -422px
+}
+
+.icon-num {
+	background: url(../img/float/bg_float.png) no-repeat;
+	width: 15px;
+	height: 21px
+}
+
+.icon-num-0 {
+	background-position: 0 0
+}
+
+.icon-num-1 {
+	background-position: -20px 0
+}
+
+.icon-num-2 {
+	background-position: -40px 0
+}
+
+.icon-num-3 {
+	background-position: -60px 0
+}
+
+.icon-num-4 {
+	background-position: -80px 0
+}
+
+.icon-num-5 {
+	background-position: -100px 0
+}
+
+.icon-num-6 {
+	background-position: -120px 0
+}
+
+.icon-num-7 {
+	background-position: -140px 0
+}
+
+.icon-num-8 {
+	background-position: -160px 0
+}
+
+.icon-num-9 {
+	background-position: -180px 0
+}

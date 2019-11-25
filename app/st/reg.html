@@ -1,0 +1,144 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <title><!--#include virtual="/include/index_head_title.html" --></title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+
+<body>
+    <!--#include virtual="./include/header.html" -->
+    
+    <div class="page_main">
+        <div class="w1020 cont">
+            <div class="page_nav">
+                <ul>
+                    <li><span class="aboutus"></span><a href="about.html">关于我们<br>ABOUT US</a></li>
+                    <li><span class="contactus"></span><a href="contact.html">联系我们<br>CONTACT US</a></li>
+                    <li><span class="partners"></span><a href="agent.html">联盟合作<br>PARTNERS</a></li>
+                    <li><span class="preferntial"></span><a href="activity.html">最新优惠<br>PREFERENTIAL</a></li>
+                    <li><span class="withdrawals"></span><a href="bank.html">取款存款<br>WITHDRAWALS</a></li>
+                    <li><span class="questions"></span><a href="faq.html">常见问题<br>QUESTIONS</a></li>
+                </ul>
+                <a class="page_ad"><img src="images/page_ad.png"></a>
+            </div>
+            <div class="page_cont">
+                <div class="cont_title">会员注册</div>
+                <div class="page_regist">
+                    <form class="regist_form" onsubmit="doRegister(); return false;">
+                        <ul>
+                            <li id="recoTr"><span><i>* </i>推荐人：</span>
+                                <input type="text" id="regRecoUserName" placeholder="可选填">
+                            </li>
+                            <li>
+                                <p>账号规则：账号必须为6-15位数字或英文</p>
+                            </li>
+                            <li><span><i>* </i>用户账号：</span>
+                                <input type="text" maxlength="15" id="regUsername">
+                            </li>
+                            <li>
+                                <p>密码规则：密码长度为6-20位数字或英文</p>
+                            </li>
+                            <li><span><i>* </i>登陆密码：</span>
+                                <input type="password" maxlength="20" id="regPassword">
+                            </li>
+                            <li><span><i>* </i>确认密码：</span>
+                                <input type="password" maxlength="20" id="password1">
+                            </li>
+                            <li>
+                                <p><i>姓名必须与您用于提款的银行户口名字一致，否则无法提款</i></p>
+                            </li>
+                            <li><span><i>* </i>真实姓名：</span>
+                                <input type="text" id="fullName" maxlength="10">
+                            </li>
+                            <li>
+                                <p>提款密码务必记住</p>
+                            </li>
+                            <li><span><i>* </i>提款密码：</span>
+                                <select id="pwd1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd4">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p><i>Email格式：88888@qq.com</i></p>
+                            </li>
+                            <li class="hide showRegEmail">
+                                <span><i>* </i>电子邮箱：</span>
+                                <input type="text" id="email" maxlength="30">
+                            </li>
+                            <li class="showRegQQ hide">
+                                <span><i>* </i>QQ号码：</span>
+                                <input type="text" id="qq" maxlength="20">
+                            </li>
+                            <li class="hide showRegMobile">
+                                <span><i>* </i>手机号码：</span>
+                                <input type="text" id="phone" maxlength="11">
+                            </li>
+                            <li id="regValiCode">
+                                <span><i>* </i>验证码：</span>
+                                <input type="text" maxlength="4"  id="valiCode"/>
+                                <img class="imgCode" src="">
+                            </li>
+                        </ul>
+                        <input type="submit" value="提交" class="tijiao">
+                        <input type="reset" value="重置" class="chongzhi">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="./js/core.js"></script>
+</body>
+
+</html>

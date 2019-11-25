@@ -1,0 +1,33 @@
+<div id="gonggao">
+	<div class="wrap">
+		<div class="ggmain" id="noticeDom"></div>
+	</div>
+</div>
+<!-- notic end -->
+
+<script type="text/javascript">
+    function initNotice() {
+        if (typeof($LAB) != 'object') {
+            setTimeout(initNotice, 1000);
+        } else {
+            initNoticeData(function(notice) {
+                if (notice.length) {
+
+                    var html = '<marquee direction="left" behavior="scroll" scrollamount="5" scrolldelay="0" loop="-1" onmouseover="this.stop();" onmouseout="this.start();" >';
+                    for (var i = 0; i < notice.length; i++) {
+                        html += notice[i].title + '：&nbsp;&nbsp;&nbsp;&nbsp;' + notice[i].message + '&nbsp;&nbsp;&nbsp;&nbsp;';
+                    }
+
+                    html += '</marquee>';
+
+                    $("#noticeDom").append(html);
+                } else {
+                    $("#noticeDom").append('<marquee direction="left" behavior="scroll" scrollamount="5" scrolldelay="0" loop="-1" onmouseover="this.stop();" onmouseout="this.start();" >欢迎来到众彩网</marquee>');
+                }
+            });
+        }
+    };
+
+    setTimeout(initNotice, 2000);
+
+</script>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="./include/header.html" -->
+    <div class="lb">
+        <div class="lb-wrap" id="lb_box">
+            <ul class="clearfix">
+                <li><img src="img/lb/0.jpg"></li>
+                <li><img src="img/lb/1.jpg"></li>
+                <li><img src="img/lb/2.jpg"></li>
+                <li><img src="img/lb/3.jpg"></li>
+                <li><img src="img/lb/4.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    <!--#include virtual="./include/radio.html" -->
+    <div class="gamebox" id="gamebox">
+        <div class="container">
+            <div class="picwrap">
+                <ul class="clearfix" style="left:0">
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/0.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/1.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/2.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/3.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/4.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/5.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/6.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/7.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/8.png"></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/gamelist/9.png"></a></li>
+                </ul>
+            </div>
+            <div class="left btn hide"></div>
+            <div class="right btn"></div>
+        </div>
+    </div>
+    <div class="showbox">
+        <div class="container">
+            <div class="top clearfix">
+                <div class="fl"><img src="img/showpic1.jpg"></div>
+                <div class="fr">
+                    <h5>全球最佳彩票投注平台</h5>
+                    <p>金辉彩票(www.jhcp.com)是一家专业高频彩票平台，于2011年5月10日正式上线运营，主销彩种涵盖福彩、体彩等主流高频彩种，北京赛车pk10为主，5分钟一期，娱乐性更高，享受不停中奖的乐趣，打造一个专业高频的购彩平台</p>
+                    <div class="btn">
+                        <a href="javascript:gAlert('请先登录');;">ENTER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom clearfix">
+                <div class="fl">
+                    <div class="clearfix tit">
+                        <div class="fl">零审核急速提款</div>
+                        <div class="fr">QUICK WITHDRAWAL</div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/showpic2.png">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li style="margin-left:32px;">
+                                <p>存款到账</p>
+                                <p>DEPOSIT</p>
+                            </li>
+                            <li style="margin-left:100px;">
+                                <p>取款到账</p>
+                                <p>WITHDRAW</p>
+                            </li>
+                            <li style="margin-left:103px;">
+                                <p>合作银行</p>
+                                <p>BANKS</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fr">
+                    <div class="clearfix tit">
+                        <div class="fl">联系我们</div>
+                        <div class="fr">CONTACT US</div>
+                    </div>
+                    <div class="pic" style="padding-left:20px;">
+                        <img src="img/showpic3.png">
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li style="margin-right: 64px;">
+                                <p>易记域名</p>
+                                <p>www.jh77.com</p>
+                            </li>
+                            <li>
+                                <p>菲律宾热线</p>
+                                <p class="cfgMainPhone"></p>
+                            </li>
+                            <li style="margin-right: 64px;">
+                                <p>代理加盟QQ</p>
+                                <p class="cfgMainAgentQQ"></p>
+                            </li>
+                            <li>
+                                <p>微信</p>
+                                <p>test</p>
+                            </li>
+                            <li style="margin-right: 64px;">
+                                <p>客服QQ</p>
+                                <p class="cfgMainCustomerQQ"></p>
+                            </li>
+                            <li>
+                                <p>公司邮箱</p>
+                                <p class="cfgMainEmail"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="./include/footer.html" -->
+    <!--#include virtual="./include/float.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    var left = $('#gamebox .left'),
+        right = $('#gamebox .right'),
+        box = $('#gamebox ul'),
+        canrun = true,
+        timer;
+
+    left.on('click', function() {
+        turn(+254);
+    })
+    right.on('click', function() {
+        turn(-254);
+    })
+
+    function turn(num) {
+
+        var nowLeft = parseInt(box.css('left')) || 0;
+
+        if (!canrun) {
+            return;
+        }
+
+        if (num > 0 && nowLeft >= 0 || num < 0 && nowLeft <= -1524) {
+            return;
+        }
+        canrun = false;
+
+        var newLeft = nowLeft + num;
+
+        if (newLeft >= 0) {
+            left.hide();
+        } else{
+            left.show();
+        }
+
+        if (newLeft <= -1524) {
+            right.hide();
+        }else{
+            right.show();
+        }
+
+        setTimeout(function() {
+            canrun = true;
+        }, 500)
+
+        box.css('left', newLeft + 'px');
+    }
+    </script>
+</body>
+
+</html>

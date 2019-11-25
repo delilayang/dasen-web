@@ -1,0 +1,49 @@
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <embed id="logoFlash" src="./img/logo.swf" quality="high" pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="200" height="100" wmode="transparent">
+        </div>
+        <div class="links">
+            <a href="javascript:toMobile();"><i class="icon-phone"></i>手机投注</a>
+        </div>
+        <a href="reg.html" class="reg"></a>
+        <div class="userbox">
+            <div class="lgbox">
+                <form onsubmit="loginNoValiCode();return false;" autocomplete="off">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="lipt" placeholder="用户名" type="text" id="userName" maxlength="15">
+                                <input class="lipt" placeholder="密码" type="password" id="userPwd" maxlength="20">
+                            </td>
+                            <td>
+                                <input class="sipt" type="text" placeholder="验证码" id="loginVcode" maxlength="4">
+                                <input class="btn" value="登录" type="submit">
+                            </td>
+                            <td>
+                                <div class="numcode"><font id="numberCode" onselectstart="return false"></font></div>
+                                <a class="btn" href="javascript:guestLogin();">游客登录</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <a href="javascript:BBOnlineService();" target="_blank" class="forget">忘记密码？</a>
+        </div>
+    </div>
+</div>
+<div class="nav" id="nav">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="reg.html">开户注册</a></li>
+            <li><a href="appdown/index.html" target="_blank">APP下载</a></li>
+            <li><a href="bank.html">存款取款</a></li>
+            <li><a href="question.html">常见问题</a></li>
+            <li><a href="rules.html">规则说明</a></li>
+            <li><a href="agent.html">加盟合作</a></li>
+            <li><a href="activity.html">最新优惠</a></li>
+            <li><a href="javascript:BBOnlineService();">在线客服</a></li>
+        </ul>
+    </div>
+</div>

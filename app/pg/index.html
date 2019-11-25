@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/top.html"-->
+    <div class="main">
+        <div class="flash">
+            <embed src="images/lunbo.swf" wmode="transparent" width="650" height="341"></embed>
+        </div>
+        <div class="ui-top-nav">
+            <div class="pplogi">
+                <div class="pplogi1">
+                    <span>用户登录</span>
+                    <a href="javascript:BBOnlineService()" class="service"><img src="images/service.png" /></a>
+                </div>
+                <form onsubmit="loginNoValiCode(); return false;" autocomplete="off">
+                    <div class="pplogi2">
+                        <div class="pplogi2d">
+                            <span>
+                        <input type="text" placeholder="用户名" id="userName" maxlength="15">
+                        </span>
+                        </div>
+                        <div class="pplogi2d">
+                            <span>
+                        <input type="password" id="userPwd" placeholder="密码" maxlength="20">
+                      </span>
+                        </div>
+                        <div class="pplogi2d">
+                            <button type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                        </div>
+                        <div class="pplogi2d">
+                            <a href="reg.html" class="free_reg">免费注册</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="ykcg" onclick="guestLogin();">游客参观</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 登录END -->
+    <!--#include virtual="include/content.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/init.html"-->
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!-- header -->
+<div class="header">
+    <div class="auto">
+        <a href="index.html" class="logo"><img src="img/logo.png"></a>
+        <form onsubmit="loginNoValiCode();return false;" autocomplete="off">
+            <div class="login-bar">
+                <label for="userName" style="font-size: 12px;color: #7c7c7c;font-weight: bold">会员登录：</label>
+                <input type="text" placeholder="请输入你的账号" id="userName" maxlength="15">
+                <input type="password" placeholder="请输入你的密码" id="userPwd" maxlength="20">
+                <input type="text" id="loginVcode" class="yzm-txt" placeholder="验证码" maxlength="4">
+                <span id="numberCode" class="yzm"></span>
+            </div>
+            <div class="btn-box">
+            	<input type="submit" class="btn btn-login" value="登录">
+                <a href="reg.html" class="btn btn-reg">注册</a>
+                <a href="javascript:guestLogin();" class="btn btn-try" id="try">试玩</a>
+            </div>
+        </form>
+    </div>
+</div>

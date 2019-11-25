@@ -1,0 +1,128 @@
+﻿/* 
+* @Author: Lydia
+* @Date:   2017-01-25 09:54:48
+* @Last Modified by name:   Lydia
+* @Last Modified time: 2017-03-17 21:59:16
+*/
+html {font-size: 62.5%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+/******* HTML5 display definitions*******/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+abbr[title] {border-bottom: 1px dotted;}
+pre {white-space: pre;white-space: pre-wrap;word-wrap: break-word;}
+figure,form{margin: 0;}
+fieldset {border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em;}
+legend {border: 0;padding: 0;white-space: normal;*margin-left: -7px;}
+/******表单样式重置*****/
+button,input,select,textarea {font-size: 100%;margin: 0;vertical-align: baseline;*vertical-align: middle;}
+button,input {line-height: normal;}
+button,select {text-transform: none;}
+input[type="checkbox"],
+input[type="radio"] {box-sizing: border-box;padding: 0;*height: 13px;*width: 13px;}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;}
+textarea{overflow: auto;vertical-align: top;}
+
+
+ul,li,ol,dl,dd{list-style: none;}
+h1,h2,h3,h4,h5,h6 {line-height: 1.5;}
+input,button,select,textarea {font-family: 'Microsoft Yahei';font-size: 14px;line-height: inherit;}
+img {border: 0;-ms-interpolation-mode: bicubic;vertical-align: middle;}
+h1 {font-size: 32px;}
+h2 {font-size: 28px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+a {color: #428bca;text-decoration: none;}
+a:hover,a:focus {color: #2a6496;text-decoration: none;}
+a:focus {outline: thin dotted;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+/* ****重置表格元素**** */
+table{border-collapse: collapse;border-spacing: 0;}
+/* ****重置 hr*****/
+hr {border: none;height: 1px;}
+/*body*/
+body{font-family: 'Microsoft Yahei';font-size: 14px; color:#fff;
+    line-height: 1.5;background:#dedede;
+    -webkit-font-smoothing: antialiased;/**这两行是让字体达到最佳显示**/
+    text-rendering: optimizespeed;}
+.borderBox{-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
+.borderBox:before,.borderBox:after {-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
+/*****设置包裹容器*****/
+.container { width: 1000px;margin: 0 auto;}
+/*****清除浮动样式设置**** */
+.clearfix {display: block;zoom: 1;}
+.clearfix:after,.clearfix:before{content: " ";display: block;font-size: 0;height: 0;clear: both; visibility: hidden;}
+.float_lf,.fl{float: left;}
+.float_rt,.fr{float: right;}
+/*文字对齐*/
+.textLeft,.tl{ text-align: left;}
+.textRight,.tr{ text-align: right;}
+.textCenter,.tc{ text-align: center;}
+/******高自动，超出部分隐藏*****/
+.ht_over{ height: auto; overflow: hidden;}
+.red_font{ color:#ff0000;}
+.blue_font{color:#0000ee;}
+.orange_font{color:#ffa500;}
+.font_14{ font-size: 14px;}
+.font_18{ font-size: 18px;}
+.font_16{ font-size: 16px;}
+.font_20{ font-size: 20px;}
+.mtb_20{ margin:20px 0;}
+.mt_30{ margin-top: 30px;}
+
+/************* common end ***************/
+/*s*/
+.top{ background:#f6f6f6; color:#fff; height:360px;background:url(img/topbg.png) top center no-repeat;}
+.top_1{height:30px;}
+.top_lf{height:30px; line-height:30px; }
+.top_lf .times{line-height:30px;}
+.top_lf .ShowTime{line-height:30px;}
+.logo{margin-top: 110px;}
+.top_rt{ width:421px; height:28px; margin-top: 1px; background:url(img/toprtbg.png) top center no-repeat;}
+.top_rt .top_shezhi span {float: left;font-size: 12px;line-height: 22px;margin: 0 10px;color: #b60505;}
+.top_rt .top_shezhi{height:28px; margin-top:1px;}
+.top_shezhi li{ float:left; padding-top: 2px; text-align: center;}
+.top_shezhi li>a{display:block; float:left;margin-left: 5px;text-align: center; color:#b60505;}
+.top_shezhi li:first-child a{ margin-left: 25px;}
+
+.dnsTab table{ border:1px solid #aaa; width:70%; background:#fff;}
+.dnsTab table tr{ line-height: 35px;}
+.dnsTab table td{border:1px solid #aaa; text-align: center;}
+.recommend{ line-height: 60px; font-size: 18px;}
+.recommend span.info{ margin-left: 30px; line-height: 30px;}
+.window_link a{color:#0000ee; font-weight: bold;margin-left: 25px;}
+.window_link a:first-child{ margin-left: 0;}
+
+.maintopimg img{ width:100%;}
+.pow{width:1024px; height:30px;  margin:0 auto;}
+.two{width:100%; height:60px;margin:20px 0; }
+.two .nav{width:1000px; height:60px; margin:0 auto; border-radius: 6px;}
+
+.nav li a{width:242px; height:60px; color:#fff; display: block; float:left; line-height:60px; text-align: center; margin-left:33px; font-size: 30px; background:url(img/nav.png) top center no-repeat;}
+.nav li:first-child a{ margin-left:0;}
+.nav li a.on,.nav li a:hover{ color:#ffe824;background:url(img/navon.png) no-repeat;}
+.adv{width:1000px; height:131px; margin: 0 auto;text-align: center;}
+.bigredfont{ color:#ff0000; font-size: 30px;}
+.DNSService{text-align: left; color:#000; margin-bottom:20px;}
+.smallfont{font-size: 24px; line-height: 33px;}
+.font_16{ font-size: 16px;}
+.bigfont{ color:#000; line-height: 30px;margin:10px 0;border-bottom: 1px solid #ccc;padding-bottom: 5px;}
+.font_24{ font-size: 24px;margin-top: 2px;}
+.font-30{ font-size: 30px; margin:12px 0; color:#ff0000;}
+.contitle{margin:30px 0;}
+.contitle span.step{display:block; float:left; width:129px; height:39px; background:url(img/stepbg.png) top center no-repeat; font-size: 16px; color:#fff; line-height: 34px; margin-right: 20px;}
+.contitle span.step b{ font-size: 30px;}
+.contitle .settitle{ line-height: 39px; color:#000;}
+.commimg{margin:10px 0;}
+
+.footer{width:100%; height:48px; background: #000000; font-size: 14px;}
+.copy{width:250px; margin:0 auto;color:#fff; text-align: center; line-height:48px;}
+

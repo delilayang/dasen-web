@@ -1,0 +1,77 @@
+<div id="page-header" style="position:relative;">
+    <div class="header clearfix">
+        <!-- LOGO -->
+        <div class="header-logo">
+            <div id="ele-logo-wrap"></div>
+        </div>
+        <div class="header-right clearfix">
+            <div class="header-top clearfix">
+                <!-- lang -->
+                <span class="lang-wrap">
+                    <span class="ele-lang-wrap"> 
+                        <a href="javascript:;" class="ele-lang-option ele-lang-zh-tw" title="繁體中文"></a> 
+                        <a href="javascript:;" class="ele-lang-option ele-lang-zh-cn" title="简体中文"></a> 
+                        <a href="javascript:;" class="ele-lang-option ele-lang-en" title="English"></a>
+                    </span>
+                </span>
+                <!-- 自訂連結 -->
+                <div class="top-link-wrap">
+                    <a href="javascript:" id="setHomePage" style="color:#FFF">设为主页</a>&nbsp;|&nbsp;
+                    <!--         <a href="javascript:" id="addFavorite" style="color:#FFF">加入最爱</a> &nbsp;|&nbsp; -->
+                    <a href="agent.html" data-color="#FFF" class="js-article-color top-custom-link" style="color: #FFF"> 合作加盟 </a>
+                </div>
+            </div>
+            <!-- 登入 -->
+            <a class="header-join-btn" href="reg.html"></a>
+            <div class="login-wrap">
+                <form onsubmit="loginNoValiCode();return false;" autocomplete="off">
+                    <input type="hidden" name="uid2" value="guest" />
+                    <input type="hidden" name="SS" value="" />
+                    <input type="hidden" name="SR" value="" />
+                    <input type="hidden" name="TS" value="" />
+                    <p class="login-unit login-unit-user"> <span class="login-user-icon"></span>
+                        <!--          <label name="loginName" for="loginName" class="login-placeholder">帐号</label>  -->
+                        <input name="loginName" placeholder="账号" type="text" id="userName" class="login-input login-acc" tabindex="1" required="" maxlength="15" /> </p>
+                    <p class="login-unit login-unit-chk">
+                        <!--          <label name="vcode" for="vcode" class="login-placeholder">验证码</label>  -->
+                        <input name="vcode" type="text" placeholder="验证码" id="loginVcode" title="( 点选此处产生新验证码 )" tabindex="3" class="login-input" />
+                        <div class="code_img">
+                            <label id="numberCode" onselectstart="return false"></label>
+                        </div>
+                    </p>
+                    <p class="login-unit login-unit-pwd">
+                        <span class="login-pwd-icon"></span>
+                        <!--          <label name="loginPwd" for="loginPwd"   class="login-placeholder">密码</label>  -->
+                        <input name="loginPwd" type="password" placeholder="密码" id="userPwd" title="请填写 6-20 位大小写英数字" class="login-input" tabindex="2" required="" maxlength="20" />
+                    </p>
+                    <input id="loginSubmitBtn" class="login-submit" name="Submit" type="submit" value="" tabindex="4" />
+                    <a class="header-forget-pw" href="###" onclick="getPwd();">忘记密码</a>
+                    <a class="header-join-link" href="reg.html">加入会员</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 主選單 -->
+    <div id="navfixed" class="mainnav-placeholder">
+        <div class="mainnav-wrap clear">
+            <div class="mainnav" data-lsub-x="10">
+                <ul class="clearfix">
+                    <li class="LS-first"><a id="yy_1" href="index.html" title="首页">首页</a></li>
+                    <li class="LS-ball"><a id="yy_2" href="reg.html">开户注册</a></li>
+                    <li class="LS-ball"><a id="yy_3" href="appdownload.html">APP下载</a></li>
+                    <li class="LS-ball"><a id="yy_4" href="faq.html">常见问题</a></li>
+                    <li class="LS-ball"><a id="yy_5" href="rule.html">规则说明</a></li>
+                    <li class="LS-ball"><a id="yy_6" href="agent.html">加盟合作</a></li>
+                    <li class="LS-ball"><a id="yy_7" href="about.html">关于我们</a></li>
+                    <li class="LS-ball"><a id="yy_8" href="activity.html">最新优惠</a></li>
+                    <li class="LS-service"><a id="yy_9" href="javascript:BBOnlineService();" class=" " title="在线客服">在线客服</a>
+                        <!-- 子選單 -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- est -->
+    <div class="est-wrap">
+    </div>
+</div>

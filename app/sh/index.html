@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="./include/nav.html"-->
+    <div class="neinei">
+        <!--#include virtual="./include/header.html"-->
+        <div class="slidebox" id="banner">
+            <div class="bd">
+                <ul>
+                    <li><img src="images/lb/0.png"></li>
+                    <li><img src="images/lb/1.png"></li>
+                    <li><img src="images/lb/2.png"></li>
+                    <li><img src="images/lb/3.png"></li>
+                    <li><img src="images/lb/4.png"></li>
+                </ul>
+            </div>
+            <div class="hd">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+        <div class="marquee2">
+            <a href="reg.html" class="regist"></a>
+            <div class="content">
+                <div class="marquee-box" id="noticeDom">
+                </div>
+            </div>
+        </div>
+        <div class="dix">
+            <ul class="game-list">
+                <li><a href="javascript:gAlert('请先登录');"><img src="images/cp_13.png"></a></li>
+                <li><a href="javascript:gAlert('请先登录');"><img src="images/cp_15.png"></a></li>
+                <li><a href="javascript:gAlert('请先登录');"><img src="images/cp_17.png"></a></li>
+                <li><a href="javascript:gAlert('请先登录');"><img src="images/cp_19.png"></a></li>
+            </ul>
+            <h1 class="shehua">“奢华VIP”<b>盛宏彩票</b>专属您的尊贵豪礼</h1>
+            <div class="dilian">
+                <a href="appdownload.htm"></a>
+                <a href="activity.html"></a>
+                <a href="reg.html"></a>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="./include/footer.html"-->
+    <!--#include virtual="./include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    jQuery("#banner").slide({ mainCell: ".bd ul", effect: "left", easing: "easeOutQuint", autoPlay: true });
+    </script>
+</body>
+
+</html>

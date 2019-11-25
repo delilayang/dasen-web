@@ -1,0 +1,94 @@
+
+.clearfix {
+    zoom: 1;
+}
+
+ .inf4 li {
+    width: 305px;
+    margin: 0 35px 0 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.duilian {
+	top: 50px;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	z-index: 10001
+}
+
+.duilian_left {
+	left: 10px;
+	width: 160px;
+	height: 473px;
+	background: url(../img/kfz.png) no-repeat;
+	margin-top: 90px;
+}
+
+.duilian_left .block1,.duilian_left .block2,.duilian_left .duilian_close {
+	position: absolute
+}
+
+.duilian_left .block1 {
+	width: 130px;
+	height: 35px;
+	top: 95px;
+	left: 5px
+}
+
+.duilian_left .block2 {
+	width: 130px;
+	height: 35px;
+	top: 185px;
+	left: 5px
+}
+
+.duilian_left .duilian_close {
+	width: 75px;
+	height: 23px;
+	left: 40px;
+	bottom: 0
+}
+
+.duilian_right {
+	right: 10px;
+	width: 160px;
+	height: 473px;
+	background: url(../img/kfy.png) no-repeat;
+	position: absolute
+}
+
+.duilian_right .block1,.duilian_right .block2,.duilian_right .block3,.duilian_right .duilian_close {
+	position: absolute
+}
+
+.duilian_right .block1 {
+	width: 100%;
+	height: 30px;
+	top: 197px;
+	left: 0
+}
+
+.duilian_right .block2 {
+	width: 100%;
+	height: 30px;
+	top: 290px;
+	left: 0
+}
+
+.duilian_right .block3 {
+	width: 100%;
+	height: 30px;
+	top: 351px;
+	left: 0;
+	background: url(../img/r4.gif)
+}
+
+.duilian_right .duilian_close {
+	width: 55px;
+	height: 24px;
+	left: 55px;
+	bottom: 0
+}

@@ -1,0 +1,146 @@
+html,body{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    top: 0;
+    background: url(../img/reg/bg_reg.jpg) no-repeat center;
+    min-height: 876px;
+    min-width: 1023px;
+    background-size: auto 940px; 
+}
+
+.container{
+	width: 1023px;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 386px;
+	height: 137px;
+	margin: 0 auto;
+	background: url(../img/reg/logo_reg.png) no-repeat center;
+}
+
+.regbox-wrap{
+	width: 1023px;
+	height: 739px;
+	position: relative;
+	margin-top: -3px;
+	background: url(../img/reg/bg_regbox.png) no-repeat center;
+}
+
+.regbox{
+	width: 936px;
+	height: 622px;
+	background: #fff;
+	position: absolute;
+	top: 90px;
+	left: 45px;
+}
+
+.user-info{
+	width: 830px;
+	border: 1px solid #0078f8;
+	margin: 25px auto 0;
+	min-height: 450px;
+	position: relative;
+}
+
+.user-info .tit{
+	position: absolute;
+	font-size: 14px;
+	left: 15px;
+	top: -12px;
+	padding: 0 2px;
+	background: #fff;
+}
+
+.user-info .info-main{
+	text-align: left;
+	width: 670px;
+	font-size: 12px;
+	margin: 20px auto;
+}
+
+.user-info .cover{
+	display: inline-block;
+	width: 77px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+
+.user-info .cover{
+	*display: inline;
+}
+
+.user-info .cover span{
+	position: relative;
+	top: 2px;
+}
+
+.user-info input{
+	border: 1px solid #0078f8;
+	height: 23px;
+	width: 286px;
+	padding: 0 5px;
+}
+
+.user-info .auth input{
+	width: 99px;
+}
+
+.user-info select{
+	border: 1px solid #0078f8;
+	height: 23px;
+	width: 57px;
+}
+
+.user-info .hint{
+	vertical-align: middle;
+	margin-left: 22px;
+}
+
+.user-info .drawcode .hint{
+	margin-left: 80px;
+}
+
+.user-info img{
+	vertical-align: middle;
+	width: 60px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.user-ctrl{
+	width: 424px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.rulescheck span{
+	vertical-align: middle;
+}
+
+.user-ctrl .btns{
+	margin-top: 20px;
+}
+
+.user-ctrl .btn{
+	display: inline-block;
+	background: url(../img/reg/btn_ctrl.png) no-repeat center;
+	width: 131px;
+	height: 32px;
+	line-height: 32px;
+	color: #682f00;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 3px;
+	border: none;
+	cursor: pointer;
+}
+
+.user-ctrl a{
+	*display: inline;
+}
+

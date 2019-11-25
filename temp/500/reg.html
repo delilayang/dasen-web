@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>500cc-注册</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix( '*');
+    </script>
+    <![endif]-->
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="htop"><img src="img/txt.png" /><a href="mobile.html">立即投注</a></div>
+        <div class="bgcon clear">
+            <!--#include virtual="./include/header.html"-->
+            <div class="titc tit_bg4 clear">
+                <h3><font>用户注册</font>registration</h3>
+                <p>欢迎来到500彩票！从这一刻开始，我们将用心为您做好每一个细节！</p>
+            </div>
+            <div class="reg clear">
+                <form onsubmit="doRegister(); return false;">
+                    <ul>
+                        <li id="recoTr"><em>推荐人账号：</em>
+                            <input class="intxt" type="text" id="regRecoUserName" maxlength="15" />
+                            <font>非必填</font>
+                        </li>
+                        <li><em>会员账号：</em>
+                            <input class="intxt" type="text" maxlength="15" id="regUsername" />
+                            <font>* 账号规则：账号必须为6-15位字母和数字组合</font>
+                        </li>
+                        <li><em>登录密码：</em>
+                            <input class="intxt" type="password" id="regPassword" maxlength="20" />
+                            <font>* 密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</font>
+                        </li>
+                        <li><em>确认密码：</em>
+                            <input class="intxt" type="password" id="password1" maxlength="20" />
+                            <font>* 确认您的登录密码，请输入和以上一致的密码</font>
+                        </li>
+                        <li><em>真实姓名：</em>
+                            <input class="intxt" type="text" id="fullName" maxlength="10" />
+                            <font>* 真实姓名必须与您用于提款银行账户名称一致</font>
+                        </li>
+                        <li><em>取款密码：</em>
+                            <select class="sel" id="pwd1">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select class="sel" id="pwd2">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select class="sel" id="pwd3">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select class="sel" id="pwd4">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <font>* 取款必须认证，务必记住</font>
+                        </li>
+                        <li class="showRegEmail hide"><em>电子邮箱：</em>
+                            <input class="intxt" type="text" id="email" maxlength="30" />
+                            <font>* 电子邮箱（Email）格式：88888888@qq.com</font>
+                        </li>
+                        <li class="showRegQQ hide"><em>QQ号码：</em>
+                            <input class="intxt" type="text" id="qq" maxlength="20" />
+                        </li>
+                        <li class="showRegMobile hide"><em>手机号码：</em>
+                            <input class="intxt" type="text" maxlength="11" id="phone"/>
+                        </li>
+                        <li id="regValiCode"><em>验证码：</em>
+                            <input class="intxt" type="text" maxlength="4"  id="valiCode"/>
+                            <img class="imgCode">
+                        </li>
+                        <li>
+                            <input class="inbut" type="submit" value="创建账号" /><a class="but1" href="index.html">已有账号登陆</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="brand clear">
+                <ul>
+                    <li><i><img src="img/ico2.png" /></i>
+                        <h3>国际顶级品牌</h3>
+                        <p>亚洲彩票龙头企业</p>
+                    </li>
+                    <li><i><img src="img/ico3.png" /></i>
+                        <h3>官方认证 大额无忧</h3>
+                        <p>拥有多国颁发正规执照</p>
+                    </li>
+                    <li><i><img src="img/ico4.png" /></i>
+                        <h3>玩家保密系统</h3>
+                        <p>千人技术团队为您保驾护航</p>
+                    </li>
+                    <li><i><img src="img/ico5.png" /></i>
+                        <h3>手机投注</h3>
+                        <p>让您随时随地游戏</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot clear">
+                <p>
+                    <font>2001-2018&copy;500.cc</font>
+                </p>
+                <p>500彩票郑重提示：彩票有风险，投注需谨慎！ 不向未满18周岁的青少年出售彩票</p>
+                <p><img src="img/bz1.png" /><img src="img/bz2.png" /><img src="img/bz3.png" /><img src="img/bz4.png" /></p>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>

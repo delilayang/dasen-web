@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="./include/nav.html"-->
+    <div class="neinei">
+        <!--#include virtual="./include/header.html"-->
+        <div class="banbanna">
+            <img src="images/welcome.png" alt="">
+        </div>
+        <div class="marquee2 marquee2nei">
+            <a href="reg.html" class="regist"></a>
+            <div class="content">
+                <div class="marquee-box" id="noticeDom">
+                </div>
+            </div>
+        </div>
+        <div class="neibu sub-content">
+            <div class="content clearfix">
+                <div class="side-bar">
+                    <a class="btn" href="reg.html">
+                        <h3>开户注册</h3>
+                    </a>
+                    <a class="btn" href="about.html">
+                        <h3>关于我们</h3>
+                    </a>
+                    <a class="btn" href="contact.html">
+                        <h3>联系我们</h3>
+                    </a>
+                    <a class="btn" href="agent.html">
+                        <h3>联盟合作</h3>
+                    </a>
+                    <a class="btn" href="activity.html">
+                        <h3>最新优惠</h3>
+                    </a>
+                    <a class="btn" href="withdrawal.html">
+                        <h3>取款存款</h3>
+                    </a>
+                    <a class="btn" href="faq.html">
+                        <h3>常见问题</h3>
+                    </a>
+                </div>
+                <div class="sub-main">
+                    <div class="tab-head">
+                        <h2>会员注册</h2>
+                        <form onsubmit="doRegister(); return false;">
+                            <div class="regist">
+                                <div id="recoTr">
+                                    <span class="name">推荐人帐号：</span>
+                                    <input type="text" placeholder="非必填" id="regRecoUserName" maxlength="15">
+                                </div>
+                                <p> 账号规则：账号必须为6-15为数字和字母组合</p>
+                                <div>
+                                    <span class="name"><span>*</span>会员账号：</span>
+                                    <input type="text" id="regUsername" maxlength="15">
+                                </div>
+                                <p>密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</p>
+                                <div>
+                                    <span class="name">
+                                    <span>*</span>登录密码：</span>
+                                    <input type="password" id="regPassword" maxlength="20">
+                                </div>
+                                <div>
+                                    <span class="name">
+                                    <span>*</span>确认密码：</span>
+                                    <input type="password" id="password1" maxlength="20">
+                                </div>
+                                <p style="color:red;"> 姓名必须与你用于提款的银行户口名字一致，否则无法提款</p>
+                                <div>
+                                    <span class="name">
+                                    <span>*</span>真实姓名：</span>
+                                    <input type="text" id="fullName" maxlength="10">
+                                </div>
+                                <p> 提款认证必须，务必记住</p>
+                                <div>
+                                    <span class="name">
+                                    <span>*</span>取款密码：</span>
+                                    <select id="pwd1" class="num">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2" class="num">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3" class="num">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4" class="num">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                                <div id="showRegQQ" class="hide" style="display: block;">
+                                    <span class="name">
+                                    <span>*</span>QQ号码：</span>
+                                    <input type="text" id="qq" maxlength="20">
+                                </div>
+                                <div id="showRegMobile" class="hide" style="display: block;">
+                                    <span class="name">
+                                    <span>*</span>手机号码：</span>
+                                    <input type="text" id="phone" maxlength="11">
+                                </div>
+                                <div id="showRegQQ" class="hide" style="display: block;">
+                                    <span class="name">
+                                    <span>*</span>邮箱地址：</span>
+                                    <input type="text" id="email" maxlength="30">
+                                </div>
+                                <div id="regValiCode">
+                                    <span class="name">
+                                    <span>*</span>验 证 码：</span>
+                                    <input class="code" type="text" id="valiCode">
+                                    <img src="" class="imgCode" title="点击更换">
+                                </div>
+                            </div>
+                            <div class="btns-box">
+                                <input type="submit" value="注册">
+                                <input type="reset" value="重置">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dilian dianlian2">
+            <a href="appdownload.htm"></a>
+            <a href="activity.html"></a>
+            <a href="reg.html"></a>
+        </div>
+    </div>
+    <!--#include virtual="./include/footer.html"-->
+    <!--#include virtual="./include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="js/core.js"></script>
+</body>
+
+</html>

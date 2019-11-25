@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>welcome</title>
+    <link href="css/core.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <!--#include virtual="/include/chkwh.html" -->
+    <style>
+    /*规则说明*/
+
+    .rule-info {
+        margin: 15px auto 0px auto;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul {
+        width: 670px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .rule-info ul li {
+        float: left;
+        margin-top: 5px;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul li img {
+        float: left;
+        width: 670px;
+    }
+
+    .rule-info ul li div {
+        float: left;
+    }
+
+    .rule-info ul li .min-banner {
+        width: 670px;
+        cursor: pointer;
+    }
+
+    .rule-info .rule-cont {
+        display: none;
+        padding: 5px 0px;
+        line-height: 2em;
+        overflow: hidden;
+    }
+
+    .rule-info .rule-pic img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="banner_bg8">
+        <div id="wraping">
+            <div class="gonggao" id="noticeDom"></div>
+        </div>
+    </div>
+    <div id="mainbg">
+        <div id="wrap">
+            <!--#include virtual="include/lefter.html" -->
+            <div id="righter">
+                <div class="title">存款取款</div>
+                <div class="mainer main">
+                    <div class="righttext appdownload">
+                        <div class="text" style="text-align:left;">
+                            【存款帮助】
+                            <br> 彩运网提供多种主流存款方式，7×24小时随时随地存款充值。全面支持「银行转账汇款」「在线银行支付」「支付宝支付」「微信支付」。最低存款金额100，汇款暂无最高限制。
+                            <br> 银行汇款方法：
+                            <br> 注册完成后登陆您的会员账号，点选「在线存款」，选择支付方式， 查看本公司最新的银行财务账号，将您要存款的钱通过网银、ATM、柜台等方式转入相应的账户中。然后在下方的汇款提交栏中输入您汇款的金额，选择您汇款的银行以及时间等。填写完毕提交，提交完后，耐心稍等片刻，工作人员会第一时间为您做确认处理。确认通过后您的账户余额会自动更新。您也可以随时在账户的近期记录中查询您提交的信息的状态以及处理时间。如长时间未处理的，请您核对您的资金转出是否成功，转入的账号是否正确。
+                            <br> 在线支付存款方法：
+                            <br> 注册完成后登陆您的会员账号，点选「在线存款」，选择支付方式， 在页面下方「在线支付」栏输入存款金额，确定，进入「确认」页面，选择您要付款的银行，并核对存款金额，提交后便进入银行支付页面。按照银行的支付流程付款。付款完成请不要过快关闭窗口。等待银行回调页面。付款成功余额将会自动更新。如您付款完成后余额没有更新，请马上联系我们在线客服人员。
+                            <br> 支付宝微信存款方法：
+                            <br> 注册完成后登陆您的会员账号，点选「在线存款」，选择支付方式， 在页面下方点选「支付宝支付」「微信支付」，进入「二维码」页面，核对存款金额后进行扫码支付，充值成功后提交入款订单即可。按照银行的支付流程付款。付款完成请不要过快关闭窗口。等待银行回调页面。付款成功余额将会自动更新。如您付款完成后余额没有更新，请马上联系我们在线客服人员。
+                            <br> 【提款帮助】
+                            <br> 彩运网致力为会员提供最优质的服务,7×24小时随时提款，无限次数。无需支付任何手续费用。
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ruleInfo").children(".rule-pic").click(function() {
+            var m = $(this);
+            if (m.next().is(":visible")) {
+                m.next().slideUp(500);
+            } else {
+                m.next().slideDown(500);
+            }
+        });
+    });
+    </script>
+    <script>
+    document.getElementById("yxyx3").className = "checkyo"
+    </script>
+</body>
+
+</html>

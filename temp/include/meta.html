@@ -1,0 +1,31 @@
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Welcome</title>
+<meta name="renderer" content="webkit" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--#include virtual="/include/chkLogin.html"-->
+<script type="text/javascript" src="/static/js/browser.js"></script>
+<script src="/static/lib/jquery/jquery-1.11.2.min.js"></script> 
+<script type="text/javascript" src="/static/lib/jquery.cookie.js"></script>
+<script type="text/javascript" src="/static/js/skin.js"></script>
+
+<link href="/static/css/margin.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/skin.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/balls.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/static/lib/util/httpUtil.js"></script>
+<script type="text/javascript"> 
+	HttpUtil.loadJs('/api/getServerData.do?t=' + Math.random());
+	var staticFileUrl=webAppConfig.staticPath;
+</script>
+<script type="text/javascript"> 
+$.ajaxSetup ({
+	cache: false //close AJAX cache
+});
+</script>
+<script type="text/javascript">
+	HttpUtil.loadJs(staticFileUrl + 'data/gamedatas.js?t=' + Math.random());
+	HttpUtil.loadJs(staticFileUrl+ 'data/gameCommon.js?t=' + Math.random()); 
+</script>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>welcome</title>
+    <link href="css/core.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <!--#include virtual="/include/chkwh.html" -->
+    <style>
+    /*规则说明*/
+
+    .rule-info {
+        margin: 15px auto 0px auto;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul {
+        width: 670px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .rule-info ul li {
+        float: left;
+        margin-top: 5px;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul li img {
+        float: left;
+        width: 670px;
+    }
+
+    .rule-info ul li div {
+        float: left;
+    }
+
+    .rule-info ul li .min-banner {
+        width: 670px;
+        cursor: pointer;
+    }
+
+    .rule-info .rule-cont {
+        display: none;
+        padding: 5px 0px;
+        line-height: 2em;
+        overflow: hidden;
+    }
+
+    .rule-info .rule-pic img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="banner_bg8">
+        <div id="wraping">
+            <div class="gonggao" id="noticeDom"></div>
+        </div>
+    </div>
+    <div id="mainbg">
+        <div id="wrap">
+            <!--#include virtual="include/lefter.html" -->
+            <div id="righter">
+                <div class="title">最新优惠</div>
+                <div class="mainer main">
+                    <div class="righttext appdownload">
+                        <div class="text" style="text-align:left;">
+                            <p>【一】回馈新老客户！ 成功推荐好友加入彩运网领取 188 彩金！
+                                <br> 成功推荐一位会员单次存款300以上、并存款次数达到3次以上，一个月内正常游戏8天以上，次月即获得188元彩金回馈，介绍的朋友越多，您获得的奖金也就越多！一个月之内连续介绍10个有效会员以上有额外惊喜大礼！
+                                <br> 注意：（同ip同姓名不计算在内，在群内的成员同样属无效。）
+                                <br> 申请步骤：
+                                <br> 步骤一：新注册时 推荐人 ： 填写您的游戏账号，或复制此链接，发送给您的好友注册。
+                                <br> 步骤二：推荐人月底联系QQ：899666，核实条件符合申请188彩金红利即可提现。
+                                <br>
+                                <br>
+                            </p>
+                            <p>【二】不计输赢返水
+                                <br>
+                                <table border="1" style="text-align: center;">
+                                    <tr>
+                                        <th width="150">会员级别</th>
+                                        <th width="400">返水比例</th>
+                                    </tr>
+                                    <tr>
+                                        <td>所有会员</td>
+                                        <td>高频彩有效投注额X0.5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>所有会员</td>
+                                        <td>香港彩特A-43倍-13% 特B-48.88倍。</td>
+                                    </tr>
+                                </table>
+                                <p>活动规则：
+                                    <br> 1.本次优惠活动于2010年06月18日生效。优惠活动适用于彩运网所有会员，无需申请系统自动派发；
+                                    <br> 2.期期退水可享有：无上限优惠，无须打码量即可取款；
+                                    <br> 3.任何滥用优惠、下注套利、非法程序下注的行为，经查实将取消优惠以及优惠产生的赢利；
+                                    <br> 4.游戏过程中，出现对冲或对打投注,将取消优惠以及优惠产生的赢利（例如在北京赛车同局投注大/小）；
+                                    <br> 5.彩运网保留所有权利在任何时候可以更改、停止、取消优惠活动并不会做出任何书面解释。
+                                    <br><br>
+                                </p>
+                                
+                            <p>【三】每日签到有礼，最高奖励 5888 彩金！
+                                <br>
+                                所有玩家只需要每天登录平台，充值达到相应的金额并且达到相应投注量即可参与抽奖活动，最高奖励 5888 彩金！<br><br>
+                                </p>
+                            <p>【四】登陆抽奖活动，最高奖励 888 彩金！
+                                <br>
+                                活动期间最近有充值且提现过的用户，每天登陆平台即可参与一次抽奖，摇到彩金需要累积投注三倍流水即可申请取款，最高奖励 888 彩金！<br><br>
+                                </p>
+                            <p>注：本优惠项目彩运网有权任何时间修改或取消（彩运网宣）<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ruleInfo").children(".rule-pic").click(function() {
+            var m = $(this);
+            if (m.next().is(":visible")) {
+                m.next().slideUp(500);
+            } else {
+                m.next().slideDown(500);
+            }
+        });
+    });
+    </script>
+    <script>
+    document.getElementById("yxyx5").className = "checkyo"
+    </script>
+</body>
+
+</html>

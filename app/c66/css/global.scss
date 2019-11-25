@@ -1,0 +1,363 @@
+﻿a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.mgb10 {
+    margin-bottom: 10px;
+}
+
+.mgb5 {
+    margin-bottom: 5px;
+}
+
+.inner {
+    width: 1070px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    min-width: 1070px;
+    
+}
+
+.index {
+    height: 100%;
+    body {
+        height: 100%;
+        min-height: 920px;
+        background: url(../img/bg.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+}
+
+.foot {
+    margin-top: 0;
+}
+
+.chang {
+    background: url(../img/bg2.jpg) no-repeat center top;
+}
+
+.nav {
+    padding-top: 10px;
+    height: 46px;
+    width: 842px;
+    ul {
+        height: 46px;
+        background: url(../img/nav.png) no-repeat center;
+    }
+    li {
+        float: left;
+        width: 14.22%;
+        height: 46px;
+        position: relative;
+        a {
+            display: block;
+            height: 46px;
+            font-size: 16px;
+            position: absolute;
+            line-height: 46px;
+            left: 0px;
+            top: 0px;
+            color: #fff;
+            text-align: center;
+            width: 130px;
+            &:hover {
+                background: url(../img/hover.png) no-repeat center;
+            }
+        }
+        .on {
+            background: url(../img/hover.png) no-repeat center;
+        }
+    }
+}
+
+.foot {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.copy {
+    font: 12px/30px "SimSun";
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    min-height: 721px;
+}
+
+.zi {
+    float: left;
+    width: 640px;
+}
+
+.che{
+    position: absolute;
+    top: 400px;
+}
+
+.login {
+    float: right;
+    width: 345px;
+    height: 435px;
+    background: url(../img/login.png) no-repeat top center;
+}
+
+.loin {
+    width: 225px;
+    padding: 0px 25px;
+    border-bottom: 1px dashed #2D758E;
+    height: 282px;
+    margin: 0 auto;
+    input[type="text"],
+    input[type="password"] {
+        padding-left: 42px;
+        width: 176px;
+        height: 34px;
+        border: 1px solid #B5B5B5;
+        border-radius: 30px;
+        margin-bottom: 29px;
+        outline: none;
+        &:-ms-input-placeholder {
+            color: #000;
+        }
+        &::-webkit-input-placeholder {
+            color: #000;
+        }
+    }
+    .sinpt1 {
+        background: url(../img/key1.png) no-repeat 16px center;
+    }
+    .sinpt2 {
+        background: url(../img/key2.png) no-repeat 16px center;
+    }
+    input[type="submit"] {
+        width: 221px;
+        height: 36px;
+        background: url(../img/enter.png) no-repeat center;
+    }
+}
+
+.new {
+    width: 275px;
+    margin: 0 auto;
+}
+
+.newti {
+    font-size: 16px;
+    color: #fffc00;
+}
+
+.luntop {
+    height: 66px;
+    position: relative;
+    overflow: hidden;
+    marquee {
+        position: absolute;
+        left: 0;
+        top: 2%;
+        color: #fff;
+        height: 98%;
+        font-size: 12px;
+    }
+}
+
+.inner2 {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.qie {
+    height: 62px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    a {
+        display: block;
+        cursor: pointer;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        line-height: 62px;
+    }
+    em {
+        font-size: 26px;
+    }
+}
+
+.qie0 {
+    background: url(../img/qie0.png) no-repeat left top;
+    a {
+        width: 50%;
+    }
+    .cur {
+        background: url(../img/cur1.png) no-repeat bottom center;
+    }
+}
+
+.qie1 {
+    background: url(../img/qie1.png) no-repeat left top;
+    a {
+        width: 33.33%;
+    }
+    .cur {
+        background: url(../img/cur1.png) no-repeat bottom center;
+    }
+}
+
+.qie2 {
+    background: url(../img/qie2.png) no-repeat left top;
+    .cur {
+        background: url(../img/cur2.png) no-repeat bottom center;
+    }
+}
+
+.qie3 {
+    background: url(../img/qie3.png) no-repeat left top;
+    .cur {
+        background: url(../img/cur3.png) no-repeat bottom center;
+    }
+}
+
+.cont {
+    width: 976px;
+    border: 2px solid #BFBFC1;
+    background: white;
+    padding: 28px 0;
+}
+
+.regbox {
+    .zut {
+        width: 143px;
+        text-align: right;
+        padding-right: 7px;
+    }
+    .shu {
+        height: 38px;
+        padding-bottom: 15px;
+        span {
+            display: block;
+            float: left;
+            font-size: 14px;
+            line-height: 38px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding-left: 7px;
+            width: 260px;
+            height: 36px;
+            float: left;
+            margin-right: 15px;
+            outline: none;
+            border: 1px solid #D2D2D2;
+        }
+        select {
+            float: left;
+            border: 1px solid #D2D2D2;
+            height: 36px;
+            margin-right: 15px;
+            width: 56px;
+            outline: none;
+            padding: 5px 7px;
+            font-size: 16px;
+        }
+    }
+    input[type="submit"] {
+        background: url(../img/chuang.png) no-repeat center;
+        width: 267px;
+        height: 38px;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: #000;
+}
+
+.qie2 a {
+    width: 25%;
+}
+
+.hui {
+    position: relative;
+    margin-top: 15px;
+    width: 990px;
+    border: 2px solid #BFBFC1;
+    background: white;
+    margin-bottom: 28px;
+    .detail {
+        padding: 30px;
+    }
+    table {
+        margin: 20px 0;
+        th,
+        td {
+            text-align: center;
+            border: 1px solid #000;
+            line-height: 40px;
+        }
+        td {
+            color: red;
+        }
+    }
+}
+
+.img1 {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.qie3 a {
+    width: 20%;
+}
+
+.neizi {
+    width: 930px;
+    padding: 15px 30px;
+    border: 2px solid #BFBFC1;
+    background: white;
+    display: none;
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.neizi.cur {
+    display: block;
+}
+
+h6 {
+    font-size: 26px;
+    color: #000;
+    line-height: 46px;
+}
+
+.imgCode{
+    position: absolute;
+    left: 440px;
+    cursor: pointer;
+    top: 6px;
+    width: 70px;
+    height: 30px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>域名已停用</title>
+</head>
+<body >
+	<div style="text-align: center; padding-top: 200px">
+		<h1>
+			本域名停用，启用新域名：<span style="font-size: 48px">www.bf05.com</span><a href="http://www.bf05.com" style="text-decoration:none; color:red; margin-left: 10px">立即进入</a><br>
+			<span id="time" style="color: red">3</span>秒后跳转到新的域名</h1>
+	</div>
+	
+	<script type="text/javascript">
+		var time = 3;
+		setInterval(function() {
+			time--;
+			if(time == 0) {
+				window.location = "http://www.bf05.com";
+			}
+			
+			document.getElementById("time").innerHTML = time;
+		}, 1000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+@import 'reset';
+
+body {
+    background: #000 url(../images/full_bg.jpg) no-repeat center 0;
+    min-width: 990px;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+    &:hover {
+        color: #DDD;
+    }
+}
+.hide {
+    display: none;
+}
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 990px; margin: 0 auto;
+    height: 800px;
+    position: relative;
+}
+.lay-mid {
+    width: 990px; margin: 0 auto;
+    position: relative;
+}
+.header {
+    height: 116px;
+    .nav {
+        box-sizing: border-box;
+        height: 29px;
+        padding-top: 5px;
+        background: url(../images/nav_bg.png) repeat-x 0 0;
+        margin-top: -64px;
+        text-align: center;
+        .logo-gap {
+            display: inline-block;
+            width: 366px;
+        }
+        a {
+            display: inline-block;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+    }
+    .logo {
+        width: 353px; height: 116px;
+        background: url(../images/logo_bg.png) no-repeat;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        z-index: 100;
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+.login {
+    width: 308px; height: 299px;
+    background: url(../images/login_box.png) no-repeat;
+    position: absolute;
+    right: 10px; top: 30px;
+    .lnk {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+    }
+    .lnk-kf {
+        width: 94px; height: 29px;
+        left: 178px; top: 34px;
+    }
+    input {
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px;
+        background: none; border: none;
+        color: #FFF;
+    }
+    .lay-inputs {
+        position: absolute; top: 70px; left: 34px;
+        padding-left: 50px;
+        p {
+            padding-top: 8px; margin: 0; margin-bottom: 15px;
+        }
+        input { width: 160px; }
+    }
+    .lay-code {
+        position: absolute; top: 180px; left: 53px;
+        input { width: 96px; }
+    }
+    .lnk-login {
+        width: 125px; height: 38px;
+        left: 90px; top: 218px;
+    }
+    .lnk-reg {
+        width: 106px; height: 29px;
+        left: 33px; top: 260px;
+    }
+    .lnk-try {
+        width: 106px; height: 29px;
+        left: 161px; top: 260px;
+    }
+    .authnum {
+        display: inline-block;
+        margin-left: 15px;
+        padding: 2px 5px;
+        background: #416dda;
+        font-size: 18px;
+    }
+}
+
+.news {
+    box-sizing: border-box;
+    width: 300px; height: 134px;
+    background: url(../images/news_box.png) no-repeat;
+    padding: 44px 24px 18px 14px;
+    position: absolute;
+    right: 10px; top: 330px;
+    font-size: 14px;
+    color: #EEE;
+    .inner { height: 72px; overflow: hidden; }
+}
+
+.flash {
+    position: absolute;
+    left: 0; top: 80px;
+}
+
+.footer {
+    text-align: center;
+    color: #CCC;
+}
+
+.modal {
+    position: fixed;
+    width: 950px; height: 550px;
+    border: 8px solid #113899;
+    border-radius: 5px; background: rgba(7, 8, 80, 0.92);
+    top: 50%; left: 50%; margin-top: -375px; margin-left: -475px;
+    .modal-header {
+        height: 36px; background: #113899;
+        text-align: center;
+        position: relative;
+        .close {
+            position: absolute; right: 10px; top: 5px;
+            width: 20px; height: 20px;
+        }
+    }
+    .modal-logo {
+        display: inline-block; padding: 0 20px;
+        width: 106px; padding-right: 40px; 
+        img { width: 110px; }
+        margin-top: -4px;
+    }
+    .modal-content {
+        overflow-y: auto;
+        height: 470px;
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb:vertical {
+          margin: 5px;
+          background-color: #999;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-button:start:decrement,
+        &::-webkit-scrollbar-button:end:increment {
+          height: 5px;
+          display: block;
+        }
+        padding: 20px;
+    }
+}
+
+.article {
+    color: #e1e9ff;
+    line-height: 1.5;
+    font-size: 14px;
+    .tit {
+        text-align: center;
+        font-size: 20px;
+       /** margin-bottom: 30px; **/
+    }
+    .links a {
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: #416dda;
+    }
+    .acti_title {
+        color: #CC3300; 
+        font-size: 22px; 
+        margin-top: 42px;
+        margin-bottom: 25px; 
+    }
+}
+
+.tb {
+    margin-bottom: 25px;
+    th {
+        color: #ff0000;
+        height: 46px;
+        background: #416dda;
+        text-align: center;
+    }
+    td {
+        text-align: center;
+        background: #416dda;
+        height: 46px;
+    }
+}
+
+
+.jc-container {
+    position: relative;
+    overflow: hidden
+}
+
+.jc-layout {
+    width: 1000px;
+    margin: 15px auto 0;
+    height: 103px;
+    position: relative
+}
+
+.jc-icon {
+    background: url(../images/jc_sprites.png) no-repeat
+}
+
+.jc-layout:after,
+.jc-layout:before {
+    display: table;
+    content: ""
+}
+
+.jc-layout:after {
+    clear: both
+}
+
+.jc-footer .jc-layout {
+    height: auto
+}
+
+.jc-header {
+    height: 102px;
+    position: relative;
+    z-index: 3
+}
+
+.btn-bg {
+    background: url(../images/btn_bg.png) no-repeat;
+}
+
+.btn-group:after,
+.input-group:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+select.pwd {
+    width: 60px;
+    height: 35px;
+    border: 1px solid #b9b4b4;
+    border-radius: 2px;
+    font-size: 16px;
+    padding-left: 10px
+}
+
+
+.reg-page {
+    height: 900px;
+}
+
+.reg-banner {
+    height: 160px;
+    background: url(../images/reg_banner.jpg) no-repeat center top
+}
+
+.reg-content {
+    padding-top: 30px;
+    background: 0 0
+}
+
+.jc-reg h3 {
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 50px;
+    border-bottom: 2px solid #c54751;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ce483f
+}
+
+.jc-reg h3 .icon-user {
+    position: absolute;
+    left: -50px;
+    top: -4px;
+    width: 45px;
+    height: 45px;
+    background-position: 0 -50px
+}
+
+.reg-form {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-size: 14px
+}
+
+.reg-form .input-group {
+    margin-bottom: 8px
+}
+
+.reg-form .input-label,
+.reg-form .input-tips {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden
+}
+
+.reg-form .input-label {
+    width: 90px;
+    margin-right: 10px;
+    text-align: right
+}
+
+.reg-form .ipt,
+.reg-form .iptd {
+    float: left;
+    width: 320px;
+    height: 25px;
+    line-height: 25px;
+    padding: 4px 9px;
+    border: 1px solid #ccc
+}
+
+.reg-form .iptd {
+    border: none;
+    padding: 0;
+    padding-right: 20px
+}
+
+.reg-form .input-tips {
+    margin-left: 20px;
+    color: #999
+}
+
+.reg-form .input-warn {
+    color: #ce483f
+}
+
+.reg-form .code-pic {
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px
+}
+
+.reg-form .btn-group {
+    margin-top: 40px;
+    padding-left: 100px
+}
+
+.reg-form .btn-login,
+.reg-form .btn-reg {
+    float: left;
+    width: 200px;
+    height: 45px
+}
+
+.reg-form .btn-reg {
+    background-position: 0 -230px
+}
+
+.reg-form .btn-login {
+    background-position: 0 -290px
+}
+
+.reg-form .has-acc {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 55px;
+    margin-right: 15px
+}
+
+
+.float {
+    width: 154px;
+    height: 420px;
+    background: url(../images/float_bg.png) no-repeat;
+    position: fixed;
+    top: 158px; left: 50%;
+    margin-left: 488px;
+    .qr_c {
+        padding-top: 70px; height: 115px;
+        text-align: center;
+        margin: 0 18px;
+        img {
+            width: 100%;
+        }
+    }
+    .btns_c {
+        padding-top: 40px;
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 105px; height: 33px;
+            color: #000;
+            line-height: 33px;
+            font-size: 19px;
+            margin-bottom: 3px;
+            background: url(../images/float_btn.png) no-repeat;
+        }
+    }
+}

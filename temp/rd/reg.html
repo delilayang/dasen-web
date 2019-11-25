@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        <!--#include virtual="/include/index_head_title.html" -->
+    </title>
+    <!--#include virtual="/include/index_head_keywords.html" -->
+    <!--#include virtual="/include/index_head_description.html" -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="./include/loginpopup.html"-->
+    <!--#include virtual="./include/header.html"-->
+    <div class="banner banner_02">
+        <div class="ui-news" id="noticeDom">
+        </div>
+    </div>
+    <div class="container-static container clearfix">
+        <!--#include virtual="./include/leftmenu.html"-->
+        <div class="main-content">
+            <h4 class="title">会员注册</h4>
+            <div class="form-bg">
+                <form onsubmit="doRegister(); return false;">
+                    <fieldset>
+                        <legend>请填写您的会员信息</legend>
+                        <div class="form-regist">
+                            <div class="row" id="recoTr">
+                                <div class="form-left">
+                                    <span>推荐人帐号 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="regRecoUserName" maxlength="15">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">可选填</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>会员帐号 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="regUsername" maxlength="15">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">帐号规则 : 帐号必须为6-15位数字和字母组合</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>登录密码 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="password" id="regPassword" maxlength="20">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">密码规则 : 密码长度要有6-20个字符,以及必须含有数字和字母组合</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>确认密码 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="password" id="password1" maxlength="20">
+                                </div>
+                                <div class="form-right">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>真实姓名 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="fullName" maxlength="10">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">姓名必须与你用于提款的银行户口名字一致,否则无法提款 </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>取款密码 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <select id="pwd1">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">提款认证必须,务必记住</span>
+                                </div>
+                            </div>
+                            <div class="row showRegEmail hide">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>电子邮箱 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="email" maxlength="30">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">email格式 : 888888@qq.com </span>
+                                </div>
+                            </div>
+                            <div class="row hide showRegMobile">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>手机号码 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="phone" maxlength="11">
+                                </div>
+                                <div class="form-right">
+                                    <span class="font-grey">手机号码格式 : 18888888888 </span>
+                                </div>
+                            </div>
+                            <div class="row showRegQQ hide">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>QQ : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="qq" maxlength="20">
+                                </div>
+                            </div>
+                            <div class="row" id="regValiCode">
+                                <div class="form-left">
+                                    <span><b class="font-grey"></b>验证码 : </span>
+                                </div>
+                                <div class="form-center">
+                                    <input type="text" id="valiCode" class="test-code" maxlength="4">
+                                    <img src="" class="imgCode" alt="点击更换">
+                                </div>
+                                <div class="form-right">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-button">
+                        <div class="row">
+                            <input type="submit" value="创建帐号">
+                            <a href="javascript:void(0)" class="popup">已有帐号登入</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="./include/footer.html"-->
+    <!--#include virtual="./include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/tab-view.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

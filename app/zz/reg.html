@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>至尊彩票-注册</title>
+    <link rel="stylesheet" rev="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="css/global.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="css/index.css" type="text/css" />
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/top.html"-->
+    <div class="cl"></div>
+    <!--#include virtual="include/header.html"-->
+    <div class="cl"></div>
+    <div class="content">
+        <div class="inner">
+            <div class="h45"></div>
+            <div class="titi"><img src="img/t1.png" alt="" /></div>
+            <div class="h45"></div>
+            <ul class="huan huan1">
+                <li><em>01 </em>设置账户及登录密码</li>
+                <li><em>02 </em>注册成功</li>
+                <li><em>03 </em>登录网站</li>
+            </ul>
+            <div class="cl"></div>
+            <div class="nei">
+                <div class="h25"></div>
+                <form onsubmit="doRegister(); return false;">
+                    <div class="zhushu" id="recoTr">
+                        <span class="w140 pr10 tear">推荐人账号: </span>
+                        <input type="text" id="regRecoUserName" maxlength="15" placeholder="非必填" />
+                        <span><em class="red">＊帐户名由6-15个字符组成</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">登录账号: </span>
+                        <input type="text" id="regUsername" maxlength="15" />
+                        <span><em class="red">＊帐户名由6-15个字符组成</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">登录密码: </span>
+                        <input type="password" id="regPassword" maxlength="20" />
+                        <span><em class="red"> ＊6-20个字母、数字或组合组成，区分大小写</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">确认密码: </span>
+                        <input type="password" id="password1" maxlength="20" />
+                        <span><em class="red">＊请再次输入密码以确保输入无误</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">真实姓名: </span>
+                        <input type="text" id="fullName" maxlength="10" />
+                        <span><em class="red">＊真实姓名必须与您用于提款银行账户名称一致</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">取款密码: </span>
+                        <select id="pwd1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <span style="margin-left: 10px;"><em class="red">＊取款必须认证，务必记住</em></span>
+                    </div>
+                    <div class="zhushu hide" id="showRegEmail">
+                        <span class="w140 pr10 tear">电子邮箱: </span>
+                        <input type="text" id="email" maxlength="30" />
+                        <span><em class="red">＊email格式：888888@qq.com</em></span>
+                    </div>
+                    <div class="zhushu hide" id="showRegQQ">
+                        <span class="w140 pr10 tear">QQ号码: </span>
+                        <input type="text" id="qq" maxlength="20" />
+                        <span><em class="red">＊请您输入QQ号码</em></span>
+                    </div>
+                    <div class="zhushu hide" id="showRegMobile">
+                        <span class="w140 pr10 tear">手机号码: </span>
+                        <input type="text" id="phone" maxlength="11" />
+                        <span><em class="red">＊请输入11位手机号码</em></span>
+                    </div>
+                    <div class="zhushu" id="regValiCode">
+                        <span class="w140 pr10 tear">验证码: </span>
+                        <input type="text" id="valiCode" maxlength="4" />
+                        <img src="" alt="" class="imgCode" title="看不清？点击更换一张验证图片">
+                        <span><em class="red">＊必填</em></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="w140 pr10 tear">&nbsp;</span>
+                        <input type="submit" class="regsub" value="" />
+                    </div>
+                </form>
+                <!--  -->
+                <div class="cl h45"></div>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="cl"></div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

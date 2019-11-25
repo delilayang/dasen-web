@@ -1,0 +1,1 @@
+$(function(){init(),$.cookie("intr")&&$("#regbtn").show()});

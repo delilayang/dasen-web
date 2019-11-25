@@ -1,0 +1,70 @@
+<div class="ui-top-nav">
+    <dl>
+        <dt id="noticeDom">
+            <span>站内公告</span>
+        </dt>
+        <dd>
+            <form onsubmit="loginNoValiCode();return false;">
+                <div class="login-frm">
+                    <div class="login-ipt">
+                        <label>帐号</label>
+                        <input type="text" value="" id="userName" maxlength="15" tabindex="1" autocomplete="off" class="txt-box">
+                    </div>
+                    <div class="login-ipt">
+                        <label>密码</label>
+                        <input type="password" value="" id="userPwd" maxlength="20" tabindex="2" class="txt-box" autocomplete="off">
+                    </div>
+                    <a class="forgot-pwd" href="javascript:" onclick="javascript:getPwd();"><img src="./images/forgot-pwd.png"></a>
+                    <div class="login-ipt">
+                        <label>验证码</label>
+                        <input type="text" value="" id="loginVcode" maxlength="4" tabindex="3" class="txt-box2">
+                        <label id="numberCode" onselectstart="return false"></label>
+                    </div>
+                    <input type="submit" value="" id="loginSubmitBtn" tabindex="4"><a href="reg.html">免费注册</a>
+                </div>
+            </form>
+        </dd>
+    </dl>
+</div>
+<div class="ui-web-nav">
+    <dl>
+        <dt>
+            <embed src="images/logo.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="223" height="82">
+        </dt>
+        <dd id="webMenu">
+            <a href="./">首页</a>
+            <a href="appdownload.html">APP下载<img src="images/ico-hot.png" alt=""></a>
+            <a href="reg.html">开户注册</a>
+            <a id="MenuActivity" href="activity.html">最新优惠</a>
+            <a href="deposit.html">存款取款</a>
+            <a href="faq.html">常见问题</a>
+            <a href="rule.html">规则说明</a>
+            <a href="agent.html">加盟合作</a>
+        </dd>
+    </dl>
+</div>
+<script type="text/javascript">
+function initNotice() {
+        if (typeof($LAB) != 'object') {
+            setTimeout(initNotice, 1000);
+        } else {
+            initNoticeData(function(notice) {
+                if (notice.length) {
+
+                    var html = '<marquee scrollamount="4" scrolldelay="80" direction="left" onmouseover="this.stop();" onmouseout="this.start();" >';
+                    for (var i = 0; i < notice.length; i++) {
+                        html += notice[i].title + '：&nbsp;&nbsp;&nbsp;&nbsp;' + notice[i].message + '&nbsp;&nbsp;&nbsp;&nbsp;';
+                    }
+
+                    html += '</marquee>';
+
+                    $("#noticeDom").append(html);
+                } else {
+                    $("#noticeDom").append('<marquee scrollamount="4" scrolldelay="80" direction="left" onmouseover="this.stop();" onmouseout="this.start();" >欢迎来到众购彩票网</marquee>');
+                }
+            });
+        }
+    };
+
+    setTimeout(initNotice, 2000);
+</script>

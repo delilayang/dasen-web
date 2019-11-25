@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>SK彩票</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/loginpopup.html"-->
+    <div class="header">
+        <div class="container clearfix">
+            <div class="logo">
+                <img src="img/logo.png" alt="" width="169">
+            </div>
+            <div class="hotNews">
+                <div class="title">最新公告：</div>
+                <div class="newsContent" id="noticeDom"></div>
+            </div>
+            <div class="nav" id="nav">
+                <ul class="clearfix">
+                    <li><a href="index.html"><i class="home active"></i><span>首页</span></a></li>
+                    <li><a href="faq.html"><i class="help"></i><span>新手帮助</span></a></li>
+                    <li><a href="activity.html"><i class="activities"></i><span>优惠活动</span></a></li>
+                    <li><a href="javascript:BBOnlineService();"><span>在线客服</span></a></li>
+                    <li class="divideLine"> | </li>
+                    <li><a href="javascript:guestLogin();" class="freePlay"><span class="innerText">免费试玩</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap">
+        <div class="banner-index">
+            <div class="container">
+                <div class="lgbox">
+                    <form onsubmit="loginNoValiCode();return false;" autocomplete="off">
+                        <ul>
+                            <li class="loginTitle">
+                                <span>会员登录</span>   
+                            </li>
+                            <li class="usn">
+                                <input type="text" placeholder="请输入您的账号" id="userName" maxlength="15" class="userInput">
+                            </li>
+                            <li class="pwd">
+                                <input type="password" placeholder="请输入您的密码" id="userPwd" maxlength="20" class="pwdInput">
+                            </li>
+                            <li class="auth">
+                                <input id="loginVcode" type="text" placeholder="验证码" id="l_auth" maxlength="4" class="verifyInput">
+                                <label id="numberCode" class="authnum" onselectstart="return false">8888</label>
+                            </li>
+                            <li class="sub">
+                                <input type="submit" value="登录">
+                            </li>
+                            <li class="fastLogin">
+                                <div class="topLine"></div>
+                                <div class="loginBtn">
+                                    <span>还没有账号？</span>
+                                    <a href="#" class="btn-login1 popup">立刻注册</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gamebox">
+            <div class="container">
+                <div class="tit">
+                    <img src="img/gamelist/bt1.png">
+                </div>
+                <div class="list">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="javascript:gAlert('请先登录');">
+                                <img src="img/gamelist/pk10.png" alt="北京pk10">
+                                <div class="title">北京赛车</div>
+                                <div><img src="img/gamelist/button.png" alt="" class="voteButton"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:gAlert('请先登录');">
+                                <img src="img/gamelist/6hc.png" alt="六合彩">
+                                <div class="title">香港六合彩</div>
+                                <div><img src="img/gamelist/button.png" alt="" class="voteButton"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:gAlert('请先登录');">
+                                <img src="img/gamelist/gsboat.png" alt="急速飞艇">
+                                <div class="title">急速飞艇</div>
+                                <div><img src="img/gamelist/button.png" alt="" class="voteButton"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:gAlert('请先登录');">
+                                <img src="img/gamelist/gsracecar.png" alt="急速赛车">
+                                <div class="title">急速赛车</div>
+                                <div><img src="img/gamelist/button.png" alt="" class="voteButton"></div>
+                            </a>
+                        </li>
+                        <li  class="last">
+                            <a href="javascript:gAlert('请先登录');">
+                                <img src="img/gamelist/ssc.png" alt="重启时时彩">
+                                <div class="title">重庆时时彩</div>
+                                <div><img src="img/gamelist/button.png" alt="" class="voteButton"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="showbox">
+            <div class="container">
+                <div class="row">
+                    <div class="itemTitle"><img src="img/showbox/audictTitle.png"></div>
+                    <div class="itemDescription">
+                        <div>
+                            <img src="img/showbox/lxh_01.jpg">
+                            <span>存款到帐</span>
+                            <span>DEPOSIT</span>
+                        </div>
+                        <div>
+                            <img src="img/showbox/lxh_03.jpg">
+                            <span>取款到帐</span>
+                            <span>WITHDRAWALS</span>
+                        </div>
+                        <div>
+                            <img src="img/showbox/lxh_05.jpg">
+                            <span>合作银行</span>
+                            <span>BANK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="itemTitle"><img src="img/showbox/contactusTitle.png"></div>
+                        <div class="contact">
+                            <div class="item">
+                                <div class="item-detail">
+                                    <div class="itemImage"><img src="img/showbox/rc1.png"></div>
+                                    <div class="itemRight"><span>易记域名</span><span>www.ch188.com</span></div>
+                                </div>
+                                <div class="item-detail">
+                                    <div class="itemImage"><img src="img/showbox/rc4.png"></div>
+                                    <div class="itemRight"><span>微信</span><a href="javascript:openWxWin();"><span>wucaifeng7788</span></a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-detail">
+                                    <div class="itemImage"><img src="img/showbox/rc6.png"></div>
+                                    <div class="itemRight"><span>公司邮箱</span><span class="cfgMainEmail"></span></div>
+                                </div>
+                                <div class="item-detail">
+                                    <div class="itemImage"><img src="img/showbox/rc2.png"></div>
+                                    <div class="itemRight"><span>公司热线</span><span class="cfgMainPhone"></span></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                    <div class="item-detail">
+                                        <div class="itemImage"><img src="img/showbox/rc3.png"></div>
+                                        <div class="itemRight"><span>客服QQ</span><a href="javascript:qqService();"><span class="cfgMainCustomerQQ"></span></a></div>
+                                    </div>
+                                    <div class="item-detail"></div>
+                                </div>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

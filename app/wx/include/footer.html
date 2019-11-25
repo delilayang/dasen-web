@@ -1,0 +1,189 @@
+<div class="footer">
+    <div class="content pay-box"></div>
+    <div class="content link-box clearfix">
+        <dl class="clearfix">
+            <dd>
+                <img src="images/icon1.png" alt="">
+            </dd>
+            <dt>
+                <p>
+                    客服QQ
+                    <a href="javascript:;" class="cfgMainCustomerQQ"></a>
+                </p>
+            </dt>
+        </dl>
+        <dl class="clearfix">
+            <dd>
+                <img src="images/icon2.png" alt="">
+            </dd>
+            <dt>
+                <p>
+                    电子邮箱
+                    <a href="javascript:;" class="cfgMainEmail"></a>
+                </p>
+            </dt>
+        </dl>
+        <dl class="clearfix">
+            <dd>
+                <img src="images/icon3.png" alt="">
+            </dd>
+            <dt>
+                <p>
+                    电话联系
+                    <a href="javascript:;" class="cfgMainPhone"></a>
+                </p>
+            </dt>
+        </dl>
+    </div>
+    <div class="btm-nav" style="height: 100px">
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="deposit.html">如何存款</a>
+                </li>
+                <li>
+                    <a href="withdraw.html">如何提款</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="contact.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="agent.html">加盟合作</a>
+                </li>
+            </ul>
+            <p> 万喜彩票网所提供的产品和服务，是由菲律宾政府卡格扬河经济特区 First Cagayan leisure and Resort Corporation. <br> 授权和监管 我们将不余遗力的为您提供优质 的服务和可靠的资金保障。 Copyright © 万喜彩票网 Reserved</p>
+        </div>
+    </div>
+</div>
+<!--#include virtual="commonJs.html"-->
+<script src="js/animateNumber.js"></script>
+<script src="/static/lib/unslider.min.js"></script>
+<script>
+$(document).ready(function() {
+
+
+    function getCurDate() {
+        var d = new Date();
+        var week;
+        /*switch (d.getDay()){
+        case 1: week="星期一"; break;
+        case 2: week="星期二"; break;
+        case 3: week="星期三"; break;
+        case 4: week="星期四"; break;
+        case 5: week="星期五"; break;
+        case 6: week="星期六"; break;
+        default: week="星期天";
+        }*/
+        var years = d.getFullYear();
+        var month = add_zero(d.getMonth() + 1);
+        var days = add_zero(d.getDate());
+        var hours = add_zero(d.getHours());
+        var minutes = add_zero(d.getMinutes());
+        var seconds = add_zero(d.getSeconds());
+        var ndate = years + "-" + month + "-" + days + " " + hours + ":" + minutes + ":" + seconds;
+        var divT = document.getElementById("time");
+        divT.innerHTML = ndate;
+    }
+
+    function add_zero(temp) {
+        if (temp < 10) return "0" + temp;
+        else return temp;
+    }
+
+    setInterval(getCurDate, 1000);
+
+    //header nav
+    var path = location.pathname,
+        navList = $('#nav li');
+
+    if (path.indexOf('agent') > -1) {
+        navList.eq(4).addClass('on');
+    } else if (path.indexOf('index') > -1 || path == '/home/') {
+        navList.eq(0).addClass('on');
+    } else if (path.indexOf('activity') > -1) {
+        navList.eq(5).addClass('on');
+    } else if (path.indexOf('reg') > -1) {
+        navList.eq(1).addClass('on');
+    } else if (path.indexOf('deposit') > -1 || path.indexOf('withdraw') > -1) {
+        navList.eq(2).addClass('on');
+    } else if (path.indexOf('app') > -1) {
+        navList.eq(3).addClass('on');
+    }
+
+
+    if ($("#footer").length > 0) {
+        $(window).scroll(function() {
+            var s = $(window).scrollTop();
+            var h = window.innerHeight;
+            var top = $("#footer").offset().top
+            if (s + h - 300 > top) {
+                $("#time-c").css('width', '30%')
+                $("#time-q").css('width', "40%")
+                new animateNumber({
+                    el: 'num1',
+                    num: 18
+                })
+                new animateNumber({
+                    el: 'num2',
+                    num: "2.18",
+                    type: 'time'
+                })
+                new animateNumber({
+                    el: 'num3',
+                    num: 35
+                })
+                $(window).unbind("scroll");
+            }
+        })
+    }
+
+    $("#close").on('click', function() {
+        $(".kf").hide()
+    })
+
+
+    if ($("#lb_box").length) {
+        var unslider = $("#lb_box").unslider({
+            speed: 500,
+            delay: 3500,
+            keys: true,
+            dots: true,
+            fluid: false
+        })
+    }
+
+
+
+    //init
+    function initNotice() {
+        if (typeof($LAB) != 'object') {
+            setTimeout(initNotice, 2000);
+        } else {
+            initNoticeData(function(notice) {
+                if (notice.length) {
+
+                    var html = '<marquee scrollamount="4" scrolldelay="30" onmouseover="this.stop();" onmouseout="this.start();" >';
+                    for (var i = 0; i < notice.length; i++) {
+                        html += notice[i].title + '：&nbsp;&nbsp;&nbsp;&nbsp;' + notice[i].message + '&nbsp;&nbsp;&nbsp;&nbsp;';
+                    }
+
+                    html += '</marquee>';
+
+                    $("#noticeDom").html(html);
+                } else {
+                    $("#noticeDom").html('<marquee scrollamount="4" scrolldelay="30" onmouseover="this.stop();" onmouseout="this.start();" >欢迎来到万喜彩票</marquee>');
+                }
+            });
+        }
+    };
+
+    setTimeout(initNotice, 2000);
+
+    init(); //初始化
+
+
+})
+</script>

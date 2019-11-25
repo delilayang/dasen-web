@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>如意彩票 - 如意七年，尽如人意！</title>
+	<link rel="stylesheet" href="css/login.css" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="bg-content new-login">
+	<div class="wrap-login">
+		<div class="nav-wrap clearfix">
+			<div class="logo"></div>
+			<div class="guest-point guest-area">
+				<span class="help-icon">有问题咨询在线客服？</span> 
+				<a id="custom-service" href="javascript:BBOnlineService()">点击此处</a>
+			</div>
+		
+		</div>
+		<div class="info-panel clearfix">
+			<div class="login-info-area">
+		
+				<form action="#" method="post" onSubmit="loginNoValiCode(); return false">
+					<div class="user-info clearfix">
+						<input type="text" id="userName" data-name="name" name="user-name" class="user-name" placeholder="用户名">
+						<input type="password" id="userPwd" data-name="password" name="user-password" placeholder="密码" class="user-password">
+						<a href="javascript:BBOnlineService();" class="forget-password" tabindex="-1" id="forgetPW">忘记密码？</a>
+						
+					</div>
+						<div id="J-panel-vcode" class="user-info ver-area clearfix" >
+						<!--<img class="var-img-area" id="J-vcode-img" src="images/changevcode.png" onClick="this.src='/login/changevcode?r='+Math.random();" data-src-path="/login/changevcode" alt="点击图片刷新验证码" title="点击图片刷新验证码" />-->
+						<span id="numberCode" class="txt-box var-img-area imgJsCode" onselectstart="return false">8888</span>
+						<input type="text" id="loginVcode" data-name="verification" name="user-name" class="user-ver" placeholder="验证码" >
+					</div>
+					
+					
+						<input class="submit-btn" type="submit" value="登 录"> 
+					<div class="login-tips">
+					<div class="left"><i class="guest_icon"></i><a id="aSafeLogin"  class="left" href="javascript:guestLogin();">游  客 试 玩</a></div>
+					<div class="right"><i class="reg_icon"></i><a id="aSafeLogin" href="reg.html">注 册 开 户</a></div>
+					</div>
+				</form>
+			</div>
+			<div class="banner-area">
+				<div id="focus" class="cycle-slideshow">
+					<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li></li><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="https://www.ry138.com/native/download.html?platform=boss" target="_blank"><img src="images/ad1.jpg" /></a></li>
+					<li><a href="https://www.ry138.com/native/download.html?platform=boss" target="_blank"><img src="images/ad2.jpg" /></a></li>
+					<li><a href="https://www.ry138.com/native/download.html?platform=boss" target="_blank"><img src="images/ad3.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+
+				</div>
+			</div>
+		</div>
+		<div class="suggest-browser">
+		<div class="guoji"> </div>
+		<div class="fuwu"> </div>
+		<div class="year7" style="width:200px; height:170px"> </div>
+		<div class="baozheng"> </div>
+		<div class="jisu"> </div>
+		
+		</div>	
+		<p class="browser-desc">2011-2018 如意彩票 All Rights Reserved.</p>   
+	</div>
+	<!--#include virtual="include/commonJs.html" -->
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,mouseOverStop:false});
+		init();
+	</script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?94445de4b1452d92218e36e6732446b0";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</body>
+</html>

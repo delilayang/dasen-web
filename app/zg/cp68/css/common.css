@@ -1,0 +1,10 @@
+*{margin:0px;padding:0px;}
+body {overflow-x:hidden;font-family: "微软雅黑", "Microsoft YaHei", Helvetica,sansation, Verdana, Arial, sans-serif;font-size: 12px;}
+a{text-decoration:none;}
+img{border:none;vertical-align:middle;}
+ul{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.cle{clear: both;}
+.abs{position: absolute;}
+.rel{position: relative;}

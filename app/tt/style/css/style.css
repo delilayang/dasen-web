@@ -1,0 +1,757 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:active,
+a:hover,
+:focus {
+    outline: 0;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font: 12px/1.5 "Microsoft YaHei", Arial, \5b8b\4f53, sans-serif;
+    color: #333;
+}
+
+.icon,
+.btn {
+    display: inline-block;
+}
+
+.icon {
+    position: relative;
+    vertical-align: top;
+    background: url(img/icon.png) no-repeat;
+}
+
+.btn {
+    border: 0 none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+body {
+    background: url(img/bg.jpg) no-repeat center top;
+}
+
+.register-bg {
+    background: #ffffff;
+}
+
+.register-container {
+    overflow: hidden;
+}
+
+.register-header {
+
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(img/banner1.jpg) no-repeat center top;
+    height: 236px;
+}
+
+.register-banner {
+    height: 325px;
+    overflow: hidden;
+    background: url(img/register_banner.jpg) no-repeat center top;
+}
+
+.register-inner {
+    padding: 14px 49px 100px;
+    margin-top: 27px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+}
+
+.register-heading {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #b2b2b2;
+    font-size: 18px;
+    color: #e2413e;
+    font-weight: bold
+}
+
+.register-heading .icon-edit {
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    margin-right: 10px;
+    background-position: 0 0;
+}
+
+.register-form {
+    margin-top: 65px;
+    font-size: 14px;
+}
+
+.register-form .input-group {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.register-form .ipt-lab,
+.register-form .ipt,
+.register-form .ipt-tip {
+    float: left;
+}
+
+.register-form .ipt-lab,
+.register-form .ipt-tip,
+.login-form .ipt-lab {
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+}
+
+.imgCode {
+    position: absolute;
+    left: 230px;
+    top:3px;
+    width: 70px;
+}
+
+.register-form .ipt-lab {
+    width: 75px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.register-form .ipt-tip{
+    margin-left: 20px;
+    position: absolute;
+}
+
+.register-form .ipt-tip {
+    color: #8d8d8d;
+}
+
+.register-form .ipt,
+.login-form .ipt {
+    border: 0px
+}
+
+.register-form .ipt {
+    width: 220px;
+    border: 1px solid #6d6d6d;
+    height: 35px
+}
+
+.register-form .select{
+    width: 220px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+}
+
+.register-form .select select{
+    height: 28px;
+    width: 52px;
+    padding: 5px;
+}
+
+.register-form .btn-group {
+    padding-left: 85px;
+    padding-top: 35px
+}
+
+.register-form .btn-group .btn {
+    display: block;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.register-form .btn-group .btn-reg {
+    width: 121px;
+    height: 29px;
+    background: url(img/bt5.png);
+    line-height: 34px;
+    float: left
+}
+
+.zhanghu {
+    display: inline-block;
+    float: left;
+    line-height: 34px;
+    margin: 0px 22px;
+    color: #d70000
+}
+
+.register-form .btn-group .btn-login {
+    width: 121px;
+    height: 29px;
+    background: url(img/bt4.png);
+    line-height: 29px;
+    float: left
+}
+
+.register-form .btn-group .btn-login:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+.register-form .btn-group .btn-reg:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+.footer {
+
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    bottom: 0px
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+.register-container .footer {
+    color: #858585;
+}
+
+.header {
+    height: 135px;
+    overflow: hidden;
+}
+
+.header .logot {
+    margin-right: 0;
+    position: relative;
+    width: 325px;
+    height: 135px;
+    vertical-align: top;
+}
+
+.content {}
+
+.float-login {
+    position: relative;
+    width: 275px;
+    height: 279px;
+    padding: 11px 20px 1px;
+    color: #fff;
+    background: url(img/login_bg.png) no-repeat;
+    box-sizing: border-box;
+}
+
+.float-login h3 {
+    height: 58px;
+    line-height: 58px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.login-form {
+    height: 128px;
+}
+
+.login-form .input-group {
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: 5px;
+}
+
+.login-form .ipt-lab {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #ffffff
+}
+
+.login-form .ipt-lab i {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 11px;
+    margin-right: 8px;
+}
+
+.login-form .ipt-lab .icon-user {
+    background-position: 0 0px;
+}
+
+.login-form .ipt-lab .icon-lock {
+    background-position: 0px -46px;
+}
+
+.login-form .ipt {
+    width: 144px;
+    padding-left: 80px;
+    font-size: 14px;
+    background: url(img/txt.png);
+    height: 41px;
+    line-height: 41px;
+    color: #FFFFFF
+}
+
+.login-form .btn-group {
+    margin-top: -3px;
+}
+
+.login-form .btn-group .btn,
+.float-login .btn-visit {
+    color: #fff;
+    font-size: 18px;
+}
+
+.fr-1 {
+    float: right;
+    width: 275px
+}
+
+.gg {
+    background: url(img/gg_bg.png);
+    width: 275px;
+    height: 94px;
+    margin-top: 6px;
+    overflow: hidden
+}
+
+.gg h2 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 35px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.gg p {
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 5px
+}
+
+.login-form .btn-group .btn {
+    float: left;
+    width: 95px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #0085b7;
+}
+
+.login-form .btn-group a.btn {
+    width: 121px;
+    line-height: 29px;
+    background: url(img/bt2.png);
+    text-align: center;
+    line-height: 29px;
+    float: left;
+    margin-top: 22px;
+    margin-left: -5px
+}
+
+.login-form .btn-visit:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+.login-form .btn-login:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+.login-form .btn-group .btn-login {
+    margin-left: 42px;
+    cursor: pointer;
+    line-height: 34px;
+    color: #ffffff;
+    background: url(img/bt1.png);
+    width: 156px;
+    height: 36px;
+    margin-left: 45px;
+    border: 0px;
+    font-size: 20px;
+}
+
+.float-login .btn-visit {
+    display: block;
+    width: 121px;
+    height: 30px;
+    background: url(img/bt3.png);
+    float: right;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 29px;
+    margin-right: -10px
+}
+
+.float-login .btn-os {
+    position: absolute;
+    z-index: 9;
+    top: 4px;
+    right: 18px;
+    width: 135px;
+    height: 53px;
+    background: url(img/kf.png) no-repeat;
+}
+
+.float-ad {
+    float: left;
+    margin-left: 90px;
+}
+
+.nav {
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center
+}
+
+.nav li {
+    display: inline-block;
+    height: 135px;
+    line-height: 135px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.nav a {
+
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav a:hover {}
+
+.nav a:first-child {
+    margin-left: 0;
+}
+
+a.open-le {
+    color: #f0ff00;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: #f0ff00;
+}
+
+.fr {
+    float: right;
+    width: 665px;
+    margin-top: 50px
+}
+
+.site-notice {
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 18px;
+    overflow: hidden;
+    padding-left: 95px;
+
+    color: #a5a5a5;
+}
+
+.site-notice h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.site-notice h3 .icon-horn {
+    float: left;
+    width: 20px;
+    height: 18px;
+    margin-top: 1px;
+    margin-right: 5px;
+    background: url(img/gg.png) left top no-repeat
+}
+
+.notice-list li {
+    height: 18px;
+    overflow: hidden;
+}
+
+.index .footer {
+    position: absolute;
+    bottom: 0px;
+    z-index: 9;
+    width: 100%;
+    background: url(img/bg1.jpg) center no-repeat;
+    height: 92px;
+}
+
+.copyright {
+    padding-top: 56px
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.zlc-model {
+    height: 100%;
+    overflow: hidden;
+}
+
+.model-content {
+    padding: 0 18px;
+}
+
+.model-content h4,
+.model-content p {
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.model-content h4 {
+    color: #004eff;
+}
+
+.model-content p {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+
+/*.model-content .warn{color:#e43232;}*/
+
+.zlc-faq .icon-doubt,
+.jc-aboutus .icon-i {
+    float: left;
+    width: 12px;
+    height: 13px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.zlc-faq .icon-doubt {
+    background-position: -140px 0;
+}
+
+.zlc-aboutus .icon-i {
+    background-position: -170px 0;
+}
+
+.prom-table,
+.prom-table th,
+.prom-table td {
+    border: 1px solid #b5e2ff;
+}
+
+.prom-table {
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    background-color: #FFFFFF
+}
+
+.prom-table tr {
+    height: 40px;
+}
+
+.prom-table th,
+.prom-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prom-table td {
+    color: #e43232;
+}
+
+.agency-actions {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.agency-actions a {
+    width: 115px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #98292b;
+}
+
+.agency-actions .btn-login {
+    float: left;
+}
+
+.agency-actions .btn-reg {
+    float: right;
+}
+
+.agency-login {
+    position: relative;
+    height: 475px;
+    margin-top: 150px;
+    background: url(img/agency_login_banner.jpg) no-repeat center;
+}
+
+.agency-login .user-login {
+    top: 70px;
+}
+
+.agency-login .login-form .ipt {
+    width: 150px;
+}
+
+.agency-login .login-form .btn-login {
+    width: 209px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: -3px;
+    background-position: 0 -280px;
+}
+
+.agency-login .jc-logo {
+    background: none;
+}
+
+.layui-layer {
+    box-shadow: none !important;
+    border-radius: 15px !important;
+}
+
+.layui-layer-title {
+    padding: 0 !important;
+    border-bottom: 0 none !important;
+    border-radius: 0 !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #004eff !important;
+    text-align: center;
+    background: transparent !important;
+    height: 64px !important;
+    line-height: 62px !important;
+}
+
+.layui-layer-page .layui-layer-content {
+    overflow: hidden !important;
+}
+
+.layui-layer-setwin {
+    top: -16px !important;
+    right: -16px !important;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    width: 48px;
+    height: 48px;
+    background: url(img/close.png) no-repeat !important;
+    opacity: 1!important;
+}
+
+.kf_t {
+    background: url(img/v_pic.png) center top no-repeat;
+    text-align: center;
+    position: fixed;
+    top: 92px !important;
+    right: 0;
+}
+
+.kf_t div {
+    margin-top: 4px
+}
+
+.mb0 {
+    margin-bottom: 0!important;
+}
+
+.zlc-promotion table {
+    margin-bottom: 20px;
+}
+
+.zlc-promotion th,
+.zlc-promotion td {
+    border: 1px solid #8d8d8d;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.zlc-promotion table p {
+    margin: 0 !important;
+}
+
+.car {
+    position: absolute;
+    bottom: 20px;
+    z-index: 9910;
+    right: 0px
+}
+.gg-1{
+	height: 60px;
+	padding: 5px 10px;
+
+}
+marquee{
+	height: 100%;
+	color: #fff;
+}
+
+.float{
+    position: fixed;
+    left: 10px;
+    top: 135px;
+}

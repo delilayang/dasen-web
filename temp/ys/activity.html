@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>WELCOME</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="banner">
+        <img src="img/ban1.jpg" alt="">
+        <!--#include virtual="include/radio.html"-->
+    </div>
+    <div class="main">
+        <div class="container clearfix">
+            <div class="leftmenu fl">
+                <div class="tit"></div>
+                <div class="list">
+                    <ul>
+                        <li><a href="appdownload.html">APP下载</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="rules.html">规则说明</a></li>
+                        <li><a href="bank.html">存款取款</a></li>
+                        <li><a href="activity.html">优惠活动</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="righttext fr">
+                <div class="tit">优惠活动</div>
+                <div class="tab clearfix" id="tab">
+                    <a href="javascript:;" class="fl active">火热进行</a>
+                    <a href="javascript:;" class="fl">历史活动</a>
+                </div>
+                <div class="detail rules tabmain" id="rules">
+                    <ul>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/12.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/12_12.jpg" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/13.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/13_13.jpg" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/3.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/3_3.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/0.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/0_0.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/9.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/9_9.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/2.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/2_2.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/4.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/4_4.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/5.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/5_5.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/7.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/7_7.png" alt="">
+                            </div>
+                        </li>
+                        <li data-type="0">
+                            <a href="javascript:;"><img src="img/activity/8.png" alt=""></a>
+                            <div class="text hide">
+                                <img src="img/activity/8_8.png" alt="">
+                            </div>
+                        </li>
+                        <!-- 
+                        <li data-type="1" class="hide">
+                            <a href="javascript:;"><img src="img/activity/past1.png" alt=""></a>
+                        </li> -->
+                        <li data-type="1" class="hide">
+                            <a href="javascript:;"><img src="img/activity/past10.png" alt=""></a>
+                        </li>
+                        <li data-type="1" class="hide">
+                            <a href="javascript:;"><img src="img/activity/past2.png" alt=""></a>
+                        </li>
+                        <li data-type="1" class="hide">
+                            <a href="javascript:;"><img src="img/activity/past3.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    var tabBtns = $('#tab a');
+
+    tabBtns.on('click', function() {
+        if (!$(this).hasClass('active')) {
+
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var index = $(this).index(),
+                mainLi = $('.tabmain li');
+
+
+
+            for (var i = 0; i < mainLi.length; i++) {
+                var dom = mainLi.eq(i);
+                if (dom.attr('data-type') == index) {
+                    dom.show();
+                } else {
+                    dom.hide();
+                }
+            }
+        }
+
+    })
+    </script>
+</body>
+
+</html>

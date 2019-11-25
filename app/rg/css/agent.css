@@ -1,0 +1,108 @@
+﻿a{
+	text-decoration:none;
+}
+
+.inner{
+	width:1220px;
+	margin:0 auto;
+}
+
+body{
+	background:#dadada;
+	min-width:1220px;
+}
+
+.banner{
+	height: 358px;
+	background: url(../img/agent/ban.png) no-repeat center bottom;
+	position:relative;
+}
+.psr{
+	position:relative;
+}
+.sdaimtl{
+	position:absolute;
+	left: 0px;
+	width: 258px;
+	bottom: 32px;
+	line-height:66px;
+	text-align:center;
+	color:#fff;
+	font-size:37px;
+	font-weight:200;
+}
+.hezuosn{
+	background:#CCCCBE;
+	padding:40px 50px;
+	border-radius:9px;
+}
+.shshwz{
+	background:#2C3546;
+	padding:30px;
+	border-radius:9px;
+	box-shadow: 0px; 
+	color:#fff;
+	font-size:16px;
+	line-height:28px;
+	-webkit-box-shadow: inset 1px 1px 38px rgba(0,0,0,.75);
+	-moz-box-shadow: inset 1px 1px 38px rgba(0,0,0,.75);
+	box-shadow: inset 1px 1px 38px rgba(0,0,0,.75);
+}
+.tuse{
+	color:#ffdd94;
+}
+.huang{
+	color:#ffe050;
+}
+.taeblen{
+	width:90%;
+	margin:20px auto;
+}
+.taeblen td{
+	color:#000;
+	background:#fff;
+	text-align:center;
+	height:32px;
+	border:1px solid #000;
+}
+.teibtou td{
+	color:#fff;
+	background:#3C3E4A;
+}
+
+.footer{
+	background:#000;
+	margin-top:22px;
+	text-align:center;
+}
+.fnav{
+	padding:22px 0px;
+	font-size:12px;
+	color:#fff;
+}
+.fnav a{
+	color:#fff;
+	padding:0px 3px;
+}
+.fnav a:hover{
+	text-decoration:underline;
+}
+
+.daisanbtn{
+	padding:0px 80px;
+	margin-bottom:22px;
+}
+.daisanbtn a{
+	background:#3078e6;
+	border-radius:6px;
+	color:#fff;
+	line-height:32px;
+	background-image: -webkit-linear-gradient(bottom, #223579, #3181ff);
+	background-image: -moz-linear-gradient(bottom, #223579, #3181ff);
+	background-image: -o-linear-gradient(bottom, #223579, #3181ff);
+	background-image: -ms-linear-gradient(bottom, #223579, #3181ff);
+	background-image: linear-gradient(to top, #223579, #3181ff);
+	width: 136px;
+	text-align:center;
+	height: 32px;
+} 

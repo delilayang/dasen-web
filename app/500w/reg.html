@@ -1,0 +1,124 @@
+<!--#include virtual="include/head.html"-->
+
+<body>
+    <!--#include virtual="include/radio.html"-->
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/nav1.html"-->
+    <div class="subban subban1"></div>
+    <!--#include virtual="include/nav2.html"-->
+    <div class="zhanzhuce">
+        <div class="inner">
+            <div class="zhaneizc">
+                <div class="zhaneizctl">用户注册</div>
+                <div class="zhutshi">加入500万彩票，500万非你莫属！【易记域名 : www.889989.com】</div>
+                <form onsubmit="doRegister(); return false;">
+                    <div class="zhushu" id="recoTr">
+                        <span class="fl zt">推荐人账号:</span>
+                        <input type="text" id="regRecoUserName" maxlength="15">
+                        <span class="fl pl10">推荐人或上级代理账号，没有可不填</span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">登录账号:</span>
+                        <input type="text" id="regUsername" maxlength="15">
+                        <span class="fl pl10">*账号规则：账号必须为6-15位字母和数字组合</span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">登录密码:</span>
+                        <input type="password" id="regPassword" maxlength="20">
+                        <span class="fl pl10">*密码规则：密码必须为6-20位字母和数字组合</span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">确认密码:</span>
+                        <input type="password" id="password1" maxlength="20">
+                        <span class="fl pl10">*确认您的登录密码，请输入和以上一致的密码</span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">真实姓名:</span>
+                        <input type="text" id="fullName" maxlength="10">
+                        <span class="fl pl10">*真实姓名必须与您用于提款银行账户名称一致</span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">取款密码:</span>
+                        <select id="pwd1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <span class="fl pl10">* 取款必须认证，务必记住</span>
+                    </div>
+                    <div class="zhushu hide" id="showRegEmail">
+                        <span class="fl zt">电子邮箱:</span>
+                        <input type="text" id="email" maxlength="30">
+                        <span class="fl pl10">*电子邮箱（Email）格式：88888888@qq.com</span>
+                    </div>
+                    <div class="zhushu hide" id="showRegQQ">
+                        <span class="fl zt">QQ号码:</span>
+                        <input type="text" id="qq" maxlength="20">
+                    </div>
+                    <div class="zhushu hide" id="showRegMobile">
+                        <span class="fl zt">手机号码:</span>
+                        <input type="text" id="phone" maxlength="11">
+                    </div>
+                    <div class="zhushu" id="regValiCode">
+                        <span class="fl zt">验证码：</span>
+                        <input type="text" id="valiCode">
+                        <span class="fl ymbtns"><img src="" class="imgCode"></span>
+                    </div>
+                    <div class="zhushu">
+                        <span class="fl zt">&nbsp;</span>
+                        <input type="submit" class="tijisbtn" value="提交注册">
+                        <input type="reset" class="tijisbtn tijisbtn-cur" value="重新输入">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

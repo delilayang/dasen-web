@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>welcome</title>
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/core.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <!--#include virtual="/include/chkwh.html" -->
+    <style>
+    /*规则说明*/
+
+    .rule-info {
+        margin: 15px auto 0px auto;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul {
+        width: 670px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .rule-info ul li {
+        float: left;
+        margin-top: 5px;
+        width: 670px;
+        overflow: hidden;
+    }
+
+    .rule-info ul li img {
+        float: left;
+        width: 670px;
+    }
+
+    .rule-info ul li div {
+        float: left;
+    }
+
+    .rule-info ul li .min-banner {
+        width: 670px;
+        cursor: pointer;
+    }
+
+    .rule-info .rule-cont {
+        display: none;
+        padding: 5px 0px;
+        line-height: 2em;
+        overflow: hidden;
+    }
+
+    .rule-info .rule-pic img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="banner_bg8">
+        <div id="wraping">
+            <div class="gonggao" id="noticeDom"></div>
+        </div>
+    </div>
+    <div id="mainbg">
+        <div id="wrap">
+            <!--#include virtual="include/lefter.html" -->
+            <div id="righter">
+                <div class="title">一般常见问题</div>
+                <div class="mainer main">
+                    <div class="righttext appdownload">
+                        <div class="text" style="text-align:left;">
+                            【1】如何加入彩运网？
+                            <br> 答：您可以直接点选 "注册开户"，确实填写资料后，可立即登记成为彩运网会员。
+                            <br>
+                            <br> 【2】我可以直接在网络上存款吗？
+                            <br> 答：可以，彩运网提供多种线上存款选择，详情请参照 "存款提款"。
+                            <br>
+                            <br> 【3】我在哪里可以找到游戏的规则？
+                            <br> 答：请查看"规则说明"页面，清楚告诉您游戏的玩法、规则及派彩方式。
+                            <br>
+                            <br> 【4】我的注码的限制是多少？
+                            <br> 答：从最低注单1元人民币以上即可投注。
+                            <br>
+                            <br> 【5】如果忘记密码怎么办？
+                            <br> 答：你可以在首页点击"忘记密码"系统自助取回密码，或者联系24小时线上客服人员谘询协助取回你的帐号密码。
+                            <br>
+                            <br> 【6】当忘记提款密码时怎么办？
+                            <br> 答：你可通过24小时线上客服人员协助处理。
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ruleInfo").children(".rule-pic").click(function() {
+            var m = $(this);
+            if (m.next().is(":visible")) {
+                m.next().slideUp(500);
+            } else {
+                m.next().slideDown(500);
+            }
+        });
+    });
+    </script>
+    <script>
+    document.getElementById("yxyx1").className = "checkyo"
+    </script>
+</body>
+
+</html>

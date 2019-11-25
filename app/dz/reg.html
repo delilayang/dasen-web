@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>大众彩票网</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body class="reg">
+    <div class="register-container">
+        <div class="register-header">
+        </div>
+        <div class="register-content clearfix">
+            <div class="inner">
+                <div class="loginpanel container">
+            <div class="container clearfix body_bg">
+                <div class="stepitm stepactive" style="z-index: 3;">
+                    <div class="stepno">01</div>
+                    <div class="stepnotxt">设置账户及登录密码</div>
+                    <div class="hlfcircle active"></div>
+                </div>
+                <div class="stepitm" style="z-index: 2;">
+                    <div class="stepno ml90">02</div>
+                    <div class="stepnotxt">注册成功</div>
+                    <div class="hlfcircle"></div>
+                </div>
+                <div class="stepitm" style="z-index: 1;">
+                    <div class="stepno ml90">03</div>
+                    <div class="stepnotxt">登录网站</div>
+                </div>
+            </div>
+            <div class="container clearfix body_bg">
+                <form onsubmit="doRegister(); return false;">
+                    <div id="recoTr" class="row clearfix" style="display: none;">
+                        <div class="col1">推荐人账号:</div>
+                        <div class="col2">
+                            <input type="text" id="regRecoUserName" maxlength="15" class="textbox1" placeholder="非必填">
+                        </div>
+                        <div class="col3">帐户名由6-15个字符组成</div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1">登录账号:</div>
+                        <div class="col2">
+                            <input type="text" id="regUsername" maxlength="15" class="textbox1">
+                        </div>
+                        <div class="col3">＊帐户名由6-15个字符组成</div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1">登录密码:</div>
+                        <div class="col2">
+                            <input type="password" id="regPassword" class="textbox1" maxlength="20">
+                        </div>
+                        <div class="col3">＊6-20个字母、数字或组合组成，区分大小写</div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1">确认密码:</div>
+                        <div class="col2">
+                            <input type="password" id="password1" maxlength="20" class="textbox1">
+                        </div>
+                        <div class="col3">＊请再次输入密码以确保输入无误</div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1">真实姓名:</div>
+                        <div class="col2">
+                            <input type="text" id="fullName" maxlength="15" class="textbox1">
+                        </div>
+                        <div class="col3">＊真实姓名必须与您用于提款银行账户名称一致</div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1">取款密码:</div>
+                        <div class="col2">
+                            <select id="pwd1" class="pwd">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd2" class="pwd">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd3" class="pwd">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd4" class="pwd">
+                                <option value="-">-</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                        <div class="col3">＊取款必须认证，务必记住</div>
+                    </div>
+                    <div class="row clearfix hide" id="showRegEmail">
+                        <div class="col1">电子邮箱:</div>
+                        <div class="col2">
+                            <input type="text" id="email" maxlength="30" class="textbox1">
+                        </div>
+                        <div class="col3">＊电子邮箱(Email)格式：769666@qq.com</div>
+                    </div>
+                    <div class="row clearfix hide" id="showRegQQ">
+                        <div class="col1">QQ号码:</div>
+                        <div class="col2">
+                            <input type="text" id="qq" maxlength="20" class="textbox1">
+                        </div>
+                        <div class="col3">＊QQ号码格式：769666</div>
+                    </div>
+                    <div class="row clearfix hide" id="showRegMobile">
+                        <div class="col1">手机号码:</div>
+                        <div class="col2">
+                            <input type="text" id="phone" maxlength="11" class="textbox1">
+                        </div>
+                        <div class="col3">＊手机号码格式：13755555555</div>
+                    </div>
+                    <div class="row clearfix" id="regValiCode">
+                        <div class="col1">验证码:</div>
+                        <div class="col2">
+                            <input type="text" id="valiCode" maxlength="4" class="textbox1">
+                        </div>
+                        <img class="imgCode" src="">
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1"></div>
+                        <div class="col2">
+                            <input type="submit" class="submitbtn" value="创建帐号">
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col1"></div>
+                        <div class="col2">
+                            <a href="index.html" class="tologinbtn">已有账号登录</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

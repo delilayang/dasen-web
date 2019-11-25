@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>爱购彩</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="radio" id="noticeDom"></div>
+        <div class="loginbox">
+            <form onsubmit="loginNoValiCode();return false;">
+                <input type="submit" style="display: none" />
+                <ul>
+                    <li class="usn lgipt">
+                        <label class="icon-label" for="userName"></label>
+                        <input type="text" id="userName" maxlength="15">
+                        <span class="cover">账&nbsp;&nbsp;&nbsp;号</span>
+                    </li>
+                    <li class="pwd lgipt">
+                        <label class="icon-label" for="userPwd"></label>
+                        <input type="password" id="userPwd" maxlength="20">
+                        <span class="cover">密&nbsp;&nbsp;&nbsp;码</span>
+                    </li>
+                    <li class="auth lgipt">
+                        <label class="icon-label" for="loginVcode"></label>
+                        <input type="text" id="loginVcode" maxlength="4">
+                        <span class="cover">验证码</span>
+                        <!-- <img src="img/temp/auth.jpg" alt=""> -->
+                        <label id="numberCode" onselectstart="return false">1844</label>
+                    </li>
+                    <li class="lg-btn" onclick="loginNoValiCode();">立即登录</li>
+                </ul>
+            </form>
+        </div>
+        <div class="service" onclick="BBOnlineService();"></div>
+        <div class="bottombox">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:guestLogin();" class="freeplay"></a>
+                </li>
+                <li>
+                    <a href="javascript:qqService();" class="qqservice"></a>
+                </li>
+                <li>
+                    <a href="reg.html" class="reg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="floatbox">
+            <ul>
+                
+                <li class="andcode">
+                    <a style="background: none;" href="appdownload.html"><img src="img/appqr.png" /></a>
+                </li>
+                <li class="qrcode">
+                    <img src="img/index/wechatQrcode.jpg" width="100" height="100"/>
+                </li>
+                <li>
+                    <a href="javascript:BBOnlineService();" class="olservice"></a>
+                </li>
+                <li>
+                    <a href="javascript:qqService();" class="qqservice"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="close" id="float_Close"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<dl class="ui-header">
+    <dt class="logo">
+        <embed id="logoFlash" src="./images/logo_sx.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="420" height="125" wmode="transparent"></embed>
+    </dt>
+    <dd class="login">
+        <div class="top-nav">
+            <dl>
+                <dt>
+                    <a href="javascript:" id="setHomePage">设为主页</a><a href="javascript:" id="addFavorite">加入最爱</a>
+                </dt>
+                <dd>
+                    <a class="hk" href="javascript:zh_tran('t');">繁體中文</a><a class="cn" href="javascript:zh_tran('s');">简体中文</a><a class="en" href="javascript:">English</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="login-frm" id="notLoginHtml">
+            <div class="frm">
+                <form onsubmit="loginNoValiCode();return false;">
+                    <div class="login-ipt">
+                        <input type="text" value="" id="userName" name="" placeholder="账号" maxlength="15" tabIndex="1" class="txt-box" />
+                    </div>
+                    <div class="login-ipt">
+                        <input type="text" value="" id="loginVcode" name="" placeholder="验证码" maxlength="4" tabIndex="3" class="txt-box2" />
+                        <label id="numberCode" class="imgJsCode" onselectstart="return false"></label>
+                    </div>
+                    <div class="login-ipt">
+                        <input type="password" value="" id="userPwd" name="password" placeholder="密码" maxlength="20" tabIndex="2" class="txt-box" />
+                    </div>
+                    <div class="login-btn">
+                        <input type="submit" id="loginSubmitBtn" value="" tabIndex="4" />
+                        <input type="button" value="" name="getPwdBtn" id="getPwdBtn" tabIndex="5" onclick="getPwd();" />
+                    </div>
+                </form>
+            </div>
+            <div class="btn">
+                <a href="./reg.html">免费注册</a>
+            </div>
+        </div>
+        <div class="header-links" id="loginIngHtml" style="display: none;">
+            <ul>
+                <li>欢迎：<span class="username"></span></li>
+                <li><a href="javascript:void(0)" id="sessionNameHtml">游客</a></li>
+                <li><a href="javascript:gotoGamePage()">进入游戏</a></li>
+                <li><a href="javascript:mainLogout()">退出</a></li>
+            </ul>
+        </div>
+    </dd>
+</dl>
+<div class="ui-web-nav" id="webMenu">
+    <a id="MenuHome" href="./index.html">首页</a>
+    <a id="MenuReg" href="./reg.html">开户注册</a>
+    <a id="MenuAppdownload" href="./appdownload.html">APP下载</a>
+    <a id="MenuFaq" href="./faq.html">常见问题</a>
+    <a id="MenuAgent" href="./agent.html">加盟合作</a>
+    <a id="MenuAbout" href="./about.html">关于我们</a>
+    <a target="_blank" href="https://www.sx666.vip/">备用网址</a>
+    <a id="MenuActivity" href="./activity.html">最新优惠</a>
+    <a class="ser" href="javascript:BBOnlineService()">在线客服</a>
+</div>

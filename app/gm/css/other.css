@@ -1,0 +1,387 @@
+﻿html,body {
+    position: relative;
+    background: url(../img/bg2.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    min-width: 950px;
+}
+
+.body {
+    background-color: #FFFFFF;
+    width: 950px;
+    margin: 10px auto;
+    overflow: hidden
+}
+
+.tit_d {
+    width: 950px;
+    margin: 0px auto;
+    color: #ffffff;
+    font-size: 33px;
+    margin-top: 22px
+}
+
+.tit_d span {
+    font-size: 33px;
+    color: #FFFF00;
+    font-family: 微软雅黑;
+}
+
+.tit2_d {
+    width: 950px;
+    margin: 0px auto;
+    color: #000000;
+    font-size: 17px;
+    margin-top: 0px
+}
+
+
+.left_menu {
+    float: left;
+    width: 198px;
+    margin-left: 6px;
+    margin-top: 10px
+}
+
+.left_menu li {
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #0f64a5;
+    position: relative;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.left_menu li a {
+    font-size: 16px;
+    color: #0f64a5
+}
+
+.left_menu li span {
+    width: 9px;
+    height: 19px;
+    background: url(../img/jt.png);
+    position: absolute;
+    right: -9px;
+    top: 15px;
+    display: none
+}
+
+.left_menu #c1 {
+    background: url(../img/ico.png) 10px 10px no-repeat
+}
+
+.left_menu #c2 {
+    background: url(../img/ico.png) 10px -50px no-repeat
+}
+
+.left_menu #c3 {
+    background: url(../img/ico.png) 10px -100px no-repeat
+}
+
+.left_menu #c4 {
+    background: url(../img/ico.png) 10px -159px no-repeat
+}
+
+.left_menu #c5 {
+    background: url(../img/ico.png) 10px -214px no-repeat
+}
+
+.left_menu #c1.on {
+    background: url(../img/ico.png) 10px -270px no-repeat #0f64a5;
+}
+
+.left_menu #c2.on {
+    background: url(../img/ico.png) 10px -327px no-repeat #0f64a5;
+}
+
+.left_menu #c3.on {
+    background: url(../img/ico.png) 10px -381px no-repeat #0f64a5;
+}
+
+.left_menu #c4.on {
+    background: url(../img/ico.png) 10px -440px no-repeat #0f64a5;
+}
+
+.left_menu #c5.on {
+    background: url(../img/ico.png) 10px -495px no-repeat #0f64a5;
+}
+
+.left_menu li.on span {
+    display: block
+}
+
+.left_menu li.on a {
+    color: #FFFFFF
+}
+
+.right_m {
+    float: right;
+    width: 720px;
+    margin-top: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    border: 1px solid #0f64a5
+}
+
+.right_m .tit {
+    font-size: 28px;
+    color: #202020;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden
+}
+
+.content {
+    font-size: 14px;
+    color: #202020;
+    line-height: 200%;
+    text-align: left;
+    margin-left: 42px;
+    margin-right: 42px;
+    padding: 52px 0px
+}
+
+
+.nav2 {
+    height: 70px;
+    border-bottom: 1px solid #efefef;
+    position: relative
+}
+
+.nav2 ul {
+    position: absolute;
+    left: 16px;
+    top: 12px
+}
+
+.nav2 li {
+    float: left;
+    margin-right: 7px;
+    border-radius: 5px;
+    background: #e7e7e7
+}
+
+.nav2 li:hover {
+    background: #075db5
+}
+
+.nav2 li:hover a {
+    color: #fff
+}
+
+.nav2 a {
+    width: 126px;
+    height: 42px;
+    color: #2b2a2a;
+    line-height: 42px;
+    text-align: center;
+    display: inline-block
+}
+
+.nav2 .active {
+    background: #075db5
+}
+
+.nav2 .active a {
+    color: #fff
+}
+
+.faq {
+    color: #535353
+}
+
+.textbox {
+    padding: 32px 50px;
+    min-height: 400px
+}
+
+.textbox .tit {
+    text-align: center;
+    font-size: 24px;
+    color: #075db5;
+    font-weight: 700
+}
+
+.textbox .text {
+    margin-top: 12px
+}
+
+.hide {
+    display: none
+}
+
+.wait {
+    color: #ff0000;
+    font-size: 23px;
+    text-align: center;
+    line-height: 300%
+}
+
+.table {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+.table td {
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    padding: 10px
+}
+
+
+
+
+.register-inner {
+    padding: 14px 49px 100px;
+    margin-top: 40px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+}
+
+.register-heading {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #b2b2b2;
+    font-size: 18px;
+    color: #e2413e;
+    font-weight: bold
+}
+
+.register-heading .icon-edit {
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    margin-right: 10px;
+    background-position: 0 0;
+}
+
+.register-form {
+    margin-top: 65px;
+    font-size: 14px;
+}
+
+.register-form .input-group {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.register-form .ipt-lab,
+.register-form .ipt,
+.register-form .select,
+.register-form .ipt-tip,
+.register-form .imgCode {
+    float: left;
+}
+
+.register-form .ipt-lab,
+.register-form .ipt-tip,
+.login-form .ipt-lab {
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+}
+
+.imgCode {
+    position: absolute;
+    left: 208px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.register-form .ipt-lab {
+    width: 75px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.register-form .ipt-tip,{
+    margin-left: 20px;
+    position: absolute;
+}
+
+.register-form .ipt-tip {
+    color: #8d8d8d;
+}
+
+.register-form .ipt,
+.login-form .ipt {
+    border: 0px;
+    margin-right:20px;
+}
+
+.register-form .ipt {
+    width: 220px;
+    border: 1px solid #6d6d6d;
+    height: 35px
+}
+
+.register-form .select{
+	width: 220px;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 20px;
+}
+.register-form .select select{
+	height: 28px;
+	width: 46px;
+	padding: 3px;
+    border:1px solid #6d6d6d
+}
+
+.register-form .btn-group {
+    padding-left: 85px;
+    padding-top: 35px
+}
+
+.register-form .btn-group .btn {
+    display: block;
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.register-form .btn-group .btn-reg {
+    width: 135px;
+    height: 34px;
+    background: url(../img/bt3.png);
+    line-height: 34px;
+    float: left;
+    border: 0px
+}
+
+.zhanghu {
+    display: inline-block;
+    float: left;
+    line-height: 34px;
+    margin: 0px 22px;
+    color: #d70000
+}
+
+.register-form .btn-group .btn-login {
+    width: 135px;
+    height: 34px;
+    background: url(../img/bt2.png);
+    line-height: 29px;
+    float: left
+}
+
+.register-form .btn-group .btn-login:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}
+
+.register-form .btn-group .btn-reg:hover {
+    opacity: .9;
+    filter: alpha(Opacity=90);
+}

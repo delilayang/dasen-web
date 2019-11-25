@@ -1,0 +1,15 @@
+#mainBody {
+    background: url('./image/bg03.jpg') center top no-repeat;
+}
+#page-container {
+    background: url('./image/content_bg_y.jpg') center top repeat-y;
+}
+.first #page-container {
+    background: none;
+}
+#page-body {
+    margin: 0 auto;
+    padding: 20px 0 34px;
+    background: url('./image/content_bg1.jpg') center top no-repeat;
+    width: 1104px;
+}

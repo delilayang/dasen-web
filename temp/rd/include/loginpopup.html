@@ -1,0 +1,70 @@
+<div class="popup-main" id="loginPopup">
+  <div class="cross"><img src="img/cross.png" width="33" height="33"></div>
+  <form class="fill-in">
+    <input type="text" id="FuserName" name="account-name" placeholder="用户名" value=""><br>
+    <input type="password" id="FuserPwd" name="pasw" placeholder="密码" value="">
+    <input type="button" onclick="fastLogin()" name="" value="" class="fast-login">
+    <a href="reg.html" type="submit" name="" value="" class="sign-up"></a>
+  </form>
+
+</div>
+<script>
+
+  //登陆
+function fastLogin() {
+    var userName = $('#FuserName').val();
+    if (userName == "") {
+        gAlert("帐号不能为空");
+        $('#FuserName').focus();
+        return false;
+    }
+
+    var userPwd = $('#FuserPwd').val();
+    if (userPwd == "") {
+        gAlert("密码不能为空");
+        $('#FuserPwd').focus();
+        return false;
+    }
+
+
+    var params = {
+        account: userName,
+        password: hex_md5(userPwd),
+        pwdtext: userPwd,
+        loginSrc: 0
+    };
+
+    showSysMsgWin("正在登录中...");
+    var isLoing = 0;
+    if (isLoing == 1) {
+        return false;
+    }
+    isLoing = 1;
+
+    $.ajax({
+        type: 'POST',
+        url: '/api/login.do',
+        data: params,
+        dataType: 'json',
+        success: function(data) {
+
+            isLoing = 0;
+            if (data && data.token) {
+                window.location.href = '/agreement.html';
+            } else {
+                gAlert(data.msg || "登录失败");
+                changeNumberCode();
+                $('#loginVcode').val("").focus();
+            }
+        },
+        error: function(response) {
+            isLoing = 0;
+            var obj = $.parseJSON(response.responseText + "");
+            gAlert(obj.msg);
+            changeNumberCode();
+            $('#loginVcode').val("");
+        }
+    });
+    return false;
+}
+</script>

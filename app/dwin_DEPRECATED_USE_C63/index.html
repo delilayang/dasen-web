@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+<body class="home">
+    <!--#include virtual="include/header.html" -->
+
+    <div class="lb">
+        <div id="lb_Index" class="wrap">
+            <ul>
+                <li><img src="img/lb/lb2.jpg" alt=""></li>
+                <li><img src="img/lb/lb1.jpg" alt=""></li>
+                <li><img src="img/lb/lb3.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="wrapper login">
+            <div class="home-login">
+                <form class="lay-form" onsubmit="loginNoValiCode();return false;" autocomplete="off">
+                    <div class="input">
+                        <i class="icon icon-user"></i><input type="text" maxlength="16" id="userName" placeholder="账号">
+                    </div>
+                    <div class="input">
+                        <i class="icon icon-lock"></i><input type="password" placeholder="密码" maxlength="20" id="userPwd">
+                    </div>
+                    <div class="lay-verify">
+                        <div class="input">
+                            <i class="icon icon-pw"></i><input type="password" placeholder="验证码" maxlength="4" id="loginVcode">
+                            <span class="vcode" id="numberCode"></span>
+                        </div>
+                        <a href="javascript:BBOnlineService();" class="forget-lnk">忘记密码?</a>
+                    </div>
+                    <div style="margin: 6px 6px 0;">
+                        <input type="submit" class="Btn btn-login" value=""></a>&nbsp;<a href="reg.html" class="Btn btn-reg"></a>
+                    </div>
+                    <div class="tc">
+                        <a href="javascript:guestLogin();" class="Btn btn-try"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="radio">
+        <div class="wrapper">
+            <div class="ttl">
+                 <i class="icon icon-gg" style="vertical-align: -4px;"></i> 最新公告
+            </div>
+            <div class="content" id="noticeDom">
+                <marquee scrollamount="4" scrolldelay="30" onmouseover="this.stop();" onmouseout="this.start();">
+                    正在加载...
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+    <div class="navs">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="fl">
+                    <ul>
+                        <li class="item item-dl">
+                            <a href="appdownload.html" title="下载专区"></a>
+                        </li>
+                        <li class="item item-kf">
+                            <a href="javascript:BBOnlineService()" title="在线客服"></a>
+                        </li>
+                        <li class="item item-newbie">
+                            <a href="faq.html" title="新手教程"></a>
+                        </li>
+                        <li class="item item-line">
+                            <a href="#" title="线路中心"></a>
+                        </li>
+                        <li class="item item-agent">
+                            <a href="agent.html" title="合作代理"></a>
+                        </li>
+                        <li class="item item-activity">
+                            <a href="activity.html" title="优惠活动"></a>
+                        </li>
+                        <li class="item item-reg">
+                            <a href="reg.html" title="立即注册"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="games">
+        <div class="wrapper">
+            <div class="lay-items">
+                <ul>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_pk10.png" alt="">
+                            </div>
+                            <p>幸运飞艇</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_ssc.png" alt="">
+                            </div>
+                            <p>重庆时时彩</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_k3.png" alt="">
+                            </div>
+                            <p>江苏快三</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_lhc.png" alt="">
+                            </div>
+                            <p>香港六合彩</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_pcdd.png" alt="">
+                            </div>
+                            <p>PC蛋蛋</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_xyft.png" alt="">
+                            </div>
+                            <p>幸运飞艇</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_11x5.png" alt="">
+                            </div>
+                            <p>广东11选5</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_kl8.png" alt="">
+                            </div>
+                            <p>北京快乐8</p>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:gAlert('请先登录');">
+                            <div class="frame">
+                                <img src="img/game_kl10.png" alt="">
+                            </div>
+                            <p>广东快乐十分</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="arrow arrow-l">
+                <i class="icon icon-arrow-l"></i>
+            </a>
+            <a href="javascript:void(0)" class="arrow arrow-r">
+                <i class="icon icon-arrow-r"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+        $('.games ul').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: '.arrow.arrow-l',
+            nextArrow: '.arrow.arrow-r',
+            autoplay: true
+        })
+    </script>
+</body>
+</html>

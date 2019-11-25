@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>星彩网</title>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <!--#include virtual="include/nav.html" -->
+    <div class="wraper auto">
+        <div class="main-block">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <img src="img/cp/bjpk10.png" class="ico">
+                        <span class="name">北京赛车</span>
+                        <span class="time">每天09:02-23:57</span>
+                    </li>
+                    <li>
+                        <img src="img/cp/cqssc.png" class="ico">
+                        <span class="name">重庆时时彩</span>
+                        <span class="time">每天09:50-02:00</span>
+                    </li>
+                    <li>
+                        <img src="img/cp/cp3.png" class="ico">
+                        <span class="name">香港六合彩</span>
+                        <span class="time">每周二、四、六</span>
+                    </li>
+                    <li>
+                        <img src="img/cp/xjssc.png" class="ico">
+                        <span class="name">新疆时时彩</span>
+                        <span class="time">每天09:50-02:00</span>
+                    </li>
+                    <li>
+                        <img src="img/cp/gdklsf.png" class="ico">
+                        <span class="name">广东快乐十分</span>
+                        <span class="time">每天09:10-23:00</span>
+                    </li>
+                    <li>
+                        <img src="img/cp/cp6.png" class="ico">
+                        <span class="name">澳洲赛车</span>
+                        <span class="time">每天09:02-23:57</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tc-banner">
+                <div class="bd">
+                    <ul>
+                        <li><img src="img/banner3.jpg"></li>
+                        <li><img src="img/banner4.jpg"></li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <!-- 公告 -->
+        <div class="tc-ggnews clear">
+            <div class="con">
+                <span class="tit">站内公告：</span>
+                <ul>
+                    <li id="noticeDom"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 开奖 -->
+        <div class="open-box">
+            <div class="open-tab">
+                <div class="tit">开奖公告</div>
+                <div class="tabli">
+                    <ul>
+                        <li class="on" rel="bjpk10">北京赛车</li>
+                        <li rel="cqssc">重庆时时彩</li>
+                        <li rel="xjssc">新疆时时彩</li>
+                        <li rel="tjssc">天津时时彩</li>
+                        <li rel="gdklsf">广东快乐十分</li>
+                    </ul>
+                </div>
+                <div class="tabcon">
+                </div>
+            </div>
+            <div class="qrcode fl">
+                <h2>手机访问星彩网</h2>
+                <div class="imgbox">
+                    <div id="qrcode">
+                        <img src="img/mqr.png">
+                    </div>
+                    <input type="hidden" id="qrurl">
+                </div>
+            </div>
+        </div>
+        <!-- 更多彩种 -->
+        <div class="more-box">
+            <div class="more-cp">
+                <h2>
+        <span>更多彩种</span> - 全新打造，玩法新颖
+        <a href="javascript:gAlert('请先登录');" class="more"><span>马上投注</span>>></a>
+      </h2>
+                <ul>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/cp/cp7.png"><span class="name">重庆幸运农场</span></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/cp/cp8.png"><span class="name">幸运飞艇</span></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/cp/cp9.png"><span class="name">澳洲时时彩</span></a></li>
+                    <li><a href="javascript:gAlert('请先登录');"><img src="img/cp/cp10.png"><span class="name">澳洲快乐十分</span></a></li>
+                </ul>
+            </div>
+            <div class="qrcode fl plat">
+                <h2>支持多平台快速充值</h2>
+                <div class="imgbox">
+                    <ul class="plat-list">
+                        <li class="wx"></li>
+                        <li class="qq"></li>
+                        <li class="alipay"></li>
+                        <li class="visa"></li>
+                        <li class="up"></li>
+                        <li class="mc"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 底部banner -->
+        <div class="banner-foot clear">
+            <img src="img/banner-foot.jpg">
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/text.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    
+    // 请求
+    $(function() {
+        getdata("bjpk10");
+    })
+
+    function getall() {
+        getdata("bjpk10");
+        getdata("cqssc");
+        getdata("xjssc");
+        getdata("tjssc");
+        getdata("gdklsf");
+    }
+    window.setInterval(function() { getall() }, 30000);
+
+    $(".tabli li").click(function() {
+        getdata($(this).attr("rel"));
+    })
+    function getdata(rel) {
+        var url = "https://lottery.restful.kct66.com/api/lottery/new?code_type=";
+        url += rel + '&callback=?';
+        $.ajax({
+            type: "get",
+            dataType: "jsonp",
+            processData: false,
+            url: url,
+            success: function(data) {
+                var arr = data.data.code.normal;
+                var list = "";
+                for (var i = 0; i < arr.length; i++) {
+                    list += "<li>" + arr[i] + "</li>";
+                }
+                var str = "";
+                str += '<div class="con">' +
+                    '<img src="img/cp/' + rel + '.png" class="cptype">' +
+                    '<div class="infobox">' +
+                    '<span class="qi"><i></i>期号 ' + data.data.expect + '</span>' +
+                    '<span class="time"><i></i>开奖时间 ' + data.data.opentime + '</span>' +
+                    '</div>' +
+                    '<div class="open-num">' +
+                    '<ul>' + list +'</ul>' +
+                    '</div>' +
+                    '</div>';
+                $(".tabcon").html(str);
+            },
+            error: function() {
+                console.log("查询失败")
+            }
+        });
+    }
+
+    // 轮播
+    jQuery(".tc-banner").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", autoPlay: true });
+    // tab
+    jQuery(".open-tab").slide({ titCell: ".tabli li", mainCell: ".tabcon", effect: "fade", autoPlay: false, trigger: "click" });
+
+    </script>
+</body>
+
+</html>

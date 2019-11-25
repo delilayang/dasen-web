@@ -1,0 +1,1 @@
+function setContentTab(e,t,n){for(i=1;i<=n;i++){var o=document.getElementById(e+i),l=document.getElementById("cont_"+e+"_"+i);o.className=i==t?" on ":" ",i==t?l.style.display="block":l.style.display="none"}}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>永旺官网-专注彩票-看得的的信誉-大额无忧</title>
+    <meta name="Keywords" content="永旺官网-专注彩票-看得的的信誉-大额无忧">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html" -->
+    <div class="ban">
+        <img src="img/ban.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="container clearfix ">
+            <div class="tabctrl fl">
+                <ul>
+                    <li class="t1"><a href="bank.html">存款取款</a></li>
+                    <li class="t2"><a href="agent.html">加盟合作</a></li>
+                    <li class="t3"><a href="about.html">关于我们</a></li>
+                    <li class="t4"><a href="faq.html">常见问题</a></li>
+                    <li class="t5"><a href="contect.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="tabmain fr">
+                <div class="tit">代理注册</div>
+                <div class="text regbox">
+                    <form onsubmit="agentRegister();return false;">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>账号规则：账号必须为6-15位数字或英文</td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>用户账号：</td>
+                                <td><input type="text" maxlength="15" id="username"></td> 
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>密码规则：密码长度为6-20位数字或英文</td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>登录密码：</td>
+                                <td><input type="password" id="password" maxlength="20"></td> 
+                            </tr>
+                            <tr>
+                                <td><span>*</span>确认密码：</td>
+                                <td><input type="password" maxlength="20" id="passwdse"></td> 
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="red">姓名必须与您用于提款的银行户口名字一致，否则无法提款</td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>真实姓名：</td>
+                                <td><input type="text" id="fullName" maxlength="10"></td> 
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>提款密码务必记住</td>
+                            </tr>
+                            <tr>
+                                <td><span>*</span>提款密码：</td>
+                                <td>
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </td> 
+                            </tr>
+                            <tr class="showRegEmail hide">
+                                <td></td>
+                                <td class="red">Email格式：88888@qq.com</td>
+                            </tr>
+                            <tr class="hide showRegEmail">
+                                <td><span>*</span>电子邮箱：</td>
+                                <td><input type="text" id="email" maxlength="30"></td> 
+                            </tr>
+                            <tr id="showRegMobile">
+                                <td><span>*</span>手机号码：</td>
+                                <td><input type="text" id="phone" maxlength="11"></td> 
+                            </tr>
+                            <tr id="showRegQQ">
+                                <td><span>*</span>QQ号码：</td>
+                                <td><input type="text" id="qq" maxlength="20"></td> 
+                            </tr>
+                            <tr id="regValiCode">
+                                <td><span>*</span>验证码：</td>
+                                <td style="position: relative;"><input type="text" maxlength="4"  id="valiCode"/><img class="imgCode" src=""></td> 
+                            </tr>
+                        </table>
+                        <div class="btns">
+                            <input type="submit" value="提交">
+                            <input type="reset" value="重置">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html" -->
+    <!--#include virtual="include/float.html" -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

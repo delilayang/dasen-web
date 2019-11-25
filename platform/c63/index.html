@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <!-- banner -->
+    <div class="banner-index">
+        <div class="inner">
+            <div class="radio clearfix">
+                <span class="fl">
+                    <img src="img/new.png" alt="" />
+                </span>
+                <div class="radiomain" id="noticeDom"></div>
+            </div>
+            <div class="lbbox" id="lb_box">
+                <ul>
+                    <li><img src="img/lb/lun1.png" alt=""></li>
+                    <li><img src="img/lb/lun2.png" alt=""></li>
+                    <li><img src="img/lb/lun3.png" alt=""></li>
+                    <li><img src="img/lb/lun4.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="lgbox">
+                <div class="wrap">
+                    <div class="tit">
+                        <span>用户登陆</span>
+                        <a href="javascript:BBOnlineService();"><img src="img/kf.png" alt="" /></a>
+                    </div>
+                    <form method="post" onsubmit="loginNoValiCode();return false;">
+                        <input type="text" value="" maxlength="15" id="userName" />
+                        <input type="password" value="" maxlength="20" id="userPwd" />
+                        <input type="submit" value="">
+                        <a href="reg.html" class="reg"><img src="img/zhu.png" alt="" /></a>
+                    </form>
+                    <a href="javascript:guestLogin();" class="try"><img src="img/can.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+    <div class="gamebox">
+        <div class="inner">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in1.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_01.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in2.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_02.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in3.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_03.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in4.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_04.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in5.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_05.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in6.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_06.jpg" alt="" /></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:gAlert('请先登录');" target="_blank"><img src="img/in7.jpg" alt="" />
+                        <div class="quan"><img src="img/qq_07.jpg" alt="" /></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--#include virtual="include/info.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/unslider.min.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

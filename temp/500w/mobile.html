@@ -1,0 +1,36 @@
+<!--#include virtual="include/head.html"-->
+
+<body>
+    <!--#include virtual="include/radio.html"-->
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/nav1.html"-->
+    <div class="mobile">
+        <img class="bg" src="img/mobile.jpg">
+        <div class="inner">
+            <img src="img/ma1.png" class="iosewm">
+            <img src="img/ma2.png" class="andewm">
+            <a href="javascript:;" class="iosbtn"></a>
+            <a href="javascript:;" class="adbtn"></a>
+        </div>
+    </div>
+    <div class="jpbox hide">
+        <div class="wrap">
+            <div class="close">X</div>
+            <img src="img/mobile/jp.jpg" alt="">
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/core.js"></script>
+    <script>
+        $('.mobile a').click(function(){
+            $('.jpbox').fadeIn(function(){
+                $('.close').one('click',function(){
+                    $('.jpbox').fadeOut();
+                })
+            });
+        })
+    </script>
+</body>
+
+</html>

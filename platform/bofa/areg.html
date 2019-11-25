@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Welcome</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="agentstatic/css/core.css">
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body>
+    <div class="header reg">
+        <div class="container">
+            <a href="javascript:;" class="logo"><img src="img/logo.png" alt="最专业彩票网"></a>
+        </div>
+    </div>
+    <div class="reg-main">
+        <div class="reg_info">
+            <ul class="reg_title">
+                <li>请在以下填写您的注册信息</li>
+            </ul>
+            <form onsubmit="doRegister(); return false;">
+                <ul class="reg_tb">
+                    <li id="recoTr" class="hide">
+                        <span>介绍人：</span>
+                        <input id="regRecoUserName" type="text" maxlength="15" placeholder="非必填">由6-15个数字字符组成
+                    </li>
+                    <li>
+                        <span>用户账号：</span>
+                        <input id="regUsername" type="text" maxlength="15">由6-15个数字字符组成
+                    </li>
+                    <li>
+                        <span>登录密码：</span>
+                        <input id="regPassword" type="password" maxlength="20">密码长度要有6-20个字符，以及必须含有数字和字母组合
+                    </li>
+                    <li>
+                        <span>确认密码：</span>
+                        <input id="password1" type="password" maxlength="20">密码二次确认
+                    </li>
+                    <li>
+                        <span>真实姓名：</span>
+                        <input id="fullName" type="text" maxlength="10">姓名必须与你用于提款的银行户口名字一致，否则无法提款
+                    </li>
+                    <li>
+                        <span>提款密码：</span>
+                        <select id="pwd1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4" class="lastselect">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        提款认证必须，务必记住
+                    </li>
+                    <li id="showRegEmail" class="hide">
+                        <span>电子邮箱：</span>
+                        <input id="email" type="text">请填写正确的电子邮箱
+                    </li>
+                    <li class="hide" id="showRegQQ">
+                        <span>QQ号码：</span>
+                        <input id="qq" type="text">请填写正确的QQ号码
+                    </li>
+                    <li class="hide" id="showRegMobile">
+                        <span>手机号码：</span>
+                        <input id="phone" type="text">请填写11位手机号码
+                    </li>
+                    <li id="regValiCode" class="clearfix">
+                        <span>验证码：</span>
+                        <input id="valiCode" maxlength="4" type="text">
+                        <img class="imgCode" src="" >
+                    </li>
+                </ul>
+                <ul class="reg_bu clearfix">
+                    <li>
+                        <input type="submit" class="bu_reg" value="">
+                    </li>
+                    <li>
+                        <div class="bu_line"></div>
+                    </li>
+                    <li>
+                        <a href="alogin.html" class="bu_login"></a>
+                        <a href="alogin.html">已有账号?</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <ul>Copyright 2014-2017 All Rights Reserved.</ul>
+    </div> -->
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="agentstatic/js/reg.js"></script>
+</body>
+
+</html>

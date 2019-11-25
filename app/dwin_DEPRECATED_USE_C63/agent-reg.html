@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="page-banner">
+        <div class="wrapper">
+            <div class="inner">
+                <img src="img/login_banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="radio">
+        <div class="wrapper">
+            <div class="ttl">
+                <i class="icon icon-gg" style="vertical-align: -4px;"></i> 最新公告
+            </div>
+            <div class="content" id="noticeDom">
+                <marquee scrollamount="4" scrolldelay="30" onmouseover="this.stop();" onmouseout="this.start();">
+                    正在加载...
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="wrapper">
+            <!--#include virtual="include/page_side.html"-->
+            <div class="content">
+                <div class="reg">
+                    <form onsubmit="agentRegister(); return false;">
+                        <fieldset>
+                            <legend>代理注册信息</legend>
+                            <div class="row">
+                                <label for="username">* 登录账号：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="6-15位字母和数字组合" maxlength="15" id="username">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="password">* 登录密码：</label>
+                                <div class="input">
+                                    <input type="password" placeholder="6-20个字符，必须含有数字和字母组合" maxlength="20" id="password">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="passwdse">* 确认密码：</label>
+                                <div class="input">
+                                    <input type="password" placeholder="请输入和以上一致的密码" maxlength="20" id="passwdse">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="pwd1">* 取款密码：</label>
+                                <div class="ipt">
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <div class="t-rule">* 取款必须认证，务必记住</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>会员资料</legend>
+                            <div class="row">
+                                <label for="fullName">真实姓名：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="必须与您用于提款银行账户名称一致" id="fullName" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="row" id="showRegEmail">
+                                <label for="email">电子邮箱：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="格式：88888888@qq.com" id="email" maxlength="30">
+                                </div>
+                            </div>
+                            <div id="showRegQQ" class="row">
+                                <label for="qq">QQ号码：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="格式：88888888" id="qq" maxlength="20">
+                                </div>
+                            </div>
+                            <div class="row" id="showRegMobile">
+                                <label for="phone">手机号码：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="格式：18888888888" id="phone" maxlength="11">
+                                </div>
+                            </div>
+                            <div class="row" id="regValiCode">
+                                <label for="phone">验证码：</label>
+                                <div class="input">
+                                    <input type="text" placeholder="" id="valiCode" maxlength="4">
+                                </div>
+                                <img class="imgCode" src="">
+                            </div>
+                        </fieldset>
+                        <div class="row actions">
+                            <input type="submit" class="RBtn" value="创建代理账号"> &nbsp;
+                            <a href="javascript:agentLogin()" style="background: #c60000" class="RBtn">已有账号登录</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="js/core.js"></script>
+</body>
+
+</html>

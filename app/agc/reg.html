@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>爱购彩</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="regbox-wrap">
+            <div class="regbox">
+                <form onsubmit="doRegister(); return false;">
+                    <div class="user-info">
+                        <div class="tit">注册账号</div>
+                        <div class="info-main">
+                            <div id="recoTr">
+                                <span class="cover">推荐人账号：</span>
+                                <input type="text" id="regRecoUserName">
+                                <span class="hint">上级代理账号或推荐人账号，如没有可以不填</span>
+                            </div>
+                            <div>
+                                <span class="cover"><span class="cf40">*</span>会员账号：</span>
+                                <input type="text" id="regUsername" maxlength="15">
+                                <span class="hint">账号规则：账号必须为6-15位字母和数字组合</span>
+                            </div>
+                            <div>
+                                <span class="cover"><span class="cf40">*</span>登录密码：</span>
+                                <input type="password" id="regPassword" maxlength="20">
+                                <span class="hint">密码规则：密码必须为6-20位字母和数字组合</span>
+                            </div>
+                            <div>
+                                <span class="cover"><span class="cf40">*</span>确认密码：</span>
+                                <input type="password" id="password1" maxlength="20">
+                                <span class="hint">确认您的登录密码，请输入和以上一致的密码</span>
+                            </div>
+                            <div>
+                                <span class="cover"><span class="cf40">*</span>真实姓名：</span>
+                                <input type="text" id="fullName" maxlength="10">
+                                <span class="hint cf40">真实姓名必须与您用于提款银行账户名称一致</span>
+                            </div>
+                            <div class="drawcode">
+                                <span class="cover"><span class="cf40">*</span>取款密码：</span>
+                                <select id="pwd1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <select id="pwd4">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <span class="hint cf40">取款必须认证，务必记住</span>
+                            </div>
+                            <div class="hide" id="showRegEmail">
+                                <span class="cover"><span class="cf40">*</span>电子邮箱：</span>
+                                <input type="text" id="email" maxlength="30">
+                                <span class="hint">电子邮箱(Email)格式：88888888@qq.com</span>
+                            </div>
+                            <div class="hide" id="showRegQQ">
+                                <span class="cover"><span class="cf40">*</span>QQ号码：</span>
+                                <input type="text" id="qq" maxlength="20">
+                                <span class="hint">请输入QQ号码</span>
+                            </div>
+                            <div id="showRegMobile" class="hide">
+                                <span class="cover"><span class="cf40">*</span>手机号码：</span>
+                                <input type="text" id="phone" maxlength="11">
+                                <span class="hint">请输入11位手机号码</span>
+                            </div>
+                            <div class="auth" id="regValiCode">
+                                <span class="cover"><span class="cf40">*</span>验&nbsp;证&nbsp;码：</span>
+                                <input type="text" id="valiCode">
+                                <img class="imgCode" alt="看不清？点击更换一张验证图片">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-ctrl">
+                        <div class="rulescheck">
+                            <label for="rules_Check">
+                                <input type="checkbox" id="rules_Check" checked="checked"><span>我已届满18岁合法博彩年龄﹐且同意各项开户条约。</span>
+                            </label>
+                        </div>
+                        <div class="btns">
+                            <input class="btn" type="submit" value="立即提交" />
+                            <input class="btn" type="reset" value="重新填写" />
+                            <input class="btn" type="button" onclick="location.href='index.html'" value="返回首页" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/commonJs.html"-->
+    <script type="text/javascript" src="js/core.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>购彩网</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="css/core.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="main-wrap">
+        <div class="main">
+            <div class="container">
+                <div class="tit">
+                    <div class="bg"></div>
+                    <div class="text">
+                        <p class="t1">用户注册</p>
+                        <p>更高端的游戏体验尽在购彩网APP，手机输入GOUCAI.VIP即可体验游戏！</p>
+                    </div>
+                </div>
+                <div class="regbox">
+                    <a href="index.html" class="home">返回首页</a>
+                    <form onsubmit="doRegister(); return false;">
+                        <ul>
+                            <li class="hide" id="recoTr">
+                                <div class="typename">推荐人账号：</div>
+                                <div class="ipt">
+                                    <input type="text" id="regRecoUserName" maxlength="15">
+                                </div>
+                                <div class="hint">上级代理账号或推荐人账号，如没有可以不填</div>
+                            </li>
+                            <li>
+                                <div class="typename"><span>*</span>会员账号：</div>
+                                <div class="ipt">
+                                    <input type="text" maxlength="15" id="regUsername">
+                                </div>
+                                <div class="hint">账号规则：账号必须为6-15位字母和数字组合</div>
+                            </li>
+                            <li>
+                                <div class="typename"><span>*</span>登录密码：</div>
+                                <div class="ipt">
+                                    <input type="password" maxlength="20" id="regPassword">
+                                </div>
+                                <div class="hint">密码规则：密码必须为6-20位字母和数字组合</div>
+                            </li>
+                            <li>
+                                <div class="typename"><span>*</span>确认密码：</div>
+                                <div class="ipt">
+                                    <input type="password" maxlength="20" id="password1">
+                                </div>
+                                <div class="hint">确认您的登录密码，请输入和以上一致的密码</div>
+                            </li>
+                            <li>
+                                <div class="typename"><span>*</span>真实姓名：</div>
+                                <div class="ipt">
+                                    <input type="text" id="fullName">
+                                </div>
+                                <div class="hint cred">真实姓名必须与您用于提款银行账户名称一致</div>
+                            </li>
+                            <li>
+                                <div class="typename"><span>*</span>取款密码：</div>
+                                <div class="ipt">
+                                    <select id="pwd1">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd2">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd3">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                    <select id="pwd4">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                                <div class="hint cred">取款必须认证，务必记住</div>
+                            </li>
+                            <li class="hide" id="showRegEmail">
+                                <div class="typename"><span>*</span>电子邮箱：</div>
+                                <div class="ipt">
+                                    <input type="text" id="email" maxlength="30">
+                                </div>
+                                <div class="hint">电子邮箱（Email）格式：88888888@qq.com</div>
+                            </li>
+                            <li class="hide" id="showRegQQ">
+                                <div class="typename"><span>*</span>QQ号码：</div>
+                                <div class="ipt">
+                                    <input type="text" id="qq" maxlength="20">
+                                </div>
+                                <div class="hint">请输入QQ号码</div>
+                            </li>
+                            <li class="hide" id="showRegMobile">
+                                <div class="typename"><span>*</span>手机号码：</div>
+                                <div class="ipt">
+                                    <input type="text" id="phone" maxlength="11">
+                                </div>
+                                <div class="hint">请输入11位手机号码</div>
+                            </li>
+                            <li id="regValiCode">
+                                <div class="typename">验证码：</div>
+                                <div class="ipt">
+                                    <input type="text" class="auth" maxlength="4" id="valiCode">
+                                    <label class="authimg">
+                                        <img src="" alt="" title="看不清？点击更换一张验证图片" class="imgCode">
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="ctrl">
+                            <input type="submit" value="立即注册">
+                            <a href="index.html">已有账号登录</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="js/core.js"></script>
+</body>
+
+</html>

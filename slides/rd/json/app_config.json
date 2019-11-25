@@ -1,0 +1,7 @@
+{
+	"defaultSkin" : "red",
+	"staticPath" : "/static/",
+    "slideList": [
+	    { "imgUrl": "/static/images/slide/m1.jpg", "href": "" }
+    ]
+}

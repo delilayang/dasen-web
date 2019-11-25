@@ -1,0 +1,154 @@
+.clear {
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    CLEAR: both;
+    PADDING-TOP: 0px
+}
+
+.header {
+    MARGIN: 0px auto;
+    WIDTH: 1000px
+}
+
+.ele-slider-wrap {
+    WIDTH: 1000px;
+    HEIGHT: 386px
+}
+
+.anythingSlider {
+    LIST-STYLE-TYPE: none;
+    WIDTH: 1000px;
+    HEIGHT: 386px;
+    LIST-STYLE-IMAGE: none
+}
+
+.anythingSlider IMG {
+    WIDTH: 1000px;
+    HEIGHT: 386px
+}
+
+.anythingWindow {
+    OVERFLOW: hidden
+}
+
+.anythingSlider {
+    POSITION: relative;
+    OVERFLOW: hidden
+}
+
+.panel A {
+    DISPLAY: block
+}
+
+.anythingSlider .horizontal LI {
+    FLOAT: left
+}
+
+.anythingSlider .fade LI {
+    Z-INDEX: 0;
+    POSITION: absolute;
+    TOP: 0px;
+    LEFT: 0px
+}
+
+.anythingSlider .fade .activePage {
+    Z-INDEX: 1
+}
+
+.ad-flash {
+    POSITION: relative;
+    WIDTH: 1000px;
+    BACKGROUND: #000;
+    HEIGHT: 386px
+}
+
+.ad-flash .anythingSlider {
+    OVERFLOW: visible
+}
+
+.ad-flash .anythingWindow {
+    OVERFLOW: visible
+}
+
+.ad-flash .anythingControls {
+    POSITION: absolute;
+    BOTTOM: 10px;
+    RIGHT: 0px
+}
+
+.ad-flash .anythingControls LI {
+    FILTER: alpha(opacity=60);
+    BACKGROUND-COLOR: #fff;
+    LIST-STYLE-TYPE: none;
+    MARGIN: 0px 10px 0px 0px;
+    FLOAT: left;
+    HEIGHT: 10px;
+    opacity: 0.6
+}
+
+.ad-flash .anythingControls A {
+    WIDTH: 25px;
+    DISPLAY: block;
+    HEIGHT: 10px;
+    COLOR: #fff;
+    TEXT-DECORATION: none
+}
+
+.ad-flash .anythingControls A.cur {
+    BACKGROUND-COLOR: #ff8100
+}
+
+.ad-flash .anythingControls A:hover {
+    BACKGROUND-COLOR: #ff8100
+}
+
+.ad-flash .arrow-wrap {
+    POSITION: absolute;
+    FILTER: alpha(opacity=80);
+    WIDTH: 1000px;
+    BACKGROUND: #000;
+    HEIGHT: 386px;
+    TOP: 0px;
+    opacity: 0.8
+}
+
+.ad-flash .arrow-wrap.back {
+    LEFT: -1000px
+}
+
+.ad-flash .arrow-wrap.forward {
+    RIGHT: -1000px
+}
+
+.ad-flash .arrow {
+    BACKGROUND-IMAGE: url(../images/arrow_icon.png);
+    POSITION: relative;
+    FILTER: alpha(opacity=0);
+    MARGIN: 0px 15px;
+    WIDTH: 25px;
+    DISPLAY: block;
+    HEIGHT: 25px;
+    TOP: 180px;
+    CURSOR: pointer;
+    opacity: 0
+}
+
+.ad-flash .arrow.back {
+    BACKGROUND-POSITION: 0px 0px;
+    FLOAT: right
+}
+
+.ad-flash .arrow.forward {
+    BACKGROUND-POSITION: 0px 100%;
+    FLOAT: left
+}
+
+.ad-flash .arrow A {
+    DISPLAY: none
+}
+
+.ad-flash .arrow A SPAN {
+    DISPLAY: none
+}

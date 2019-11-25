@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盛源彩票</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="page-banner">
+        <div class="wrapper">
+            <div class="inner">
+                <img src="images/reg_banner.jpg" alt="">
+            </div>
+        </div>
+        <!--#include virtual="include/radio.html"-->
+    </div>
+
+    <div class="reg">
+        <div class="wrapper">
+            <h2 class="ttl">请填写您的代理注册信息</h2>
+
+            <form onsubmit="agentRegister(); return false;">
+                <div class="row">
+                    <label for="username">登录账号：</label>
+                    <div class="input">
+                        <input type="text" maxlength="15" id="username">
+                    </div>
+                    <span class="t-rule">
+                            * 账号规则：账号必须为6-15位字母和数字组合
+                    </span>
+                </div>
+                <div class="row">
+                    <label for="password">登录密码：</label>
+                    <div class="input">
+                        <input type="password" maxlength="20" id="password">
+                    </div>
+                    <span class="t-rule">
+                            * 密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合
+                    </span>
+                </div>
+                <div class="row">
+                    <label for="passwdse">确认密码：</label>
+                    <div class="input">
+                        <input type="password" maxlength="20" id="passwdse">
+                    </div>
+                    <span class="t-rule">
+                            * 确认您的登录密码，请输入和以上一致的密码
+                    </span>
+                </div>
+                <div class="row">
+                    <label for="fullName">真实姓名：</label>
+                    <div class="input">
+                        <input type="text" id="fullName" maxlength="10">
+                    </div>
+                    <span class="t-rule">
+                            * 真实姓名必须与您用于提款银行账户名称一致
+                    </span>
+                </div>
+                <div class="row">
+                    <label for="pwd1">取款密码：</label>
+                    <div class="ipt">
+                        <select id="pwd1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <span class="t-rule">
+                            * 取款必须认证，务必记住
+                    </span>
+                </div>
+                <div class="row" id="showRegEmail">
+                    <label for="email">电子邮箱：</label>
+                    <div class="input">
+                        <input type="text" id="email" maxlength="30">
+                    </div>
+                    <span class="t-rule">
+                            * 电子邮箱（Email）格式：88888888@qq.com
+                    </span>
+                </div>
+                <div id="showRegQQ" class="row">
+                    <label for="qq">QQ号码：</label>
+                    <div class="input">
+                        <input type="text" id="qq" maxlength="20">
+                    </div>
+                    <span class="t-rule">
+                            * QQ号码 格式：88888888
+                    </span>
+                </div>
+                <div class="row" id="showRegMobile">
+                    <label for="phone">手机号码：</label>
+                    <div class="input">
+                        <input type="text" id="phone" maxlength="11">
+                    </div>
+                    <span class="t-rule">
+                            * 手机号码 格式：18888888888
+                    </span>
+                </div>
+                <div class="row" id="regValiCode">
+                    <label for="phone">验证码：</label>
+                    <div class="input">
+                        <input type="text" maxlength="4"  id="valiCode"/>
+                    </div>
+                    <img class="imgCode" src="">
+                </div>
+                <div class="row actions">
+                    <p>
+                        <input type="submit" class="RBtn" value="创建代理账号">
+                         <a href="javascript:agentLogin()" class="t-home">已有账号登录</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/float_nav.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+        $(".float-nav").Float();
+    </script>
+</body>
+</html>

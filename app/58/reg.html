@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>58彩票</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" rev="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="css/animation.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="css/global.css" type="text/css" />
+    <!--#include virtual="/include/chkwh.html" -->
+</head>
+
+<body style="background:#fff;">
+    <div class="top">
+    </div>
+    <div class="jianbx">
+        <div class="cl h35"></div>
+        <div class="zhuin">
+            <div class="zhuti">
+                <div class="zhutiin">请填写您的注册信息</div>
+            </div>
+            <div class="h44"></div>
+            <form onsubmit="doRegister(); return false;">
+                <div class="shu" id="recoTr">
+                    <span class="hei">推荐人:</span>
+                    <input type="text" maxlength="15" id="regRecoUserName">
+                    <span class="pl15">可选填</span>
+                </div>
+                <div class="shu">
+                    <span class="hei">登录账号:</span>
+                    <input type="text" maxlength="15" id="regUsername">
+                    <span class="pl15">＊帐户名由6-15个字符组成</span>
+                </div>
+                <div class="shu">
+                    <span class="hei">登录密码:</span>
+                    <input type="password" id="regPassword" maxlength="20">
+                    <span class="pl15">＊6-20个字母、数字或组合组成，区分大小写</span>
+                </div>
+                <div class="shu">
+                    <span class="hei">确认密码:</span>
+                    <input type="password" id="password1" maxlength="20">
+                    <span class="pl15">＊请再次输入密码以确保输入无误</span>
+                </div>
+                <div class="shu">
+                    <span class="hei">真实姓名:</span>
+                    <input type="text" id="fullName" maxlength="10">
+                    <span class="hong">＊真实姓名必须与您用于提款银行账户名称一致</span>
+                </div>
+                <div class="shu">
+                    <span class="hei">取款密码:</span>
+                    <div class="select">
+                        <select id="pwd1">
+                            <option value="-">-</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd2">
+                            <option value="-">-</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd3">
+                            <option value="-">-</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="pwd4">
+                            <option value="-">-</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="shu hide" id="showRegEmail">
+                    <span class="hei">电子邮箱:</span>
+                    <input type="text" id="email" maxlength="30">
+                    <span class="hong">＊电子邮箱(Email)格式：88888888@qq.com</span>
+                </div>
+                <div class="shu hide" id="showRegQQ">
+                    <span class="hei">QQ号码:</span>
+                    <input type="text" id="qq" maxlength="20">
+                    <span class="hong">＊QQ号码格式：88888888</span>
+                </div>
+                <div class="shu hide" id="showRegMobile">
+                    <span class="hei">手机号码:</span>
+                    <input type="text" id="phone" maxlength="11">
+                    <span class="hong">＊手机号码格式：13888888888</span>
+                </div>
+                <div class="shu" id="regValiCode">
+                    <span class="hei">验证码:</span>
+                    <input type="text" maxlength="4" id="valiCode">
+                    <span class="hong"><img src="" class="imgCode" title="点击更换"></span>
+                </div>
+                <div class="shu">
+                    <span class="hei">&nbsp;</span>
+                    <input type="submit" class="regsub" value="">
+                    <span class="co888 pl33">如果已有账号，可点击 <a href="index.html" class="co555" >登录</a>进入</span>
+                </div>
+                <div class="cl h45"></div>
+            </form>
+        </div>
+        <div class="cl h25"></div>
+    </div>
+    <!--#include virtual="include/commonJs.html" -->
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="first zh-cn ">
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <!--#include virtual="/include/chkwh.html"-->
+    <style type="text/css">
+    strong,
+    h3,
+    h4 {
+        line-height: 45px;
+    }
+    .rules {
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="mainBody">
+        <!--#include virtual="include/top.html"-->
+        <div class="banner-wrap"></div>
+        <div id="page-container">
+            <div id="page-body" class="clearfix">
+                <!--#include virtual="include/notice.html"-->
+                <!--#include virtual="include/left_menu.html"-->
+                <div id="page-right">
+                    <div class="page-right-top"></div>
+                    <div class="page-right-y">
+                        <div class="detail rules" id="rules">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;"><img src="image/activity/1.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/11.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><img src="image/activity/2.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/22.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><img src="image/activity/3.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/33.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><img src="image/activity/4.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/44.png" alt="">
+                                    </div>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;"><img src="image/activity/5.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/55.png" alt="">
+                                    </div>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;"><img src="image/activity/6.png" alt=""></a>
+                                    <div class="text hide">
+                                        <img src="image/activity/66.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page-right-bottom"></div>
+                </div>
+            </div>
+            <!--#include virtual="include/footer.html"-->
+        </div>
+    </div>
+    <!--#include virtual="include/float_right.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/init.html"-->
+    <script>
+        $("#yy_8").addClass("current")
+
+        //rules
+        var rulesBoxes = $('#rules li'),
+            textBoxes = $('#rules .text');
+   
+        rulesBoxes.on('click', function() {
+            var $btn = $(this),
+                textBox = $btn.find('.text');
+   
+            if (!$btn.hasClass('on')) {
+                textBoxes.slideUp();
+                $btn.addClass('on').siblings().removeClass('on');
+                textBox.slideDown();
+            } else {
+                $btn.removeClass('on');
+                textBox.slideUp();
+            }
+        })
+    </script>
+</body>
+
+</html>

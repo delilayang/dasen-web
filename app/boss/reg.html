@@ -1,0 +1,202 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <style>
+		.logo{ float:left}
+        .slogen {
+            float: left;
+            line-height: 48px;
+            padding-left: 10px;
+            font-size: 18px;
+            color: #bac3e4;
+            font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+        }
+        .register-bottom {
+            width: 1160px;
+            margin: 0 auto;
+        }
+        .register-bottom h4 {
+            font-size: 20px;
+            color: #f8f0cb;
+            text-align: center;
+            line-height: 90px;
+            padding-top: 5px;
+        }
+        .bottom-dl {
+            padding-top: 10px;
+        }
+        .register-bottom dl {
+            float: left;
+            width: 229px;
+            padding: 10px 30px;
+            border-right: 1px dashed #626784;
+            color: #fff;
+            height: 155px;
+        }
+        .register-bottom dl:last-child {
+            border-color: transparent;
+        }
+        .register-bottom dl dt {
+            font-size: 24px;
+            line-height: 50px;
+        }
+        .register-bottom dl dt span {
+             color: #e6d4a6;
+         }
+        .register-bottom dl dd {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body class="new-register">
+
+<div class="register-wrap">
+    <div class="register-content">
+        <div class="top-wrap clearfix">
+            <div class="logo"></div>
+            <p class="slogen">如意七年，尽如人意，成就彩票游戏第一品牌！</p>
+            <a href="https://www.ry138.com/native/download.html?platform=boss" id="appDownload" target="_blank" class="link"><i></i>手机APP下载</a>
+        </div>
+        <div class="register-panel clearfix">
+     
+
+            <div class="register-area">
+
+
+                <form method="post" id="J-form" onsubmit="doRegister(); return false;">
+
+                    <ul class="register">
+					<li>
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">推荐人：</label>
+                            <input type="text" class="input" id="regRecoUserName" maxlength="15"/>
+                          <span>可以不填写</span>
+                        </li>
+                        <li>
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">会员账号：</label>
+                            <input type="text" class="input" id="regUsername" maxlength="15"/>
+                            <span>* 账号由6-15位字母和数字组合</span>
+                        </li>
+                        <li>
+                            <label class="ui-label" for="pwd" style="color: rgb(51, 51, 51);">登陆密码：</label>
+                            <input onpaste="return false" class="input"  type="password" id="regPassword" maxlength="20"/>
+                            <span>* 6-12个字母，以及必须含有数字和字母组合</span>
+
+                        </li>
+                        <li>
+                            <label class="ui-label" for="check-pwd" style="color: rgb(51, 51, 51);">确认密码：</label>
+                            <input onpaste="return false" class="input" type="password" id="password1" maxlength="20"/>
+                            <span>* 确认您的登录密码，请输入和以上一致的密码</span>
+                        </li >
+						<li>
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">真实姓名：</label>
+                            <input type="text" class="input" id="fullName" maxlength="10"/>
+                            <span>* 此姓名必须与你用于提款的银行户口名字一致</span>
+                        </li>
+                        
+                   		<li>
+                            <label class="ui-label" for="pwd" style="color: rgb(51, 51, 51);">提现密码：</label>
+                           
+                        <div class="sel">
+                            <select id="pwd1" class="input" style=" width:60px;">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd2" class="input" style=" width:60px; margin-left:7px">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd3" class="input" style=" width:60px; margin-left:7px">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <select id="pwd4" class="input" style=" width:60px; margin-left:7px">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                            <span>* 4位数纯数字密码，资金提现时需要认证，请务必牢记！</span>
+                        </li>
+						
+                        <li class="showRegMobile hide">
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">手机号码：</label>
+                            <input type="text" class="input" id="phone" maxlength="11"/>
+                            <span>* 手机号码格式 : 18888888888</span>
+                            
+						</li>
+                        <li class="showRegEmail hide">
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">电子邮箱：</label>
+                            <input type="text" class="input" id="email" maxlength="30"/>
+                            <span>* email格式 : 888888@qq.com</span>
+                            
+                        </li>
+
+                        <li class="showRegQQ hide">
+                            <label class="ui-label" for="name" style="color: rgb(51, 51, 51);">QQ号码：</label>
+                            <input type="text" class="input" id="qq" maxlength="20"/>
+                            <span>*  QQ格式：888888</span>
+                            
+                        </li>
+                        
+                        <span style="font-size:12px">隐私承诺：以上您的个人信息，我们将使用多重加密算法储存在我们的云服务器内，不会泄露您的个人信息。</span>
+                        <li></li>
+                    </ul>
+              
+                    <div id="J-button-submitDev">
+                        <input id="J-button-submit" class="submit-btn" type="submit" value="提交注册">
+						<a class="submit-btn-a" href="index.html">我要登陆</a>
+                    </div>
+                </form>
+				
+			
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" id="nextTitle" class="next-title"></a>
+    <!--  -->
+
+</div>
+<div class="game-wrap"></div>
+<!--#include virtual="include/commonJs.html" -->
+<script>
+    init()
+</script>
+</body>
+</html>
